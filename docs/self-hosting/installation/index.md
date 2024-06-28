@@ -30,10 +30,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 ## Installation Steps
 
-### 1. Create a Docker Compose File
+### 1. Setup the Docker compose file
 
-Create a new directory for docmost and download the Docker compose file:
-```sh
+Create a new directory for Docmost and download the Docker compose file with commands below:
+```shell
 mkdir docmost
 cd docmost
 curl -O https://raw.githubusercontent.com/docmost/docmost/main/docker-compose.yml
@@ -44,7 +44,7 @@ Next, open the docker-compose.yml file. On Linux, you can use vim:
 vi docker-compose.yml
 ```
 
-The downloaded `docker-compose.yml` file should contain the following with default environment variables:
+The downloaded `docker-compose.yml` file should contain the template below with default environment variables:
 
 ```yaml title="docmost/docker-compose.yml"
 version: '3'
@@ -91,15 +91,17 @@ volumes:
 ### Replace the default configs
 You are to replace the default environment variables in the `docker-compose.yml` file.
 
-The `APP_URL` should be replaced with your url. E.g. `APP_URL: 'https://example.com'` or `APP_URL: 'https://docmost.example.com'`.
+The `APP_URL` should be replaced with your chosen domain. E.g. `APP_URL: 'https://example.com'` or `APP_URL: 'https://docmost.example.com'`.
 
 The `APP_SECRET` value should be replaced with a long random secret key. You can generate the secret with `openssl rand -hex 32`.
 
-Replace `STRONG_DB_PASSWORD_HERE` in the `POSTGRES_PASSWORD` environment variable with a secure password.
+Replace `STRONG_DB_PASSWORD` in the `POSTGRES_PASSWORD` environment variable with a secure password.
 
 Update the `DATABASE_URL` default `STRONG_DB_PASSWORD` value with your chosen Postgres password.
 
-To configure Emails or File storage driver, see the [Configuration](./self-hosting/configuration) documentation.
+To configure Emails or File storage driver, see the [Configuration](./self-hosting/configuration) doc.
+The default File storage driver is `local storage`. You don't have to do anything unless you wish to use S3 storage.
+
 
 ### Start the Services
 Make sure you are inside the `docmost` directory which contains the `docker-compose.yml` file.
@@ -119,17 +121,18 @@ If all is set, you should see the Docmost setup page which will enable you set u
 </p>
 
 After a successful setup, you will become the workspace owner. You can then invite other users to join your workspace.
+Congratulations 🎉.
 
 If you encounter any issues, feel free to create an issue or discussion on the [GitHub repo](https://github.com/docmost/docmost).
 
-### Upgrade
+## Upgrade
 To upgrade to the latest Docmost version, run the following commands:
 ```shell
 docker pull docmost/docmost
-docker-compose up --force-recreate --build docmost -d
+docker compose up --force-recreate --build docmost -d
 ```
 
-#### Helpful docker commands
+## Helpful docker commands
 
 To stop the services:
 ```shell
