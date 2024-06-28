@@ -99,7 +99,7 @@ Replace `STRONG_DB_PASSWORD_HERE` in the `POSTGRES_PASSWORD` environment variabl
 
 Update the `DATABASE_URL` default `STRONG_DB_PASSWORD` value with your chosen Postgres password.
 
-To configure Emails or File storage driver, see the [Configuration](./configuration) documentation.
+To configure Emails or File storage driver, see the [Configuration](./self-hosting/configuration) documentation.
 
 ### Start the Services
 Make sure you are inside the `docmost` directory which contains the `docker-compose.yml` file.
