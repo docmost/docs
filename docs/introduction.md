@@ -38,6 +38,3 @@ There is no cloud version for now. It will be available in the future.
 
 **What license does Docmost use?**
 Docmost is licensed under the [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) (GNU Affero General Public License). 
-
-**Do you require a CLA?**  
-Yes, to contribute code to our project, you will need to accept our Contributor License Agreement (CLA). Thank you for your cooperation!
