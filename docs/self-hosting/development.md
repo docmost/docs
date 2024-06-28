@@ -85,3 +85,6 @@ $ pnpm nx run server:migration:create migration_name_here
 Migrations are stored inside the `apps/server/src/database/migrations` directory.  
 
 The project does not make use of any ORM. We use the [Kysely](https://github.com/kysely-org/kysely) query builder to build typesafe sql queries.
+
+Ps: If you wish to make code contributions to Docmost, you will need to accept our Contributor License Agreement (CLA). 
+
