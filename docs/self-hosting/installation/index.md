@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Installation
 
-For now, Docker is the recommended mode of installation. If you are a developer, you may be interested in the [development guide](./self-hosting/development).
+For now, Docker is the recommended mode of installation. If you are a developer, you may be interested in the [development guide](/self-hosting/development).
 
 ## Prerequisites
 Before you begin, make sure you have Docker installed on your server. See the [official Docker installation guide](https://docs.docker.com/engine/install/) based on your OS.
