@@ -49,6 +49,10 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        gtag: {
+          trackingID: "G-15RC5C8G8H",
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -83,45 +87,57 @@ const config: Config = {
         },
       ],
     },
-    /*
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Intro',
-              to: '/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docmostHQ',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/docmost/docmost',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Docmost. Built with Docusaurus.`,
+    algolia: {
+      appId: "6AXFZPSU9P",
+      apiKey: "8196626504bfe56f3e1cefbc88598c04",
+      indexName: "docmost_docs",
+      contextualSearch: true,
+      replaceSearchResultPathname: {
+        from: "/docs/",
+        to: "/",
+      },
+      searchParameters: {},
+      searchPagePath: "search",
     },
-     */
+    /*
+        footer: {
+          style: 'dark',
+          links: [
+            {
+              title: 'Docs',
+              items: [
+                {
+                  label: 'Intro',
+                  to: '/intro',
+                },
+              ],
+            },
+            {
+              title: 'Community',
+              items: [
+                {
+                  label: 'Twitter',
+                  href: 'https://twitter.com/docmostHQ',
+                },
+              ],
+            },
+            {
+              title: 'More',
+              items: [
+                {
+                  label: 'Blog',
+                  to: '/blog',
+                },
+                {
+                  label: 'GitHub',
+                  href: 'https://github.com/docmost/docmost',
+                },
+              ],
+            },
+          ],
+          copyright: `Copyright © ${new Date().getFullYear()} Docmost. Built with Docusaurus.`,
+        },
+         */
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
