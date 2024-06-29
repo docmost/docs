@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 
 # Development
-Docmost is a monorepo which uses pnpm workspace and nx. This will guide you on how to se
+Docmost is a monorepo which uses pnpm workspace and nx. This is a guide on how to set it up for local development.
 
 ### Project structure
 ```
