@@ -88,9 +88,9 @@ const config: Config = {
       ],
     },
     algolia: {
-      appId: "6AXFZPSU9P",
-      apiKey: "8196626504bfe56f3e1cefbc88598c04",
-      indexName: "docmost_docs",
+      appId: "1YNLNIMGT9",
+      apiKey: "83977ee76ec0f9158a9f7805abd8ddb2",
+      indexName: "most",
       contextualSearch: true,
       replaceSearchResultPathname: {
         from: "/docs/",
