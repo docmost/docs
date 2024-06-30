@@ -14,7 +14,7 @@ Before you begin, make sure you have Docker installed on your server. See the [o
 If you use Ubuntu, you can install Docker with the commands below:
 
 <details>
-  <summary>Show docker installation code</summary>
+  <summary>Click to see docker installation code</summary>
 
 ```shell
     # Add Docker's official GPG key:
