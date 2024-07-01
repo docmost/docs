@@ -14,7 +14,7 @@ Before you begin, make sure you have Docker installed on your server. See the [o
 If you use Ubuntu, you can install Docker with the commands below:
 
 <details>
-  <summary>Click to see docker installation code</summary>
+  <summary>Click to see Ubuntu docker installation commands</summary>
 
 ```shell
     # Add Docker's official GPG key:
@@ -53,7 +53,11 @@ Next, open the docker-compose.yml file. On Linux, you can use vim:
 vi docker-compose.yml
 ```
 
-The downloaded `docker-compose.yml` file should contain the template below with default environment variables:
+The downloaded `docker-compose.yml` file should contain the template below with default environment variables.
+
+:::info
+`APP_URL` is optional, but useful for correct email links.
+:::
 
 ```yaml title="docmost/docker-compose.yml"
 version: "3"
@@ -101,15 +105,16 @@ volumes:
 
 You are to replace the default environment variables in the `docker-compose.yml` file.
 
-The `APP_URL` should be replaced with your chosen domain. E.g. `APP_URL: 'https://example.com'` or `APP_URL: 'https://docmost.example.com'`.
+The `APP_URL` should be replaced with your chosen domain. E.g. `https://example.com` or `https://docmost.example.com`.
 
-The `APP_SECRET` value should be replaced with a long random secret key. You can generate the secret with `openssl rand -hex 32`.
+The `APP_SECRET` value must be replaced with a long random secret key.  
+You can generate the secret with `openssl rand -hex 32`. If you leave the default value, the app will fail to start.
 
 Replace `STRONG_DB_PASSWORD` in the `POSTGRES_PASSWORD` environment variable with a secure password.
 
 Update the `DATABASE_URL` default `STRONG_DB_PASSWORD` value with your chosen Postgres password.
 
-To configure Emails or File storage driver, see the [Configuration](./self-hosting/configuration) doc.
+To configure Emails or File storage driver, see the [Configuration](./self-hosting/configuration) doc.  
 The default File storage driver is `local storage`. You don't have to do anything unless you wish to use S3 storage.
 
 ### Start the Services
