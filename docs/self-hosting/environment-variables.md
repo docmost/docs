@@ -8,12 +8,12 @@ To configure your application, set the following environment variables. These va
 
 ## Application Configuration
 
-| Variable               | Example                 | Description                                    |
-| ---------------------- | ----------------------- | ---------------------------------------------- |
-| `APP_URL`              | `http://localhost:3000` | The base URL of your application.              |
-| `APP_SECRET`           | `random_key`            | A random key used for application security.    |
-| `PORT`                 | `3000`                  | The port on which the application will run.    |
-| `JWT_TOKEN_EXPIRES_IN` | `30d`                   | The expiration time for JSON Web Tokens (JWT). |
+| Variable               | Example                      | Description                                                                           |
+| ---------------------- |------------------------------|---------------------------------------------------------------------------------------|
+| `APP_URL`              | `http://docmost.example.com` | The base URL of your application. It is optional, but useful for correct email links. |
+| `APP_SECRET`           | `random_key`                 | A random key used for application security.                                           |
+| `PORT`                 | `3000`                       | The port on which the application will run.                                           |
+| `JWT_TOKEN_EXPIRES_IN` | `30d`                        | The expiration time for JSON Web Tokens (JWT).                                        |
 
 ## Database Configuration
 
@@ -50,15 +50,15 @@ To configure your application, set the following environment variables. These va
 
 ### Using SMTP
 
-| Variable            | Example             | Description                                      |
-| ------------------- | ------------------- | ------------------------------------------------ |
-| `MAIL_DRIVER`       | `smtp`              | The mail driver to use for sending emails.       |
-| `MAIL_HOST`         | `smtp.example.com`  | The SMTP server to use for sending emails.       |
-| `MAIL_PORT`         | `587`               | The port to use for the SMTP server.             |
-| `MAIL_USERNAME`     |                     | The username for the SMTP server.                |
-| `MAIL_PASSWORD`     |                     | The password for the SMTP server.                |
+| Variable    | Example             | Description                                      |
+|-------------| ------------------- | ------------------------------------------------ |
+| `MAIL_DRIVER` | `smtp`              | The mail driver to use for sending emails.       |
+| `SMTP_HOST` | `smtp.example.com`  | The SMTP server to use for sending emails.       |
+| `SMTP_PORT` | `587`               | The port to use for the SMTP server.             |
+| `SMTP_USERNAME` |                     | The username for the SMTP server.                |
+| `SMTP_PASSWORD` |                     | The password for the SMTP server.                |
 | `MAIL_FROM_ADDRESS` | `hello@example.com` | The email address that emails will be sent from. |
-| `MAIL_FROM_NAME`    | `Docmost`           | The name that emails will be sent from.          |
+| `MAIL_FROM_NAME` | `Docmost`           | The name that emails will be sent from.          |
 
 ### Using Postmark
 
