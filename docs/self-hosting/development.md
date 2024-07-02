@@ -15,6 +15,9 @@ root
     └── editor-ext // package for editor extensions
 ```
 
+The frontend client is developed using Vite and React, with the user interface powered by the [Mantine](https://mantine.dev/) UI library.
+The backend server is built using the [Nest.js](https://nestjs.com/) framework.
+
 ### Requirements
 To run Docmost, you'll need the following:
 - **Node.js**: >= 18
