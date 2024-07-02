@@ -11,6 +11,7 @@ Designed for seamless real-time collaboration, multiple users can work on the sa
 Docmost is an open-source alternative to the likes of Notion and Confluence. Whether you're managing a wiki, a knowledge base, or extensive project documentation, Docmost provides the tools you need to create, collaborate, and share knowledge effortlessly.
 
 Docmost has support for Spaces. You can create Spaces for different teams, projects, or departments depending on your needs. Each Space comes with its own permissions.
+
 The rich text editor has support for markdown shortcuts.
 
 ![img](https://docmost.com/screenshots/home.png)
@@ -32,10 +33,13 @@ Currently, Docmost supports local email and password authentication only. Other 
 
 ## FAQ
 **How do I install Docmost?**  
-We have written an installation guide for you. You can find it [here](./installation).
+We have written an installation guide for you. You can find it on the [installation page](./installation).
 
 **Do you have a cloud version if I don't want to host it myself?**  
 There is no cloud version for now. It will be available in the future.
 
 **What license does Docmost use?**  
 Docmost is licensed under the [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) (GNU Affero General Public License). 
+
+**Got anymore questions?**  
+Feel free to email me at _philip at docmost.com_.
