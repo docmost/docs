@@ -31,7 +31,7 @@ Make sure you have `pnpm` installed `npm install -g pnpm`.
 $ git clone https://github.com/docmost/docmost
 $ cd docmost
 $ pnpm install
-$ cp .env.exmaple .env
+$ cp .env.example .env
 ```
 
 Make sure to update the .env file.  
