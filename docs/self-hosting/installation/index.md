@@ -114,7 +114,7 @@ Replace `STRONG_DB_PASSWORD` in the `POSTGRES_PASSWORD` environment variable wit
 
 Update the `DATABASE_URL` default `STRONG_DB_PASSWORD` value with your chosen Postgres password.
 
-To configure Emails or File storage driver, see the [Configuration](./self-hosting/configuration) doc.  
+To configure Emails or File storage driver, see the [Configuration](/self-hosting/configuration) doc.  
 The default File storage driver is `local storage`. You don't have to do anything unless you wish to use S3 storage.
 
 ### Start the Services
