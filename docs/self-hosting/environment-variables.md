@@ -57,6 +57,7 @@ To configure your application, set the following environment variables. These va
 | `SMTP_PORT` | `587`               | The port to use for the SMTP server.             |
 | `SMTP_USERNAME` |                     | The username for the SMTP server.                |
 | `SMTP_PASSWORD` |                     | The password for the SMTP server.                |
+| `SMTP_SECURE` | `false`               | Use TLS when connecting to the server, typically for port 465. Defaults to false. [See nodemailer 'secure' for details](https://nodemailer.com/smtp/)  |
 | `MAIL_FROM_ADDRESS` | `hello@example.com` | The email address that emails will be sent from. |
 | `MAIL_FROM_NAME` | `Docmost`           | The name that emails will be sent from.          |
 
