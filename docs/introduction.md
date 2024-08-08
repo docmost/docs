@@ -27,6 +27,7 @@ The rich text editor has support for markdown shortcuts.
 - **Nested Navigation**: You can nest and reorder pages via the sidebar.
 - **Search**: Quickly find the information you need with powerful search capabilities.
 - **File Attachment**: Attach files to your pages for easy reference and sharing.
+- **Import / Export**: You can easily import and export pages in Markdown and HTML formats.
 
 ## Authentication
 Currently, Docmost supports local email and password authentication only. Other authentication strategies will come in the near future.
