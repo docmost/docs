@@ -62,10 +62,10 @@ const config: Config = {
     //image: "",
     navbar: {
       title: "Docmost",
-      logo: {
-        alt: "Logo",
-        src: "img/logo.svg",
-      },
+      //logo: {
+      //  alt: "Logo",
+      //  src: "img/logo.svg",
+      //},
       items: [
         {
           type: "docSidebar",
