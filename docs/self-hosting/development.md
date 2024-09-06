@@ -66,7 +66,8 @@ You can run the built server and client using `pnpm nx run server:start`. The pr
 Check the `package.json` of each app to learn more about all the available commands.
 
 #### Migrations
-During development, you have to run the latest migrations manually. These are the usefully migration commands.
+
+In development mode, you have to run the latest migrations manually. These are the useful migration commands.
 
 ```bash
 # To run all pending database migrations
@@ -87,7 +88,12 @@ $ pnpm nx run server:migration:create migration_name_here
 
 Migrations are stored inside the `apps/server/src/database/migrations` directory.  
 
+If you make changes to the database, e.g.creating a new table or column, you will have to regenerate the db types with
+```bash
+pnpm nx run server:migration:codegen
+```
+
 The project does not make use of any ORM. We use the [Kysely](https://github.com/kysely-org/kysely) query builder to build typesafe sql queries.
 
-Ps: If you wish to make code contributions to Docmost, you will need to accept our Contributor License Agreement (CLA). 
+**Ps:** If you wish to make code contributions to Docmost, you will need to accept our Contributor License Agreement (CLA) before your PR can be accepted. 
 
