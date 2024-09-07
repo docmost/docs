@@ -20,6 +20,14 @@ const config: Config = {
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+  scripts: [
+    {
+      src: "https://data.docmost.com/js/plausible.js",
+      async: true,
+      defer: true,
+      "data-domain": "docmost.com",
+    },
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
