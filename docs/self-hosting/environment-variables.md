@@ -31,9 +31,10 @@ To configure your application, set the following environment variables. These va
 
 ### Using Local storage
 
-| Variable         | Example | Description                                 |
-| ---------------- | ------- | ------------------------------------------- |
-| `STORAGE_DRIVER` | `local` | The storage driver to use for file storage. |
+| Variable            | Example | Description                                        |
+|---------------------|---------|----------------------------------------------------|
+| `STORAGE_DRIVER`    | `local` | The storage driver to use for file storage.        |
+| `FILE_UPLOAD_SIZE_LIMIT` | `50mb`  | The maximum file size per upload. Default is 50mb. |
 
 ### Using S3-compatible storage
 
@@ -69,3 +70,9 @@ To configure your application, set the following environment variables. These va
 | `POSTMARK_TOKEN`    |                     | The token for Postmark, if using Postmark as the `MAIL_DRIVER`. |
 | `MAIL_FROM_ADDRESS` | `hello@example.com` | The email address that emails will be sent from.                |
 | `MAIL_FROM_NAME`    | `Docmost`           | The name that emails will be sent from.                         |
+
+## DRAW.IO (Diagrams.net) configuration
+The default Draw.io embed url is `https://embed.diagrams.net`.
+| Variable  | Example                  | Description                |
+|-----------| ------------------------ |----------------------------|
+| `DRAWIO_URL` | `https://embed.diagrams.net` | Your custom DRAWIO URL server url. |
