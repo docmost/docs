@@ -43,5 +43,8 @@ There is no cloud version for now. It will be available in the future.
 **What license does Docmost use?**  
 Docmost is licensed under the [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) (GNU Affero General Public License). 
 
+**Will there be an enterprise version?**  
+Yes, we have plans to introduce an enterprise version in the near future.
+
 **Got anymore questions?**  
 Feel free to email me at _philip at docmost.com_.
