@@ -75,4 +75,4 @@ To configure your application, set the following environment variables. These va
 The default Draw.io embed url is `https://embed.diagrams.net`.
 | Variable  | Example                  | Description                |
 |-----------| ------------------------ |----------------------------|
-| `DRAWIO_URL` | `https://embed.diagrams.net` | Your custom DRAWIO URL server url. |
+| `DRAWIO_URL` | `https://embed.diagrams.net` | Your custom draw.io server url. |
