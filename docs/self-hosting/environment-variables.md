@@ -23,9 +23,9 @@ To configure your application, set the following environment variables. These va
 
 ## Redis Configuration
 
-| Variable    | Example                  | Description                               |
-| ----------- | ------------------------ | ----------------------------------------- |
-| `REDIS_URL` | `redis://127.0.0.1:6379` | The connection URL for your Redis server. |
+| Variable    | Example                  | Description                                             |
+| ----------- | ------------------------ |---------------------------------------------------------|
+| `REDIS_URL` | `redis://127.0.0.1:6379` | The connection URL for your Redis server.<br/> **Format**: `redis://username:password@host:port/db-number` |
 
 ## Storage Configuration
 
