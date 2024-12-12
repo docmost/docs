@@ -139,6 +139,10 @@ If all is set, you should see the Docmost setup page which will enable you set u
 After a successful setup, you will become the workspace owner. You can then invite other users to join your workspace.
 Congratulations 🎉.
 
+:::warning[Reverse Proxy / WebSockets]
+If you are using a reverse proxy, make sure WebSockets is enabled. The real-time page editor depends on WebSockets to work.
+:::
+
 If you encounter any issues, feel free to create an issue or discussion on the [GitHub repo](https://github.com/docmost/docmost).
 
 ## Upgrade
