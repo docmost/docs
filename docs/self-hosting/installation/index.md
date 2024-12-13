@@ -101,6 +101,8 @@ volumes:
   redis_data:
 ```
 
+For health check, a dedicated endpoint is available at `YOUR_URL/api/health`.
+
 ### Replace the default configs
 
 You are to replace the default environment variables in the `docker-compose.yml` file.
