@@ -42,6 +42,7 @@ AWS_S3_SECRET_ACCESS_KEY=
 AWS_S3_REGION=
 AWS_S3_BUCKET=
 AWS_S3_ENDPOINT=
+AWS_S3_FORCE_PATH_STYLE=
 ```
 
 Being S3-compatible means Docmost can work with AWS S3, Backblaze, Wasabi, DigitalOcean Spaces, Minio, and other S3-compatible providers.

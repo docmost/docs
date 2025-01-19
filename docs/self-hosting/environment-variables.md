@@ -46,6 +46,7 @@ To configure your application, set the following environment variables. These va
 | `AWS_S3_REGION`            |         | The region where your S3 bucket is located.      |
 | `AWS_S3_BUCKET`            |         | The name of your S3 bucket.                      |
 | `AWS_S3_ENDPOINT`          |         | The endpoint URL for your S3 service (optional). |
+| `AWS_S3_FORCE_PATH_STYLE`  | `true`  | Force the request to use path-style addressing (optional). |
 
 ## Email Configuration
 
