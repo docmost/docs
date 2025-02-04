@@ -8,12 +8,12 @@ To configure your application, set the following environment variables. These va
 
 ## Application Configuration
 
-| Variable               | Example                      | Description                                                                           |
-| ---------------------- |------------------------------|---------------------------------------------------------------------------------------|
-| `APP_URL`              | `http://docmost.example.com` | The base URL of your application. It is optional, but useful for correct email links. |
-| `APP_SECRET`           | `random_key`                 | A random key used for application security.                                           |
-| `PORT`                 | `3000`                       | The port on which the application will run.                                           |
-| `JWT_TOKEN_EXPIRES_IN` | `30d`                        | The expiration time for JSON Web Tokens (JWT).                                        |
+| Variable              | Example                       | Description                                                                                      |
+|-----------------------|-------------------------------|--------------------------------------------------------------------------------------------------|
+| `APP_URL`             | `https://docmost.example.com` | The base URL of your application. It is optional, but useful for correct email links.            |
+| `APP_SECRET`           | `LONG_SECRET_KEY`             | A secure key for application security (32 chars minimum).  Generate with `openssl rand -hex 32`. |
+| `PORT`                | `3000`                        | The port on which the application will run.                                                      |
+| `JWT_TOKEN_EXPIRES_IN` | `30d`                         | The expiration time for JSON Web Tokens (JWT). The default is 30 days.                           |
 
 ## Database Configuration
 
