@@ -29,6 +29,7 @@ The rich text editor has support for markdown shortcuts.
 - **Search**: Quickly find the information you need with powerful search capabilities.
 - **File Attachment**: Attach files to your pages for easy reference and sharing.
 - **Import / Export**: You can easily import and export pages in Markdown and HTML formats.
+- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇫🇷
 
 ## Authentication
 Currently, Docmost supports local email and password authentication only. Other authentication strategies will come in the near future.
@@ -38,10 +39,10 @@ Currently, Docmost supports local email and password authentication only. Other 
 We have written an installation guide for you. You can find it on the [installation page](./installation).
 
 **Do you have a cloud version if I don't want to host it myself?**  
-There is no cloud version for now. It will be available in the future.
+Yes! You can subscribe to our cloud version at [https://docmost.com/pricing](https://docmost.com/pricing?ref=docs).
 
 **What license does Docmost use?**  
-Docmost is licensed under the [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) (GNU Affero General Public License). 
+Docmost is licensed under the [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) 3.0 License. 
 
 **Will there be an enterprise version?**  
 Yes, we have plans to introduce an enterprise version in the near future.

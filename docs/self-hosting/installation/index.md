@@ -143,6 +143,7 @@ Congratulations 🎉.
 
 :::warning[Reverse Proxy / WebSockets]
 If you are using a reverse proxy, make sure WebSockets is enabled. The real-time page editor depends on WebSockets to work.
+The WebSocket paths are `/socket.io` and `/collab`.
 :::
 
 If you encounter any issues, feel free to create an issue or discussion on the [GitHub repo](https://github.com/docmost/docmost).
@@ -152,7 +153,7 @@ If you encounter any issues, feel free to create an issue or discussion on the [
 To upgrade to the latest Docmost version, run the following commands:
 
 ```shell
-docker pull docmost/docmost
+docker pull docmost/docmost:latest
 docker compose up --force-recreate --build docmost -d
 ```
 
