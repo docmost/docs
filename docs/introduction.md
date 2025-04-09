@@ -32,7 +32,8 @@ The rich text editor has support for markdown shortcuts.
 - **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇫🇷
 
 ## Authentication
-Currently, Docmost supports local email and password authentication only. Other authentication strategies will come in the near future.
+- Email and password
+- SSO (SAML/OIDC) is available in our enterprise edition [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise License">Purchase enterprise license</a>].
 
 ## FAQ
 **How do I install Docmost?**  
@@ -42,10 +43,11 @@ We have written an installation guide for you. You can find it on the [installat
 Yes! You can subscribe to our cloud version at [https://docmost.com/pricing](https://docmost.com/pricing?ref=docs).
 
 **What license does Docmost use?**  
-Docmost is licensed under the [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) 3.0 License. 
+Docmost is licensed under the open-source [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) 3.0 License.<br />
+Enterprise features are available under an enterprise license (Enterprise Edition).
 
-**Will there be an enterprise version?**  
-Yes, we have plans to introduce an enterprise version in the near future.
+**Do you have an enterprise version?**  
+Yes, we have an enterprise version with SSO integration. Contact <a href="mailto:sales@docmost.com">sales@docmost.com</a> to purchase an enterprise license.
 
 **Got anymore questions?**  
 Feel free to email me at _philip at docmost.com_.

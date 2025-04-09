@@ -77,3 +77,10 @@ The default Draw.io embed url is `https://embed.diagrams.net`.
 | Variable  | Example                  | Description                |
 |-----------| ------------------------ |----------------------------|
 | `DRAWIO_URL` | `https://embed.diagrams.net` | Your custom draw.io server url. |
+
+## Telemetry
+We only collect the active version, user count, page count, space and workspace count.
+
+| Variable  | Example                  | Description                |
+|-----------| ------------------------ |----------------------------|
+| `DISABLE_TELEMETRY` | `true` | To disable telemetry |
