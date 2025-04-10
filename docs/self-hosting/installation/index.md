@@ -60,8 +60,6 @@ The downloaded `docker-compose.yml` file should contain the template below with 
 :::
 
 ```yaml title="docmost/docker-compose.yml"
-version: "3"
-
 services:
   docmost:
     image: docmost/docmost:latest
