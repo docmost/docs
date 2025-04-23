@@ -21,6 +21,7 @@ The rich text editor has support for markdown shortcuts.
 - **Collaborative Real-time Editor**: Work together on pages in real-time.
 - **Diagrams**: Built-in support for Draw.io, Excalidraw and Mermaid diagramming tools.
 - **Spaces**: Organize your pages by team, projects, or departments for better collaboration.
+- **Public sharing**: You can publicly share your pages, allowing anyone with the link to view them.
 - **Permissions Management**: Easily control access to contents with easy to understand permissions.
 - **Groups**: Easily grant unified permissions to users via groups.
 - **Comments**: Add comments to pages for better communication and feedback.
