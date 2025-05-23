@@ -20,6 +20,8 @@ Supported languages include:
 🇳🇱 Dutch  
 🇺🇦 Ukrainian
 
+🇸🇦 Arabic
+
 Language settings can be managed by each user from the "Settings > Preferences" page, ensuring each person sees the UI in their preferred language.
 
 <p align="center">

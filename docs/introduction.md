@@ -30,7 +30,7 @@ The rich text editor has support for markdown shortcuts.
 - **Search**: Quickly find the information you need with powerful search capabilities.
 - **File Attachment**: Attach files to your pages for easy reference and sharing.
 - **Import / Export**: You can easily import and export pages in Markdown and HTML formats.
-- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇫🇷
+- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇫🇷 🇸🇦
 
 ## Authentication
 - Email and password
