@@ -30,18 +30,29 @@ The rich text editor has support for markdown shortcuts.
 - **Search**: Quickly find the information you need with powerful search capabilities.
 - **File Attachment**: Attach files to your pages for easy reference and sharing.
 - **Import / Export**: You can easily import and export pages in Markdown and HTML formats.
-- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇫🇷
+  - Zip import
+  - Notion import
+  - Confluence import (Enterprise Edition)
+- **Read/Edit preference mode:** Say goodbye to accidental edits.
+- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇫🇷🇺🇦
 
 ## Authentication
 - Email and password
 - SSO (SAML/OIDC) is available in our enterprise edition [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise License">Purchase enterprise license</a>].
+
+## Enterprise Edition Features
+- SSO (SAML 2.0 / OIDC ) - Integrate Microsoft Entra ID, Okta, OneLogin and more., 
+- Confluence importer
+- Email support
+- Audit logs (coming soon)
+- [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise Edition.">Purchase enterprise edition</a>].
 
 ## FAQ
 **How do I install Docmost?**  
 We have written an installation guide for you. You can find it on the [installation page](./installation).
 
 **Do you have a cloud version if I don't want to host it myself?**  
-Yes! You can subscribe to our cloud version at [https://docmost.com/pricing](https://docmost.com/pricing?ref=docs).
+Yes! You can get started with our cloud version at [https://app.docmost.com](https://app.docmost.com/create?ref=docs).
 
 **What license does Docmost use?**  
 Docmost is licensed under the open-source [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) 3.0 License.<br />
@@ -51,4 +62,4 @@ Enterprise features are available under an enterprise license (Enterprise Editio
 Yes, we have an enterprise version with SSO integration. Contact <a href="mailto:sales@docmost.com">sales@docmost.com</a> to purchase an enterprise license.
 
 **Got anymore questions?**  
-Feel free to email me at _philip at docmost.com_.
+Feel free to email the founder: philip@docmost.com.

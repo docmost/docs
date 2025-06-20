@@ -34,7 +34,6 @@ To configure your application, set the following environment variables. These va
 | Variable            | Example | Description                                        |
 |---------------------|---------|----------------------------------------------------|
 | `STORAGE_DRIVER`    | `local` | The storage driver to use for file storage.        |
-| `FILE_UPLOAD_SIZE_LIMIT` | `50mb`  | The maximum file size per upload. Default is 50mb. |
 
 ### Using S3-compatible storage
 
@@ -47,6 +46,15 @@ To configure your application, set the following environment variables. These va
 | `AWS_S3_BUCKET`            |         | The name of your S3 bucket.                      |
 | `AWS_S3_ENDPOINT`          |         | The endpoint URL for your S3 service (optional). |
 | `AWS_S3_FORCE_PATH_STYLE`  | `true`  | Force the request to use path-style addressing (optional). |
+
+
+### Storage file upload limits
+
+| Variable                 | Example | Description                                           |
+|--------------------------|---------|-------------------------------------------------------|
+| `FILE_UPLOAD_SIZE_LIMIT` | `50mb`  | The maximum file size per upload. Default is 50mb.    |
+| `FILE_IMPORT_SIZE_LIMIT` | `100mb` | The maximum file import size limit. Default is 200mb. |
+
 
 ## Email Configuration
 
@@ -79,7 +87,7 @@ The default Draw.io embed url is `https://embed.diagrams.net`.
 | `DRAWIO_URL` | `https://embed.diagrams.net` | Your custom draw.io server url. |
 
 ## Telemetry
-We only collect the active version, user count, page count, space and workspace count.
+We anonymously collect the active version, user count, page count, space and workspace count.
 
 | Variable  | Example                  | Description                |
 |-----------| ------------------------ |----------------------------|

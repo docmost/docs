@@ -56,7 +56,7 @@ vi docker-compose.yml
 The downloaded `docker-compose.yml` file should contain the template below with default environment variables.
 
 :::info
-`APP_URL` is optional, but useful for correct email links.
+`APP_URL` should be the domain you can access docmost from. e.g `https://docmost.example.com`
 :::
 
 ```yaml title="docmost/docker-compose.yml"
