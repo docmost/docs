@@ -9,7 +9,7 @@ For now, Docker is the recommended mode of installation. If you are a developer,
 
 
 :::tip Cloud Hosting  
-Don't want to worry about hosting, upgrades and backups? [**Try our Cloud Hosting**](https://app.docmost.com/create?utm_docs=installation)
+Don't want to worry about hosting, upgrades and backups? [**Try our Cloud Hosting**](https://app.docmost.com/create?utm_medium=installation)
 :::
 
 ## Prerequisites
