@@ -7,6 +7,11 @@ sidebar_position: 1
 
 For now, Docker is the recommended mode of installation. If you are a developer, you may be interested in the [development guide](/self-hosting/development).
 
+
+:::tip Cloud Hosting  
+Don't want to worry about hosting, upgrades and backups? [**Try our Cloud Hosting**](https://app.docmost.com/create?utm_docs=installation)
+:::
+
 ## Prerequisites
 
 Before you begin, make sure you have Docker installed on your server. See the [official Docker installation guide](https://docs.docker.com/engine/install/) based on your OS.
