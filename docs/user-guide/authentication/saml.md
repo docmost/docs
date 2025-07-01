@@ -9,6 +9,9 @@ tags:
 **Edition:** Enterprise
 
 Docmost supports authentication via the Security Assertion Markup Language (SAML 2.0), allowing integration with identity providers (IdPs) that support the SAML protocol.
+<p align="center">
+<img src="/docs/img/saml-auth.png" width="350"/>
+</p>
 
 ### How to configure SAML 2.0
 
