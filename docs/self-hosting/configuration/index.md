@@ -50,7 +50,7 @@ AWS_S3_FORCE_PATH_STYLE=
 Being S3-compatible means Docmost can work with AWS S3, Backblaze, Wasabi, DigitalOcean Spaces, Minio, and other S3-compatible providers.
 
 
-### File upload limit
+### File upload size limit
 The maximum file size that can be uploaded on the editor.
 ```shell
 FILE_UPLOAD_SIZE_LIMIT=100mb
