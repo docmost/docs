@@ -53,7 +53,7 @@ Being S3-compatible means Docmost can work with AWS S3, Backblaze, Wasabi, Digit
 ### File upload limit
 The maximum file size that can be uploaded on the editor.
 ```shell
-FILE_UPLOAD_LIMIT=100mb
+FILE_UPLOAD_SIZE_LIMIT=100mb
 ```
 
 ### File import size limit
