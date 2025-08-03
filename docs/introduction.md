@@ -41,7 +41,9 @@ The rich text editor has support for markdown shortcuts.
 - SSO (SAML/OIDC) is available in our enterprise edition [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise License">Purchase enterprise license</a>].
 
 ## Enterprise Edition Features
-- SSO (SAML 2.0 / OIDC ) - Integrate Microsoft Entra ID, Okta, OneLogin and more., 
+- SSO (SAML 2.0 / OIDC ) - Integrate Microsoft Entra ID, Okta, OneLogin and more.,
+- MFA (TOTP)
+- Resolve comments
 - Confluence importer
 - Email support
 - Audit logs (coming soon)
