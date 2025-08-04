@@ -65,19 +65,17 @@ The downloaded `docker-compose.yml` file should contain the template below with 
 :::
 
 ```yaml title="docmost/docker-compose.yml"
-version: "3"
-
 services:
   docmost:
     image: docmost/docmost:latest
     depends_on:
       - db
-      - redis
+      - valkey
     environment:
       APP_URL: "http://localhost:3000"
       APP_SECRET: "REPLACE_WITH_LONG_SECRET"
       DATABASE_URL: "postgresql://docmost:STRONG_DB_PASSWORD@db:5432/docmost?schema=public"
-      REDIS_URL: "redis://redis:6379"
+      REDIS_URL: "redis://valkey:6379"
     ports:
       - "3000:3000"
     restart: unless-stopped
@@ -85,7 +83,7 @@ services:
       - docmost:/app/data/storage
 
   db:
-    image: postgres:16-alpine
+    image: postgres:17-alpine
     environment:
       POSTGRES_DB: docmost
       POSTGRES_USER: docmost
@@ -94,16 +92,16 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
 
-  redis:
-    image: redis:7.2-alpine
+  valkey:
+    image: valkey/valkey:alpine
     restart: unless-stopped
     volumes:
-      - redis_data:/data
+      - valkey_data:/data
 
 volumes:
   docmost:
   db_data:
-  redis_data:
+  valkey_data:
 ```
 
 For health check, a dedicated endpoint is available at `YOUR_URL/api/health`.
@@ -158,7 +156,7 @@ To upgrade to the latest Docmost version, run the following commands:
 
 ```shell
 docker pull docmost/docmost:latest
-docker compose up --force-recreate --build docmost -d
+docker compose up --force-recreate -d
 ```
 
 ## Helpful docker commands
