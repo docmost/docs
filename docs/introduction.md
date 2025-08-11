@@ -38,6 +38,7 @@ The rich text editor has support for markdown shortcuts.
 
 ## Authentication
 - Email and password
+- LDAP (enterprise edition)
 - SSO (SAML/OIDC) is available in our enterprise edition [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise License">Purchase enterprise license</a>].
 
 ## Enterprise Edition Features

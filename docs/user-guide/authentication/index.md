@@ -5,6 +5,7 @@ Authentication in Docmost ensures secure and efficient access management, provid
 
 Authentication methods in Docmost include:
 - Email and Password Authentication
+- LDAP (enterprise edition)
 - SSO (SAML/OIDC) (available in Cloud and Enterprise edition)
 
 
