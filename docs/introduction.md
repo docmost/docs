@@ -29,12 +29,13 @@ The rich text editor has support for markdown shortcuts.
 - **Nested Navigation**: You can nest and reorder pages via the sidebar.
 - **Search**: Quickly find the information you need with powerful search capabilities.
 - **File Attachment**: Attach files to your pages for easy reference and sharing.
+- **Search in attachments:** Search for content in PDF and DOCX file attachments (Enterprise Edition)
 - **Import / Export**: You can easily import and export pages in Markdown and HTML formats.
   - Zip import
   - Notion import
   - Confluence import (Enterprise Edition)
 - **Read/Edit preference mode:** Say goodbye to accidental edits.
-- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇫🇷🇺🇦
+- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇺🇦
 
 ## Authentication
 - Email and password
@@ -43,7 +44,9 @@ The rich text editor has support for markdown shortcuts.
 
 ## Enterprise Edition Features
 - SSO (SAML 2.0 / OIDC ) - Integrate Microsoft Entra ID, Okta, OneLogin and more.,
+- LDAP
 - MFA (TOTP)
+- Full-text search in attachments (PDF, DOCX)
 - Resolve comments
 - Confluence importer
 - Email support
