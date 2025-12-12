@@ -86,6 +86,15 @@ The default Draw.io embed url is `https://embed.diagrams.net`.
 |-----------| ------------------------ |----------------------------|
 | `DRAWIO_URL` | `https://embed.diagrams.net` | Your custom draw.io server url. |
 
+## Search Configuration (Enterprise)
+
+| Variable            | Example                   | Description                                                                                                                                                                                      |
+|---------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `SEARCH_DRIVER`     | `typesense`               | The search engine driver to use. Default is `postgres` (database search). `typesense` is a purpose-built search engine with typo-tolerant, fast search available in Enterprise edition.         |
+| `TYPESENSE_URL`     | `http://localhost:8108`   | The URL of your Typesense server. Required when `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                                         |
+| `TYPESENSE_API_KEY` | `your_api_key_here`       | Your Typesense API key with read/write permissions. Required when `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                       |
+| `TYPESENSE_LOCALE`  | `en`                      | The locale for text analysis and search. Default is `en`. Examples: `en`, `es`, `fr`, `de`, `ja`, `zh`, `ko`, etc. See [Typesense supported languages](https://typesense.org/docs/latest/api/search.html#supported-languages) for full list. (Enterprise) |
+
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.
 

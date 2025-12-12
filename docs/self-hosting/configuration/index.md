@@ -62,6 +62,33 @@ The maximum size limit for an import file.
 FILE_IMPORT_SIZE_LIMIT=200mb
 ```
 
+## AI
+### OpenAI / Azure OpenAI
+```shell
+AI_DRIVER=openai
+OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxx
+AI_EMBEDDING_MODEL=text-embedding-3-small
+AI_COMPLETION_MODEL=gpt-4o-mini
+# optional
+OPENAI_API_URL=
+```
+
+### Google Gemini
+```shell
+AI_DRIVER=gemini
+GEMINI_API_KEY=AIzaSyxxxxx
+AI_EMBEDDING_MODEL=gemini-embedding-001
+AI_COMPLETION_MODEL=gemini-2.5-flash
+```
+
+### Ollama
+```shell
+AI_DRIVER=ollama
+OLLAMA_API_URL=http://localhost:11434
+AI_EMBEDDING_MODEL=nomic-embed-text
+AI_COMPLETION_MODEL=qwen2.5:7b
+```
+
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.
 To disable telemetry:
