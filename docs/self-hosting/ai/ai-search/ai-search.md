@@ -14,28 +14,20 @@ AI-powered search in Docmost uses vector embeddings to provide semantic search a
 
 ## Installing pgvector
 
-### Docker Setup (Recommended)
+### Docker Setup
+:::warning
+Since Docmost's default PostgreSQL compose image is Alpine-based, and pgvector does not have an Alpine build, you will not be able to do a clean in-place swap. Instead, you'll need to migrate your data.
+:::
 
-Use the official pgvector Docker image instead of the standard PostgreSQL image:
+You can switch your PostgreSQL image to pgvector's bundled PostgreSQL build.  
 
-```yaml
-# docker-compose.yml
-services:
-  db:
-    image: pgvector/pgvector:pg17
-    environment:
-      POSTGRES_DB: docmost
-      POSTGRES_USER: docmost
-      POSTGRES_PASSWORD: your_password
-    volumes:
-      - db_data:/var/lib/postgresql/data
-```
+If you already have Docmost set up, you may want to back up your PostgreSQL database first, then import it into the pgvector PostgreSQL image.  
 
-The pgvector extension will be automatically available.
+See pgvector docker guide: https://github.com/pgvector/pgvector#docker  
 
 ### Manual Installation
 If you are using a non-docker installation of Postgres, you can manually install the pgvector extension.
-See the pgvector installation guide: https://github.com/pgvector/pgvector?tab=readme-ov-file#installation
+See the pgvector installation guide: https://github.com/pgvector/pgvector#installation
 
 ## Supported AI Providers
 
