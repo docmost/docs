@@ -48,6 +48,7 @@ The rich text editor has support for markdown shortcuts.
 - LDAP
 - MFA (TOTP)
 - AI Search (ASK AI)
+- API keys management
 - Full-text search in attachments (PDF, DOCX)
 - Resolve comments
 - Confluence importer
