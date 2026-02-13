@@ -89,6 +89,11 @@ const config: Config = {
           href: "https://docmost.com",
         },
         {
+          href: "https://docmost.com/api-docs",
+          label: "API",
+          position: "left",
+        },
+        {
           href: "https://github.com/docmost/docmost",
           label: "GitHub",
           position: "right",
@@ -152,6 +157,7 @@ const config: Config = {
       additionalLanguages: ["bash"],
     },
   } satisfies Preset.ThemeConfig,
+
 };
 
 export default config;
