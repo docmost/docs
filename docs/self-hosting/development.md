@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Development
@@ -20,9 +20,9 @@ The backend server is built using the [Nest.js](https://nestjs.com/) framework.
 
 ### Requirements
 To run Docmost, you'll need the following:
-- **Node.js**: >= 20
-- **Postgres**: >= 14
-- **Redis/Valkey**
+- **Node.js**: >= 22
+- **Postgres**: >= 16
+- **Redis/Valkey** >=7
 
 ### Development setup
 Make sure you have `pnpm` installed `npm install -g pnpm`.

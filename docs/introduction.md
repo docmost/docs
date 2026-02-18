@@ -8,7 +8,7 @@ sidebar_position: 1
 Welcome to **Docmost**, an open-source, enterprise-ready collaborative wiki and documentation software.
 Designed for seamless real-time collaboration, multiple users can work on the same page at the same time in real-time without overwriting each other.
 
-Docmost is an open-source alternative to the likes of Notion and Confluence. Whether you're managing a wiki, a knowledge base, or extensive project documentation, Docmost provides the tools you need to create, collaborate, and share knowledge effortlessly.
+Docmost is an open-source alternative to the likes of Notion and Confluence. Whether you're managing a wiki, a knowledge base, or extensive project documentation, Docmost provides the tools you need to create, collaborate, and share knowledge effortlessly. Docmost is fully self-hosted and can run in air-gapped environments with no external dependencies.
 
 Docmost has support for Spaces. You can create Spaces for different teams, projects, or departments depending on your needs. Each Space comes with its own permissions. With an optional enterprise edition, Docmost scales to meet the needs of larger organizations with SSO, AI, API access, and more.
 
