@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Pages
@@ -44,12 +44,25 @@ Click the **three-dot menu (...)** at the top right of a page to access:
 | **Copy as Markdown** | Copy the page content as Markdown text |
 | **Full width** | Toggle full-width layout for the page |
 | **Page history** | View and restore previous versions of the page |
-| **Move** | Move the page to a different space or parent page |
+| **Move** | Move the page and all its sub-pages to a different space |
 | **Export** | Export the page in Markdown or HTML format |
 | **Print PDF** | Generate a PDF version of the page |
 | **Move to trash** | Delete the page by moving it to trash |
 
 The menu footer also displays the **word count**, **creator name**, and **creation date**.
+
+## Sidebar Page Menu
+
+You can also right-click or hover over a page in the sidebar and click the **three-dot menu (...)** to access quick actions:
+
+| Action | Description |
+|--------|-------------|
+| **Copy link** | Copy the page URL to your clipboard |
+| **Export page** | Export the page in Markdown or HTML format |
+| **Duplicate** | Create a copy of the page in its current position within the same space |
+| **Move** | Move the page and all its sub-pages to a different space |
+| **Copy to space** | Copy the page and all its sub-pages to a different space, keeping the original in place |
+| **Move to trash** | Delete the page by moving it to trash |
 
 ## Comments
 
@@ -66,15 +79,46 @@ Comments appear in the comments panel on the right side of the page. The panel h
 
 ## Page History
 
-Docmost keeps a history of changes made to each page. To access page history:
+Docmost automatically saves page history as you edit. During the first 5 minutes after a page is created, snapshots are saved every minute. After that, history is saved every 5 minutes during an edit session.
+
+To access page history:
 
 1. Open the **page menu (...)**.
 2. Click **Page history**.
-3. Browse previous versions and restore if needed.
+3. Browse the list of saved versions on the right.
+4. Select a version to view a **diff highlight** showing what changed compared to the current version.
+5. Click **Restore** to revert the page to a previous version.
 
 ## Sharing
 
-Pages can be shared publicly when public sharing is enabled at the workspace level. Click the **Share** button or the **globe icon** to manage sharing settings.
+You can share individual pages publicly with anyone, even people outside your workspace.
+
+To share a page:
+
+1. Open the page you want to share.
+2. Click the **Share** button or the **globe icon** in the page toolbar.
+3. Toggle sharing on to generate a public link.
+
+### Sharing Options
+
+- **Include subpages** - When enabled, all child pages under the shared page are also publicly accessible.
+- **Allow search engine indexing** - When enabled, search engines can index the shared page. When disabled, the page is still accessible via link but hidden from search results.
+
+### Sharing Controls
+
+Public sharing can be controlled at two levels:
+
+- **Workspace level** - Admins can disable public sharing for the entire workspace in **Settings > General**.
+- **Space level** - Space admins can disable public sharing for individual spaces in **Space Settings**.
+
+Workspace-level settings take precedence over space-level settings. If public sharing is disabled at either level, all previously shared pages under that scope will be automatically unshared.
+
+### Managing Shared Pages
+
+To view all publicly shared pages in your workspace:
+
+1. Go to **Settings > Public sharing**.
+2. Browse the list of all currently shared pages.
 
 ## Export
 

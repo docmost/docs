@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Editor
@@ -38,11 +38,8 @@ Type `/` on a new line to open the slash command menu. You can also type to filt
 | Command | Description |
 |---------|-------------|
 | **Table** | Insert a table |
-| **Table View** | Insert a database-style table view |
-| **Kanban Board** | Insert a Kanban board |
 | **Toggle block** | Insert a collapsible block |
 | **Callout** | Insert a callout notice block |
-| **Columns (2-5)** | Insert multi-column layouts |
 
 ### Advanced
 
@@ -103,44 +100,121 @@ Type `@` in the editor to open the mention menu. The menu shows two sections:
 
 Type `:` followed by a keyword to search and insert emoji. For example, `:smile` shows matching emoji suggestions.
 
+## Diagrams
+
+The editor supports three diagram tools that you can insert via the `/` slash command menu:
+
+- **Mermaid** - Write text-based diagrams using Mermaid syntax (flowcharts, sequence diagrams, Gantt charts, and more).
+- **Draw.io (diagrams.net)** - Create visual diagrams with a full-featured drag-and-drop editor.
+- **Excalidraw** - Create hand-drawn style whiteboard diagrams.
+
+For more details, see the [Diagrams](./diagrams) page.
+
+## Tables
+
+To insert a table, type `/` and select **Table**. A 3×3 table is inserted with a header row enabled by default.
+
+### Table Toolbar
+
+Click inside a table cell to reveal the table toolbar above the table. The toolbar provides the following actions:
+
+| Action | Description |
+|--------|-------------|
+| **Add left column** | Insert a new column to the left of the current cell |
+| **Add right column** | Insert a new column to the right of the current cell |
+| **Delete column** | Remove the current column |
+| **Add row above** | Insert a new row above the current cell |
+| **Add row below** | Insert a new row below the current cell |
+| **Delete row** | Remove the current row |
+| **Toggle header row** | Enable or disable the header style on the first row |
+| **Toggle header column** | Enable or disable the header style on the first column |
+| **Delete table** | Remove the entire table |
+
+### Table Features
+
+- **Resize columns** — Drag the column borders to adjust column widths.
+- **Reorder rows and columns** — Drag rows or columns to rearrange them.
+- **Merge cells** — Select multiple cells and merge them into one.
+- **Split cells** — Split a previously merged cell back into individual cells.
+- **Cell alignment** — Align cell content left, center, or right.
+- **Cell background color** — Set a background color on individual cells.
+
+### Navigation
+
+Use `Tab` to move to the next cell and `Shift + Tab` to move to the previous cell.
+
 ## Drag and Drop
 
 Hover over any block to reveal a drag handle on the left. Click and drag the handle to reorder blocks within the page.
 
 ## Keyboard Shortcuts
 
+### Essentials
+
+| Command | Shortcut |
+|---------|----------|
+| Copy | `Ctrl/Cmd + C` |
+| Cut | `Ctrl/Cmd + X` |
+| Paste | `Ctrl/Cmd + V` |
+| Paste without formatting | `Ctrl/Cmd + Shift + V` |
+| Undo | `Ctrl/Cmd + Z` |
+| Redo | `Ctrl/Cmd + Shift + Z` |
+| Add a line break | `Shift + Enter` |
+| Find and replace | `Ctrl/Cmd + F` |
+
 ### Text Formatting
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl/Cmd + B` | Bold |
-| `Ctrl/Cmd + I` | Italic |
-| `Ctrl/Cmd + U` | Underline |
-| `Ctrl/Cmd + E` | Inline code |
-| `Ctrl/Cmd + Shift + X` | Strikethrough |
+| Command | Shortcut |
+|---------|----------|
+| Bold | `Ctrl/Cmd + B` |
+| Italic | `Ctrl/Cmd + I` |
+| Underline | `Ctrl/Cmd + U` |
+| Strikethrough | `Ctrl/Cmd + Shift + S` |
+| Highlight | `Ctrl/Cmd + Shift + H` |
+| Inline code | `Ctrl/Cmd + E` |
+| Subscript | `Ctrl/Cmd + ,` |
+| Superscript | `Ctrl/Cmd + .` |
 
-### Blocks
+### Paragraph Formatting
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl/Cmd + Alt + 1-6` | Heading 1-6 |
-| `Ctrl/Cmd + Shift + B` | Block quote |
-| `Ctrl/Cmd + Alt + C` | Code block |
-| `Ctrl/Cmd + Shift + U` | Bullet list |
-| `Ctrl/Cmd + Shift + O` | Numbered list |
-| `Ctrl/Cmd + Shift + T` | Toggle task list |
+| Command | Shortcut |
+|---------|----------|
+| Normal text | `Ctrl/Cmd + Alt + 0` |
+| Heading 1 | `Ctrl/Cmd + Alt + 1` |
+| Heading 2 | `Ctrl/Cmd + Alt + 2` |
+| Heading 3 | `Ctrl/Cmd + Alt + 3` |
+| Heading 4 | `Ctrl/Cmd + Alt + 4` |
+| Heading 5 | `Ctrl/Cmd + Alt + 5` |
+| Heading 6 | `Ctrl/Cmd + Alt + 6` |
+| Ordered list | `Ctrl/Cmd + Shift + 7` |
+| Bullet list | `Ctrl/Cmd + Shift + 8` |
+| Task list | `Ctrl/Cmd + Shift + 9` |
+| Blockquote | `Ctrl/Cmd + Shift + B` |
+| Code block | `Ctrl/Cmd + Alt + C` |
+| Left align | `Ctrl/Cmd + Shift + L` |
+| Center align | `Ctrl/Cmd + Shift + E` |
+| Right align | `Ctrl/Cmd + Shift + R` |
+| Justify | `Ctrl/Cmd + Shift + J` |
 
-### General
+### Text Selection
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl/Cmd + F` | Find and replace |
-| `Ctrl/Cmd + A` | Select all (within code block, selects code content only) |
-| `Tab` | Indent list item or navigate to next table cell |
-| `Shift + Tab` | Outdent list item or navigate to previous table cell |
-| `/` | Open slash command menu |
-| `@` | Open mention menu |
-| `:` | Open emoji picker |
+| Command | Shortcut |
+|---------|----------|
+| Select all | `Ctrl/Cmd + A` |
+| Extend selection one character to left | `Shift + ←` |
+| Extend selection one character to right | `Shift + →` |
+| Extend selection one line up | `Shift + ↑` |
+| Extend selection one line down | `Shift + ↓` |
+
+### Navigation
+
+| Command | Shortcut |
+|---------|----------|
+| Indent list item / next table cell | `Tab` |
+| Outdent list item / previous table cell | `Shift + Tab` |
+| Open slash command menu | `/` |
+| Open mention menu | `@` |
+| Open emoji picker | `:` |
 
 ### Markdown Shortcuts
 
@@ -151,6 +225,9 @@ The editor supports standard Markdown shortcuts as you type:
 | `# ` | Heading 1 |
 | `## ` | Heading 2 |
 | `### ` | Heading 3 |
+| `#### ` | Heading 4 |
+| `##### ` | Heading 5 |
+| `###### ` | Heading 6 |
 | `- ` or `* ` | Bullet list |
 | `1. ` | Numbered list |
 | `[ ] ` | To-do list item |
@@ -158,8 +235,11 @@ The editor supports standard Markdown shortcuts as you type:
 | `` ``` `` | Code block |
 | `---` | Divider |
 | `**text**` | Bold |
-| `*text*` | Italic |
+| `*text*` or `_text_` | Italic |
 | `` `text` `` | Inline code |
 | `~~text~~` | Strikethrough |
+| `$$text$$` | Inline math equation |
+| `$$$text$$$` | Math block |
+| `:::` | Callout block |
 
 You can also paste Markdown content directly into the editor and it will be automatically converted to rich text.

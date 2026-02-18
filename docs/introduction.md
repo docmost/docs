@@ -5,55 +5,62 @@ sidebar_position: 1
 
 # Introduction
 
-Welcome to **Docmost**, an open-source collaborative wiki and documentation software.  
+Welcome to **Docmost**, an open-source, enterprise-ready collaborative wiki and documentation software.
 Designed for seamless real-time collaboration, multiple users can work on the same page at the same time in real-time without overwriting each other.
 
 Docmost is an open-source alternative to the likes of Notion and Confluence. Whether you're managing a wiki, a knowledge base, or extensive project documentation, Docmost provides the tools you need to create, collaborate, and share knowledge effortlessly.
 
-Docmost has support for Spaces. You can create Spaces for different teams, projects, or departments depending on your needs. Each Space comes with its own permissions.
-
-The rich text editor has support for markdown shortcuts.
+Docmost has support for Spaces. You can create Spaces for different teams, projects, or departments depending on your needs. Each Space comes with its own permissions. With an optional enterprise edition, Docmost scales to meet the needs of larger organizations with SSO, AI, API access, and more.
 
 ![img](https://docmost.com/screenshots/home.png)
 
 ## Features
 
 - **Collaborative Real-time Editor**: Work together on pages in real-time.
-- **Diagrams**: Built-in support for Draw.io, Excalidraw and Mermaid diagramming tools.
 - **Spaces**: Organize your pages by team, projects, or departments for better collaboration.
-- **AI Search (ASK AI)**: Ask questions and get answers directly from your page content.
-- **Public sharing**: You can publicly share your pages, allowing anyone with the link to view them.
-- **Permissions Management**: Easily control access to contents with easy to understand permissions.
-- **Groups**: Easily grant unified permissions to users via groups.
+- **Permissions Management**: Easily control access to content with intuitive permissions at the workspace and space level.
+- **Groups**: Grant unified permissions to users via groups.
+- **Nested Navigation**: Nest, reorder, and drag-and-drop pages via the sidebar.
+- **Tables**: Insert and edit tables with resizable columns, mergeable cells, header rows/columns, and cell background colors.
+- **Diagrams**: Built-in support for Draw.io, Excalidraw, and Mermaid diagramming tools.
+- **Math Equations**: Write inline and block-level math equations using KaTeX.
+- **Callouts and Toggle Blocks**: Structure your content with callout notices and collapsible toggle blocks.
 - **Comments**: Add comments to pages for better communication and feedback.
-- **Page History**: Track changes with a comprehensive version history.
-- **Nested Navigation**: You can nest and reorder pages via the sidebar.
-- **Search**: Quickly find the information you need with powerful search capabilities.
+- **Page History**: Track changes with a comprehensive version history and restore previous versions.
+- **Public Sharing**: Publicly share your pages, allowing anyone with the link to view them.
+- **Search**: Full-text search across pages with space and type filters.
 - **File Attachment**: Attach files to your pages for easy reference and sharing.
-- **Search in attachments:** Search for content in PDF and DOCX file attachments (Enterprise Edition)
-- **Import / Export**: You can easily import and export pages in Markdown and HTML formats.
-  - Zip import
+- **Import / Export**: Import and export pages in Markdown and HTML formats.
+  - ZIP archive import
   - Notion import
-  - Confluence import (Enterprise Edition)
-- **Read/Edit preference mode:** Say goodbye to accidental edits.
-- **Translations**: Docmost is available in over 10+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸🇺🇦
+  - Confluence import (Enterprise)
+  - DOCX import (Enterprise)
+- **Print to PDF**: Generate PDF versions of pages using the browser print dialog.
+- **@ Mentions**: Mention team members and link to pages directly in the editor.
+- **Markdown Shortcuts**: Type Markdown syntax directly in the editor and it converts to rich text automatically.
+- **Keyboard Shortcuts**: Full set of keyboard shortcuts for formatting, navigation, and editor actions.
+- **Dark Mode**: Switch between light, dark, and system themes.
+- **Read/Edit Mode**: Set a default page mode to prevent accidental edits.
+- **Translations**: Available in 12+ languages. 🇺🇸 🇨🇳 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇰🇷 🇧🇷 🇷🇺 🇪🇸 🇳🇱 🇺🇦
 
 ## Authentication
 - Email and password
-- LDAP (enterprise edition)
-- SSO (SAML/OIDC) is available in our enterprise edition [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise License">Purchase enterprise license</a>].
+- LDAP (Enterprise)
+- SSO via SAML / OIDC (Enterprise)
+- MFA via TOTP (Enterprise)
 
 ## Enterprise Edition Features
-- SSO (SAML 2.0 / OIDC ) - Integrate Microsoft Entra ID, Okta, OneLogin and more.,
-- LDAP
-- MFA (TOTP)
-- AI Search (ASK AI)
-- API keys management
-- Full-text search in attachments (PDF, DOCX)
-- Resolve comments
-- Confluence importer
-- Email support
-- Audit logs (coming soon)
+- **SSO** (SAML 2.0 / OIDC) — Integrate Microsoft Entra ID, Okta, OneLogin, and more.
+- **LDAP** — Authenticate users against your LDAP directory.
+- **MFA** (TOTP) — Multi-factor authentication with authenticator apps.
+- **AI** — AI-powered writing assistance (Ask AI) and AI-powered search (AI Answers). Use cloud models or local LLMs.
+- **API** — REST API with personal API keys and admin key management.
+- **Full-text search in attachments** — Search content inside PDF and DOCX file attachments.
+- **Resolve comments** — Mark comment threads as resolved.
+- **Disable public sharing** — Control public sharing at the workspace or space level.
+- **Confluence importer** — Import Confluence spaces with preserved formatting, hierarchy, and attachments.
+- **DOCX importer** — Import Microsoft Word documents.
+- **Priority support** — Direct email support.
 - [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise Edition.">Purchase enterprise edition</a>].
 
 ## FAQ

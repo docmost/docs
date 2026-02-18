@@ -89,6 +89,18 @@ AI_EMBEDDING_MODEL=nomic-embed-text
 AI_COMPLETION_MODEL=qwen2.5:7b
 ```
 
+## Search
+
+By default, Docmost uses the database for full-text search. You can optionally configure Typesense as the search driver for improved search performance and relevance.
+
+### Using Typesense
+```shell
+SEARCH_DRIVER=typesense
+TYPESENSE_API_KEY=xyz123
+TYPESENSE_URL=http://localhost:8108
+TYPESENSE_LOCALE=en
+```
+
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.
 To disable telemetry:
