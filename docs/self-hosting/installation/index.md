@@ -138,6 +138,10 @@ Once the services are up and running, verify the installation by opening your we
 
 If all is set, you should see the Docmost setup page which will enable you set up your workspace and account.
 
+:::tip
+To set up a custom domain and SSL, see our [reverse-proxy guide](/self-hosting/reverse-proxy)
+:::
+
 <p align="center">
 <img src="/docs/img/setup.png" width="700"/>
 </p>
@@ -149,7 +153,7 @@ Congratulations 🎉.
 If you are using a reverse proxy, make sure WebSockets is enabled. The real-time page editor depends on WebSockets to work.
 :::
 
-If you encounter any issues, feel free to create an issue or discussion on the [GitHub repo](https://github.com/docmost/docmost).
+If you encounter any issues, feel free to create a discussion on the [GitHub repo](https://github.com/docmost/docmost/discussions).
 
 ## Upgrade
 
