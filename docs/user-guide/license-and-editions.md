@@ -39,6 +39,7 @@ The enterprise edition includes everything in the open source edition, plus addi
 | SSO (SAML, OIDC, LDAP) | ❌ | ✅ |
 | Multi-factor authentication (MFA) | ❌ | ✅ |
 | API management | ❌ | ✅ |
+| Audit logs | ❌ | ✅ |
 | Priority support | ❌ | ✅ |
 
 ## Activating an Enterprise License
