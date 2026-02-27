@@ -37,6 +37,7 @@ The enterprise edition includes everything in the open source edition, plus addi
 | Full-text search in pages | ✅ | ✅ |
 | Full-text search in attachments (PDF, DOCX) | ❌ | ✅ |
 | AI | ❌ | ✅ |
+| MCP | ❌ | ✅ |
 | SSO (SAML, OIDC, LDAP) | ❌ | ✅ |
 | Multi-factor authentication (MFA) | ❌ | ✅ |
 | API management | ❌ | ✅ |
