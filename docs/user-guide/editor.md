@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Editor
 
-Docmost features a block-based rich text editor built on top of TipTap. The editor supports a wide range of content types, formatting options, and embeds to help you create rich documentation.
+Docmost features an advanced WYSIWYG rich text editor. The editor supports a wide range of content types, formatting options, and embeds to help you create rich documentation.
 
 ## Slash Commands
 
@@ -43,17 +43,16 @@ Type `/` on a new line to open the slash command menu. You can also type to filt
 
 ### Advanced
 
-| Command | Description |
-|---------|-------------|
-| **Math inline** | Insert an inline math equation (KaTeX) |
-| **Math block** | Insert a block-level math equation (KaTeX) |
+| Command             | Description                                                    |
+|---------------------|----------------------------------------------------------------|
+| **Math inline**     | Insert an inline math equation (KaTeX)                         |
+| **Math block**      | Insert a block-level math equation (KaTeX)                     |
 | **Mermaid diagram** | Insert a Mermaid diagram (flowcharts, sequence diagrams, etc.) |
-| **Draw.io** | Open the Draw.io diagram editor |
-| **Excalidraw** | Open the Excalidraw whiteboard editor |
-| **Date** | Insert a date with a calendar picker |
-| **Subpages** | List all child pages of the current page |
-| **Insert Link** | Link to pages or external URLs |
-| **Mention member** | Mention a workspace member |
+| **Draw.io**         | Open the Draw.io diagram editor                                |
+| **Excalidraw**      | Open the Excalidraw whiteboard editor                          |
+| **Date**            | Insert a date with a calendar picker                           |
+| **Subpages**        | List all child pages of the current page                       |
+| **Status**          | Display a custom status badge in the page.                        | |
 
 ### Embeds
 
@@ -109,6 +108,10 @@ The editor supports three diagram tools that you can insert via the `/` slash co
 - **Excalidraw** - Create hand-drawn style whiteboard diagrams.
 
 For more details, see the [Diagrams](./diagrams) page.
+
+## Anchors
+
+You can copy page anchors in headings to quickly link to specific sections. Simply hover over a heading to reveal the anchor icon, then click to copy the link.
 
 ## Tables
 

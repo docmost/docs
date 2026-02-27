@@ -1,10 +1,12 @@
 ---
 sidebar_position: 16
+slug: /editions
 ---
 
 # License & Editions
 
 Docmost is available in two editions for self-hosted deployments: **Open Source** and **Enterprise**.
+They both allow self-hosting and on-premises deployment.
 
 ## Editions
 
@@ -15,6 +17,7 @@ The open source edition is free to use and includes all core documentation and c
 ### Enterprise
 
 The enterprise edition includes everything in the open source edition, plus additional features designed for larger teams and organizations.
+You need an enterprise license key to unlock enterprise features.
 
 ## Feature Comparison
 
@@ -22,7 +25,7 @@ The enterprise edition includes everything in the open source edition, plus addi
 |---------|:----------:|:----------:|
 | Pages, editor and rich content blocks | ✅ | ✅ |
 | Spaces and permissions | ✅ | ✅ |
-| Page level permissions | ❌ | ✅ |
+| Page-level permissions | ❌ | ✅ |
 | Groups | ✅ | ✅ |
 | Page history and restore | ✅ | ✅ |
 | Comments | ✅ | ✅ |
@@ -37,11 +40,9 @@ The enterprise edition includes everything in the open source edition, plus addi
 | Full-text search in pages | ✅ | ✅ |
 | Full-text search in attachments (PDF, DOCX) | ❌ | ✅ |
 | AI | ❌ | ✅ |
-| MCP | ❌ | ✅ |
 | SSO (SAML, OIDC, LDAP) | ❌ | ✅ |
 | Multi-factor authentication (MFA) | ❌ | ✅ |
 | API management | ❌ | ✅ |
-| Audit logs | ❌ | ✅ |
 | Priority support | ❌ | ✅ |
 
 ## Activating an Enterprise License
