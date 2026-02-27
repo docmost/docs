@@ -40,9 +40,11 @@ You need an enterprise license key to unlock enterprise features.
 | Full-text search in pages | ✅ | ✅ |
 | Full-text search in attachments (PDF, DOCX) | ❌ | ✅ |
 | AI | ❌ | ✅ |
+| MCP | ❌ | ✅ |
 | SSO (SAML, OIDC, LDAP) | ❌ | ✅ |
 | Multi-factor authentication (MFA) | ❌ | ✅ |
 | API management | ❌ | ✅ |
+ Audit logs | ❌ | ✅ |
 | Priority support | ❌ | ✅ |
 
 ## Activating an Enterprise License
