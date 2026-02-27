@@ -91,12 +91,27 @@ AI_COMPLETION_MODEL=qwen2.5:7b
 
 ## Search
 
-By default, Docmost uses the database for full-text search. You can optionally configure Typesense as the search driver for improved search performance and relevance.
+By default, Docmost uses the database for full-text search. In the enterprise edition, can optionally configure Typesense as the search driver for improved search performance and relevance.
 
 ### Using Typesense
+You can add the Typesense compose service to your existing Docmost docker-compose.yml file.
+See Typesense [installation guide](https://typesense.org/docs/guide/install-typesense.html#docker).
+```yaml
+  typesense:
+    image: typesense/typesense:30.1
+    restart: on-failure
+    ports:
+      - "8108:8108"
+    volumes:
+      - ./typesense-data:/data
+    command: '--data-dir /data --api-key=YOUR_KEY --enable-cors'
+```
+
+**Environment variables:**
+
 ```shell
 SEARCH_DRIVER=typesense
-TYPESENSE_API_KEY=xyz123
+TYPESENSE_API_KEY=YOUR_KEY
 TYPESENSE_URL=http://localhost:8108
 TYPESENSE_LOCALE=en
 ```
