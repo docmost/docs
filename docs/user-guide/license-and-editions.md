@@ -22,6 +22,7 @@ The enterprise edition includes everything in the open source edition, plus addi
 |---------|:----------:|:----------:|
 | Pages, editor and rich content blocks | ✅ | ✅ |
 | Spaces and permissions | ✅ | ✅ |
+| Page level permissions | ❌ | ✅ |
 | Groups | ✅ | ✅ |
 | Page history and restore | ✅ | ✅ |
 | Comments | ✅ | ✅ |
