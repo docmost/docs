@@ -14,6 +14,24 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 
 ![img](https://docmost.com/screenshots/home.png)
 
+## Workspaces, spaces, and pages
+
+In Docmost, a **_workspace_** is the top-level entity for organizing your documentation and collaboration efforts. It includes all your content, user roles, and permissions. 
+
+Within a workspace, you can create multiple **_spaces_**. Spaces are dedicated, organized areas within your workspace that group together pages, documents, permissions, and members by project, team, or purpose.  
+
+Within a space, you can create and manage individual documents, or **_pages_**, which contain the content itself.
+
+### Example: Workspaces, spaces, and pages
+
+For example, you want to create a wiki that holds content related to your organization, divided by departments. 
+
+Here's what you do:
+
+* Create a **_workspace_** and call it the name of your organization, such as **Acme Corp**. 
+* Within your workspace, create a **_space_** for each department, such as **HR**, **R&D**, and **Finance**. 
+* Within each space, create **_pages_** related to the activities in the department, such as **Annual Goals**, **Dev Roadmap**, and **Planning & Analysis**.
+
 ## Features
 
 - **Collaborative Real-time Editor**: Work together on pages in real-time.
