@@ -19,7 +19,7 @@ MCP must be enabled by a workspace admin before it can be used.
 1. Go to **Settings** > **AI & MCP**.
 2. Click the **MCP** tab.
 3. Toggle the MCP switch on.
-4. The **MCP Server URL** is displayed. It follows the format: `https://YOUR_DOCMOST_URL.com/api/mcp`.
+4. The **MCP Server URL** is displayed. It follows the format: `https://YOUR_DOCMOST_URL.com/mcp`.
 
 Once enabled, any workspace member with an API key can connect their AI tools to the MCP server.
 
@@ -47,7 +47,7 @@ Add the following to your Claude Desktop configuration file (`claude_desktop_con
       "args": [
         "-y",
         "mcp-remote",
-        "https://YOUR_DOCMOST_URL.com/api/mcp",
+        "https://YOUR_DOCMOST_URL.com/mcp",
         "--header",
         "Authorization: Bearer YOUR_API_KEY"
       ]
@@ -63,13 +63,13 @@ Replace `https://YOUR_DOCMOST_URL.com` with your Docmost instance URL and `YOUR_
 Run one of the following commands to add the Docmost MCP server:
 
 ```bash
-claude mcp add --transport http --header "Authorization: Bearer YOUR_API_KEY" docmost https://YOUR_DOCMOST_URL.com/api/mcp
+claude mcp add Docmost  --transport http https://YOUR_DOCMOST_URL.com/mcp --header "Authorization: Bearer YOUR_API_KEY" 
 ```
 
 Or using `mcp-remote`:
 
 ```bash
-claude mcp add docmost -- npx -y mcp-remote https://YOUR_DOCMOST_URL.com/api/mcp --header "Authorization: Bearer YOUR_API_KEY"
+claude mcp add docmost -- npx -y mcp-remote https://YOUR_DOCMOST_URL.com/mcp --header "Authorization: Bearer YOUR_API_KEY"
 ```
 
 ### Cursor
@@ -84,7 +84,7 @@ Add the following to your Cursor MCP configuration (`.cursor/mcp.json`):
       "args": [
         "-y",
         "mcp-remote",
-        "https://YOUR_DOCMOST_URL.com/api/mcp",
+        "https://YOUR_DOCMOST_URL.com/mcp",
         "--header",
         "Authorization: Bearer YOUR_API_KEY"
       ]
