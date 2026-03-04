@@ -49,12 +49,16 @@ AI_COMPLETION_MODEL=<model>    # Model used for answering questions
 
 ## OpenAI Configuration
 
-Supports OpenAI API and Azure OpenAI.
+Supports OpenAI API, Azure OpenAI and any OpenAI-Compatible provider.
+:::tip
+Set `AI_DRIVER=openai` to use the official OpenAI API or Azure.   
+If you are using another compatible provider, set `AI_DRIVER=openai-compatible`.
+:::
 
 ### Environment Variables
 
 ```bash
-AI_DRIVER=openai
+AI_DRIVER=openai #or openai-compatible
 OPENAI_API_KEY=sk-proj-xxxxx
 AI_EMBEDDING_MODEL=text-embedding-3-small
 AI_COMPLETION_MODEL=gpt-4o-mini
