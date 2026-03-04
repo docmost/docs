@@ -44,6 +44,7 @@ AI_COMPLETION_MODEL=<model>    # Model used for answering questions
 ```
 
 **Important:** `AI_EMBEDDING_DIMENSION` is optional and auto-detected from preset models. Only set it manually if using a custom model not in the preset list.
+The supported values are `768`, `1024`, `1536`, `2000` and `3072`
 
 ---
 
