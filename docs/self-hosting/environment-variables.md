@@ -80,6 +80,20 @@ To configure your application, set the following environment variables. These va
 | `MAIL_FROM_ADDRESS` | `hello@example.com` | The email address that emails will be sent from.                |
 | `MAIL_FROM_NAME`    | `Docmost`           | The name that emails will be sent from.                         |
 
+## AI Configuration (Enterprise)
+
+| Variable                      | Example                        | Description                                                                                                                                                              |
+|-------------------------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `AI_DRIVER`                   | `openai`                       | The AI provider to use. Options: `openai`, `openai-compatible`, `gemini`, `ollama`.                                                                                      |
+| `AI_EMBEDDING_MODEL`          | `text-embedding-3-small`       | The model used for generating vector embeddings.                                                                                                                         |
+| `AI_COMPLETION_MODEL`         | `gpt-4o-mini`                  | The model used for answering questions.                                                                                                                                  |
+| `AI_EMBEDDING_DIMENSION`      | `1536`                         | Optional. The vector dimension for pgvector. Auto-detected for preset models. Supported values: `768`, `1024`, `1536`, `2000`, `3072`.                                   |
+| `AI_EMBEDDING_SUPPORTS_MRL`   | `true`                         | Optional. Controls whether the `dimensions` parameter is sent to the embedding model API. Defaults to model preset if available, otherwise `true`. Set to `false` for models that do not accept a `dimensions` parameter. |
+| `OPENAI_API_KEY`              | `sk-proj-xxxxx`                | Your OpenAI API key. Required when `AI_DRIVER` is `openai` or `openai-compatible`.                                                                                       |
+| `OPENAI_API_URL`              | `https://api.openai.com/v1`    | Optional. Custom API endpoint for Azure OpenAI or compatible providers.                                                                                                  |
+| `GEMINI_API_KEY`              | `AIzaSyxxxxx`                  | Your Google Gemini API key. Required when `AI_DRIVER=gemini`.                                                                                                            |
+| `OLLAMA_API_URL`              | `http://localhost:11434`       | The URL of your Ollama instance. Required when `AI_DRIVER=ollama`.                                                                                                       |
+
 ## DRAW.IO (Diagrams.net) configuration
 The default Draw.io embed url is `https://embed.diagrams.net`.
 | Variable  | Example                  | Description                |

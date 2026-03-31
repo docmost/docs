@@ -71,6 +71,19 @@ AI_EMBEDDING_MODEL=text-embedding-3-small
 AI_COMPLETION_MODEL=gpt-4o-mini
 # optional
 OPENAI_API_URL=
+# AI_EMBEDDING_SUPPORTS_MRL=false
+```
+
+### OpenAI-Compatible
+```shell
+AI_DRIVER=openai-compatible
+OPENAI_API_KEY=your-api-key
+OPENAI_API_URL=https://api.your_provider.com/v1
+AI_EMBEDDING_MODEL=your-embedding-model
+AI_COMPLETION_MODEL=your-completion-model
+# optional
+AI_EMBEDDING_DIMENSION=1024
+AI_EMBEDDING_SUPPORTS_MRL=false
 ```
 
 ### Google Gemini

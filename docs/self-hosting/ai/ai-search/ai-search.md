@@ -38,13 +38,20 @@ Docmost supports three AI providers: OpenAI (Azure OpenAI), Google Gemini, and O
 All providers require these base environment variables:
 
 ```bash
-AI_DRIVER=<provider>           # openai, gemini, or ollama
+AI_DRIVER=<provider>           # openai, openai-compatible, gemini, or ollama
 AI_EMBEDDING_MODEL=<model>     # Model used for generating embeddings
 AI_COMPLETION_MODEL=<model>    # Model used for answering questions 
 ```
 
 **Important:** `AI_EMBEDDING_DIMENSION` is optional and auto-detected from preset models. Only set it manually if using a custom model not in the preset list.
-The supported values are `768`, `1024`, `1536`, `2000` and `3072`
+The supported values are `768`, `1024`, `1536`, `2000` and `3072`.
+
+`AI_EMBEDDING_SUPPORTS_MRL` is optional and controls whether the `dimensions` parameter is sent to the embedding model API. Most modern embedding models support Matryoshka Representation Learning (MRL) and accept a `dimensions` parameter to control output size. However, some models return fixed-size embeddings and will error if `dimensions` is passed.
+
+- When not set, defaults to the model preset if available, otherwise defaults to `true`.
+- Set to `true` to send the dimension to the model API.
+- Set to `false` to skip sending it — the dimension is still used for the pgvector index.
+
 
 ---
 
@@ -85,6 +92,18 @@ AI_DRIVER=openai
 OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxx
 AI_EMBEDDING_MODEL=text-embedding-3-small
 AI_COMPLETION_MODEL=gpt-4o-mini
+```
+
+### OpenAI-Compatible Example
+
+For third-party providers that implement the OpenAI API format but use custom embedding models:
+
+```bash
+AI_DRIVER=openai-compatible
+OPENAI_API_KEY=your-api-key
+OPENAI_API_URL=https://api.your-provider.com/v1
+AI_EMBEDDING_MODEL=your-custom-embedding-model
+AI_COMPLETION_MODEL=your-completion-model
 ```
 
 ---
