@@ -61,6 +61,7 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **Confluence importer** — Import Confluence spaces with preserved formatting, hierarchy, and attachments.
 - **DOCX importer** — Import Microsoft Word documents.
 - **Priority support** — Direct email support.
+- You can generate a free trial license key at [https://customers.docmost.com](https://customers.docmost.com).
 - [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise Edition.">Purchase enterprise edition</a>].
 
 ## FAQ
@@ -74,8 +75,8 @@ Yes! You can get started with our cloud version at [https://app.docmost.com](htt
 Docmost is licensed under the open-source [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) 3.0 License.<br />
 Enterprise features are available under an enterprise license (Enterprise Edition).
 
-**Do you have an enterprise version?**  
-Yes, we have an enterprise version with SSO integration. Contact <a href="mailto:sales@docmost.com">sales@docmost.com</a> to purchase an enterprise license.
+**Do you have an enterprise version?**
+Yes, we have an enterprise version with SSO integration. You can get a business or enterprise trial license key at [https://customers.docmost.com](https://customers.docmost.com). To purchase, contact <a href="mailto:sales@docmost.com">sales@docmost.com</a>.
 
 **Got anymore questions?**  
 Feel free to email the founder: philip@docmost.com.

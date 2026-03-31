@@ -95,6 +95,11 @@ const config: Config = {
           position: "left",
         },
         {
+          href: "https://customers.docmost.com",
+          label: "License Portal",
+          position: "right",
+        },
+        {
           href: "https://github.com/docmost/docmost",
           label: "GitHub",
           position: "right",

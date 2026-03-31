@@ -21,31 +21,9 @@ You need an enterprise license key to unlock enterprise features.
 
 ## Feature Comparison
 
-| Feature | Open Source | Enterprise |
-|---------|:----------:|:----------:|
-| Pages, editor and rich content blocks | ✅ | ✅ |
-| Spaces and permissions | ✅ | ✅ |
-| Page-level permissions | ❌ | ✅ |
-| Groups | ✅ | ✅ |
-| Page history and restore | ✅ | ✅ |
-| Comments | ✅ | ✅ |
-| Resolve comments | ❌ | ✅ |
-| Public sharing | ✅ | ✅ |
-| Disable public sharing (workspace/space level) | ❌ | ✅ |
-| Diagrams (Mermaid, Draw.io, Excalidraw) | ✅ | ✅ |
-| Import (Markdown, HTML) | ✅ | ✅ |
-| Import (Confluence) | ❌ | ✅ |
-| Import (DOCX) | ❌ | ✅ |
-| Export (Markdown, HTML) | ✅ | ✅ |
-| Full-text search in pages | ✅ | ✅ |
-| Full-text search in attachments (PDF, DOCX) | ❌ | ✅ |
-| AI | ❌ | ✅ |
-| MCP | ❌ | ✅ |
-| SSO (SAML, OIDC, LDAP) | ❌ | ✅ |
-| Multi-factor authentication (MFA) | ❌ | ✅ |
-| API management | ❌ | ✅ |
- Audit logs | ❌ | ✅ |
-| Priority support | ❌ | ✅ |
+For pricing and feature comparison, visit https://docmost.com/pricing#compare.
+
+You can generate a free trial license key at [https://customers.docmost.com](https://customers.docmost.com).
 
 ## Activating an Enterprise License
 
