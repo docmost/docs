@@ -9,7 +9,7 @@ tags:
 Page permissions allow you to control who can view and edit individual pages within a space. By default, all pages in a space are accessible to every space member based on their space role. With page permissions, you can restrict specific pages so that only selected users and groups have access.
 
 :::note
-Page permissions is an enterprise feature. An active enterprise license is required.
+Page permissions is a commercial feature. An active Business or Enterprise license is required.
 :::
 
 ## Access Levels
