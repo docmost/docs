@@ -5,7 +5,7 @@ tags:
 
 # AI Search Setup
 
-AI-powered search in Docmost uses vector embeddings to provide semantic search across your workspace. This is an enterprise feature that requires a valid license key.
+AI-powered search and AI Chat in Docmost uses vector embeddings to provide semantic search across your workspace. This is an enterprise feature that requires a valid license key.
 
 ## Prerequisites
 
@@ -131,6 +131,10 @@ AI_COMPLETION_MODEL=gemini-2.5-flash
 Docmost AI search and embeddings supports local LLMs via Ollama.  
 Ollama Docker Installation Guide: https://docs.ollama.com/docker
 
+:::tip
+You can use any OLLAMA-supported model based on your needs and compute capacity.
+:::
+
 ### Environment Variables
 
 ```bash
@@ -140,7 +144,7 @@ AI_EMBEDDING_MODEL=nomic-embed-text
 AI_COMPLETION_MODEL=qwen2.5:7b
 ```
 
-### Ollama Preset Models
+### Ollama Embedding Preset Models
 
 | Model |
 |-------|
@@ -190,7 +194,7 @@ After configuring your AI provider:
 
 1. Log in to Docmost as a workspace admin
 2. Go to **Settings** → **AI settings**
-3. Toggle **AI-powered search (Ask AI)** to enable
-4. Wait for background job to generate embeddings for existing pages (monitor via logs)
+3. Toggle **AI-powered search (AI Answers)** to enable
+4. Wait for background job to generate embeddings for existing pages (You can monitor via logs if _DEBUG_MODE: true_ env is set)
 
-**Note:** Embeddings are generated asynchronously. New pages get embeddings on creation/update. Existing pages are queued for processing when AI search is enabled.
+**Note:** Embeddings are generated asynchronously. New pages get embeddings on creation/update after 10 minutes. Existing pages are queued for processing when AI search is enabled.
