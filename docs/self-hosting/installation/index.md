@@ -109,7 +109,14 @@ For health check, a dedicated endpoint is available at `YOUR_URL/api/health`.
 
 ### Replace the default configs
 
-You are to replace the default environment variables in the `docker-compose.yml` file.
+You are to replace the default environment variables in the `.env` file.
+
+Create a `.env` file in the `docmost` directory and define the required variables, for example:
+```shell
+APP_URL=http://localhost:3000
+APP_SECRET=REPLACE_WITH_LONG_SECRET
+POSTGRES_PASSWORD=STRONG_DB_PASSWORD
+```
 
 The `APP_URL` should be replaced with your chosen domain. E.g. `https://example.com` or `https://docmost.example.com`.
 
