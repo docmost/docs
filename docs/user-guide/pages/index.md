@@ -156,3 +156,23 @@ To delete a page:
 2. Click **Move to trash**.
 
 Deleted pages are moved to the trash and can be restored or permanently deleted from there.
+
+## View Trash
+
+To view the Trash:
+
+1. Navigate to the Space where the page(s) has been deleted.
+2. Open the **page menu (...)**.
+3. Click **Trash**
+4. From here one can view the page(s) content by clicking the Title
+
+## Restore Page(s)
+
+To view the Trash:
+
+1. Navigate to the Space where the page(s) has been deleted.
+2. Open the **page menu (...)**.
+3. Click **Trash**.
+4. Click the **page menu (...)** and Select Restore.
+5. Click **Restore**.
+6. Finished
