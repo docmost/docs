@@ -1,0 +1,9 @@
+{
+  "label": "Erste Schritte",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Erfahren Sie, was Docmost ist und wie Sie es in Betrieb nehmen."
+  },
+  "collapsed": false
+}

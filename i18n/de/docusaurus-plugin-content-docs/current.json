@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Aktuell",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Self-Hosting": {
+    "message": "Self-Hosting",
+    "description": "The label for category Self-Hosting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Reverse Proxy": {
+    "message": "Reverse Proxy",
+    "description": "The label for category Reverse Proxy in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.AI": {
+    "message": "AI",
+    "description": "The label for category AI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User Guide": {
+    "message": "Benutzerhandbuch",
+    "description": "The label for category User Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Authentication": {
+    "message": "Authentifizierung",
+    "description": "The label for category Authentication in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Pages": {
+    "message": "Seiten",
+    "description": "The label for category Pages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Bases": {
+    "message": "Bases",
+    "description": "The label for category Bases in sidebar tutorialSidebar"
+  }
+}

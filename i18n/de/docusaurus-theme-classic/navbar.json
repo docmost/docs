@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Docmost",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Dokumentation",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Website": {
+    "message": "Website",
+    "description": "Navbar item with label Website"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.License Portal": {
+    "message": "Lizenzportal",
+    "description": "Navbar item with label License Portal"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

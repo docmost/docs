@@ -35,7 +35,11 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "de"],
+    localeConfigs: {
+      en: { label: "English", htmlLang: "en" },
+      de: { label: "Deutsch", htmlLang: "de" },
+    },
   },
 
   presets: [
@@ -102,6 +106,10 @@ const config: Config = {
         {
           href: "https://github.com/docmost/docmost",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          type: "localeDropdown",
           position: "right",
         },
       ],
