@@ -7,6 +7,12 @@ sidebar_position: 1
 
 Docker is the recommended mode of installation. If you are a developer, you may be interested in the [development guide](/self-hosting/development).
 
+## Managed hosting
+
+[![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/docmost)
+
+One-click managed Docmost with storage, backups, email and a free subdomain included, and a share of every subscription goes back to Docmost.
+
 
 :::tip[Enterprise trial]
 Unlock enterprise features such as Bases, SSO, AI, Audit logs, and SCIM provisioning. Start an enterprise trial at [customers.docmost.com](https://customers.docmost.com/) to generate a license key.
