@@ -141,6 +141,13 @@ Wenn Sie den Rest von Docmost (die App selbst) berechtigterweise in einem andere
 | `IFRAME_EMBED_ALLOWED`   | `false`                                                   | Hauptschalter für die externe Iframe-Einbettung. Standardmäßig `false`, was `X-Frame-Options: SAMEORIGIN` ausgibt. Auf `true` setzen, um externe Einbettung zuzulassen.                                                                                                                                      |
 | `IFRAME_ALLOWED_ORIGINS` | `https://intranet.example.com,https://portal.example.com` | Optionale, durch Kommas getrennte Zulassungsliste. Wird nur berücksichtigt, wenn `IFRAME_EMBED_ALLOWED=true`. Wenn angegeben, gibt Docmost `Content-Security-Policy: frame-ancestors 'self' <origins>` anstelle von `X-Frame-Options` aus. Wenn leer, ist die Einbettung von jedem Ursprung aus zulässig. |
 
+### Ausgehende Anfragen an private Netzwerke
+Integrationen wie das SIEM-Streaming lassen den Server Anfragen an URLs senden, die Arbeitsbereichs-Eigentümer konfigurieren. Auf selbst gehosteten Instanzen werden Ziele in privaten Netzwerken standardmäßig abgelehnt. Link-local-, Cloud-Metadaten-, unspezifizierte und Multicast-Adressen werden immer abgelehnt. Docmost Cloud ignoriert diese Variable.
+
+| Variable                   | Beispiel                   | Beschreibung                                                                                                                                                                                                                                                                                                                                                              |
+|----------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ALLOWED_PRIVATE_NETWORKS` | `all,127.0.0.0/8,::1/128`  | `none` (Standard) lehnt private, Loopback- und reservierte Ziele ab. `all` erlaubt private Netzwerke (10.x, 172.16-31.x, 192.168.x, 100.64.x, IPv6 Unique Local). Eine durch Kommas getrennte Liste von CIDR-Bereichen, jeweils optional mit Port (`192.168.1.20/32:8088`), erlaubt nur diese Bereiche. Nach `all` aufgeführte Bereiche kommen hinzu, zum Beispiel Loopback für einen Collector auf derselben Maschine. |
+
 ## Telemetrie
 Wir erfassen anonym die aktive Version, die Anzahl der Benutzer, die Anzahl der Seiten sowie die Anzahl der Bereiche und Arbeitsbereiche.
 
