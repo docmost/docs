@@ -20,7 +20,7 @@ The backend server is built using the [Nest.js](https://nestjs.com/) framework.
 
 ### Requirements
 To run Docmost, you'll need the following:
-- **Node.js**: >= 22
+- **Node.js**: >= 24
 - **Postgres**: >= 16
 - **Redis/Valkey** >=7
 
