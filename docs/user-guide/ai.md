@@ -1,7 +1,8 @@
 ---
 sidebar_position: 12
 tags:
-  - enterprise
+    - business
+    - enterprise
 ---
 
 # AI
