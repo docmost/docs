@@ -10,7 +10,7 @@ tags:
 Docmost provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that allows AI assistants and tools to interact with your workspace content. Through MCP, AI clients can search, read, create, and update pages, manage spaces, and more — all using your existing API key for authentication.
 
 :::note
-MCP is an enterprise feature. An active enterprise license is required.
+A valid Business or Enterprise license is required to unlock this feature.
 :::
 
 ## Enabling MCP (Admin)
