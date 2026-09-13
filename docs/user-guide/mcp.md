@@ -1,6 +1,7 @@
 ---
 sidebar_position: 14
 tags:
+    - business
     - enterprise
 ---
 
