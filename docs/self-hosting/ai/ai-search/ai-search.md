@@ -6,7 +6,7 @@ tags:
 
 # AI Search Setup
 
-AI-powered search and AI Chat in Docmost uses vector embeddings to provide semantic search across your workspace. This is an enterprise feature that requires a valid license key.
+AI-powered search and AI Chat in Docmost uses vector embeddings to provide semantic search across your workspace. This is a paid feature that requires a valid license key.
 
 ## Prerequisites
 
