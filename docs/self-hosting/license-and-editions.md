@@ -4,20 +4,25 @@ slug: /editions
 ---
 
 # License & Editions
+Docmost is available in three editions for self-hosted and on-premises deployments: **Open Source**, **Business**, and **Enterprise**.
 
-Docmost is available in two editions for self-hosted deployments: **Open Source** and **Enterprise**.
-They both allow self-hosting and on-premises deployment.
+Business and Enterprise are commercially licensed editions that build on the Open Source edition with additional capabilities.
 
 ## Editions
 
 ### Open Source
 
-The open source edition is free to use and includes all core documentation and collaboration features. It is available under the AGPL-3.0 license.
+The Open Source edition is free and includes Docmost’s core documentation and collaboration features. It is licensed under AGPL-3.0.
+
+### Business
+
+The Business edition includes everything in Open Source, plus additional features designed for businesses that need more advanced functionality and controls.
 
 ### Enterprise
 
-The enterprise edition includes everything in the open source edition, plus additional features designed for larger teams and organizations.
-You need an enterprise license key to unlock enterprise features.
+The Enterprise edition includes everything in Business, along with advanced security, compliance, and governance features for larger organizations—such as audit logs, SIEM integration, and page verification.
+
+A valid license key is required to activate Business or Enterprise features.
 
 ## Feature Comparison
 
@@ -25,13 +30,13 @@ For pricing and feature comparison, visit https://docmost.com/pricing#compare.
 
 You can generate a free trial license key at [https://customers.docmost.com](https://customers.docmost.com).
 
-## Activating an Enterprise License
+## Activating a Business or Enterprise License
 
-To activate or upgrade to the enterprise edition:
+To activate or upgrade to the Business/Enterprise edition:
 
 1. Go to **Settings** > **License & Edition**.
 2. Click the **Add license** button.
-3. In the dialog, paste your enterprise license key into the **License key** field.
+3. In the dialog, paste your Business or Enterprise license key into the **License key** field.
 4. Click **Save**.
 
 Once activated, the page displays your license details including the edition, licensee name, seat count, issue and expiry dates, license ID, and status.
@@ -46,7 +51,7 @@ After activating a license, the License & Edition page shows:
 
 - **Workspace ID** — Your unique workspace identifier.
 - **Member count** — The current number of members in your workspace.
-- **Edition** — The active edition (Open Source or Enterprise).
+- **Edition** — The active edition (Open Source / Business / Enterprise).
 - **Licensed to** — The name associated with the license.
 - **Seat count** — The total licensed seats and how many are currently used.
 - **Issued at** — The date the license was issued.
@@ -76,4 +81,4 @@ When an enterprise license expires:
 - The workspace reverts to the open source edition.
 - You can continue using Docmost with the open source feature set.
 
-To restore enterprise features, renew your license and apply the new key via **Update license**.
+To restore paid features, renew your license and apply the new key via **Update license**.
