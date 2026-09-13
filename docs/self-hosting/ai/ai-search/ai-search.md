@@ -1,6 +1,7 @@
 ---
 tags:
-   - Enterprise
+    - business
+    - enterprise
 ---
 
 # AI Search Setup
