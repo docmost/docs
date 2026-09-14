@@ -1,7 +1,8 @@
 ---
 sidebar_position: 12
 tags:
-  - enterprise
+    - business
+    - enterprise
 ---
 
 # AI
@@ -9,7 +10,7 @@ tags:
 Docmost includes AI-powered features that help you write, edit, and search your workspace content. AI capabilities are available in two areas: the editor (Ask AI) and search (AI Answers). Since Docmost is self-hosted, you can choose to use cloud-based AI models (OpenAI, Google Gemini) or local LLMs (via Ollama) — keeping your data fully under your control.
 
 :::note
-AI is an enterprise feature. An active enterprise license is required. AI features also require an AI provider to be configured by a workspace admin. See the [AI Search Setup](/self-hosting/ai/ai-search) guide for provider configuration.
+AI is available on the Business and Enterprise editions. A valid license is required. AI features also require an AI provider to be configured by a workspace admin. See the [AI Search Setup](/self-hosting/ai/ai-search) guide for provider configuration.
 :::
 
 ## AI Settings (Admin)

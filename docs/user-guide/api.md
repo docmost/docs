@@ -1,7 +1,8 @@
 ---
 sidebar_position: 13
 tags:
-  - enterprise
+    - business
+    - enterprise
 ---
 
 # API

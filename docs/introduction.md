@@ -17,7 +17,7 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 ## Features
 
 - **Collaborative Real-time Editor**: Work together on pages in real-time.
-- **Bases** (Table and Kanban views) (Enterprise): Organize content as structured databases with properties, filters, sorts, and formulas.
+- **Bases** (Table and Kanban views): Organize content as structured databases with properties, filters, sorts, and formulas.
 - **Spaces**: Organize your pages by team, projects, or departments for better collaboration.
 - **Permissions Management**: Easily control access to content with intuitive permissions at the workspace and space level.
 - **Groups**: Grant unified permissions to users via groups.
@@ -36,8 +36,8 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **Import / Export**: Import and export pages in Markdown and HTML formats.
   - ZIP archive import
   - Notion import
-  - Confluence import (Enterprise)
-  - PDF & DOCX import (Enterprise)
+  - Confluence import
+  - PDF & DOCX import
 - **Print to PDF**: Generate PDF versions of pages using the browser print dialog.
 - **@ Mentions**: Mention team members and link to pages directly in the editor.
 - **Markdown Shortcuts**: Type Markdown syntax directly in the editor and it converts to rich text automatically.
@@ -48,11 +48,11 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 
 ## Authentication
 - Email and password
-- LDAP (Enterprise)
-- SSO via SAML / OIDC (Enterprise)
-- MFA via TOTP (Enterprise)
+- LDAP
+- SSO via SAML / OIDC
+- MFA via TOTP
 
-## Enterprise Edition Features
+## Paid Editions Features
 - **Bases** (Table and Kanban views) — Organize content as structured databases with properties, filters, sorts, and formulas.
 - **SSO** (SAML 2.0 / OIDC) — Integrate Microsoft Entra ID, Okta, OneLogin, and more.
 - **LDAP** — Authenticate users against your LDAP directory.
@@ -82,10 +82,10 @@ Yes! You can get started with our cloud version at [https://app.docmost.com](htt
 
 **What license does Docmost use?**  
 Docmost is licensed under the open-source [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) 3.0 License.<br />
-Enterprise features are available under an enterprise license (Enterprise Edition).
+Commercial features are available under a Business or Enterprise license.
 
 **Do you have an enterprise version?**
-Yes, we have an enterprise version with SSO integration. You can get a business or enterprise trial license key at [https://customers.docmost.com](https://customers.docmost.com). To purchase, contact <a href="mailto:sales@docmost.com">sales@docmost.com</a>.
+Yes. You can get a Business or Enterprise trial license key at [https://customers.docmost.com](https://customers.docmost.com). To purchase, contact <a href="mailto:sales@docmost.com">sales@docmost.com</a>.
 
 **Got anymore questions?**  
 Feel free to email the founder: philip@docmost.com.

@@ -1,7 +1,8 @@
 ---
 sidebar_position: 2
 tags:
-  - enterprise
+    - business
+    - enterprise
 ---
 
 # Page Permissions

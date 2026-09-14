@@ -7,7 +7,7 @@ sidebar_position: 14
 Multi-factor authentication adds an extra layer of security to your account by requiring a verification code in addition to your password when signing in.
 
 :::note
-MFA is an enterprise feature. An active enterprise license is required.
+A valid Business or Enterprise license is required to unlock this feature.
 :::
 
 ## Supported Methods
