@@ -21,6 +21,7 @@ const config: Config = {
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+  clientModules: ["./src/clientModules/analytics.ts"],
   scripts: [
     {
       src: "https://data.docmost.com/js/plausible.js",
