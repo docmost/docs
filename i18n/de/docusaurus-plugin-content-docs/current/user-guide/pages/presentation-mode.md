@@ -26,6 +26,10 @@ Wenn eine Folie mehr Inhalt hat, als auf den Bildschirm passt, geht es auf der n
 - Auch die Leertaste und Bild ab wechseln zur nächsten Folie, daher funktionieren auch Präsentationsfernbedienungen. Auf einer langen Folie scrollen sie zuerst nach unten.
 - Ein Klick auf eine Folie wechselt die Folie nicht. So können Sie Links anklicken, Umschaltblöcke öffnen und Text markieren.
 
+## Laserpointer
+
+Klicken Sie auf die Laserpointer-Schaltfläche neben den Pfeilen, um Ihren Mauszeiger durch einen hellblauen Punkt zu ersetzen. So sehen andere bei einer Bildschirmfreigabe leichter, worauf Sie zeigen. Klicken Sie erneut auf die Schaltfläche, um den Laserpointer auszuschalten.
+
 ## Vollbild
 
 Klicken Sie auf die Vollbild-Schaltfläche neben den Pfeilen, um den ganzen Bildschirm zu nutzen. Drücken Sie `Esc`, um das Vollbild zu verlassen.

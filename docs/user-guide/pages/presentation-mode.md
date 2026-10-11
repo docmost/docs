@@ -26,6 +26,10 @@ If a slide has more content than fits on the screen, the rest continues on the n
 - Space and Page Down also go to the next slide, so presentation clickers work too. On a long slide, they scroll down first.
 - Clicking a slide doesn't change slides, so you can click links, open toggles and select text.
 
+## Laser Pointer
+
+Click the laser pointer button next to the arrows to swap your cursor for a soft blue dot. It helps people watching your screen share see what you're pointing at. Click the button again to turn it off.
+
 ## Fullscreen
 
 Click the fullscreen button next to the arrows to fill your screen. Press `Esc` to leave fullscreen.
