@@ -89,6 +89,60 @@ To configure your application, set the following environment variables. These va
 | `MAIL_FROM_ADDRESS` | `hello@example.com` | The email address that emails will be sent from.                |
 | `MAIL_FROM_NAME`    | `Docmost`           | The name that emails will be sent from.                         |
 
+## Integrations
+
+Register a provider app and set its credentials before a workspace admin installs the integration. See the [integration setup guides](/self-hosting/integrations). Restart Docmost after changing these variables. Set `APP_URL` to the base address users open, such as `https://docmost.example.com`; each guide gives the callback URL to register.
+
+### GitHub
+
+| Variable | Example | Description |
+|----------|---------|-------------|
+| `INTEGRATION_GITHUB_CLIENT_ID` | `<client-id>` | GitHub OAuth app client ID. |
+| `INTEGRATION_GITHUB_CLIENT_SECRET` | `<client-secret>` | GitHub OAuth app client secret. |
+| `INTEGRATION_GITHUB_URL` | `https://github.example.com` | Optional GitHub Enterprise Server base URL. Defaults to `https://github.com`. Replaces the host used for sign-in and previews. |
+
+### GitLab
+
+| Variable | Example | Description |
+|----------|---------|-------------|
+| `INTEGRATION_GITLAB_CLIENT_ID` | `<application-id>` | GitLab OAuth application ID. |
+| `INTEGRATION_GITLAB_CLIENT_SECRET` | `<application-secret>` | GitLab OAuth application secret. |
+| `INTEGRATION_GITLAB_URL` | `https://gitlab.example.com` | Optional GitLab self-managed base URL. Defaults to `https://gitlab.com`. Replaces the host used for sign-in and previews. |
+
+### Jira
+
+For Jira Cloud, use the Atlassian credentials. Setting `INTEGRATION_JIRA_URL` selects Jira Data Center, which uses the Jira credentials instead.
+
+| Variable | Example | Description |
+|----------|---------|-------------|
+| `INTEGRATION_ATLASSIAN_CLIENT_ID` | `<client-id>` | Atlassian OAuth 2.0 app client ID for Jira Cloud. |
+| `INTEGRATION_ATLASSIAN_CLIENT_SECRET` | `<client-secret>` | Atlassian OAuth 2.0 app client secret for Jira Cloud. |
+| `INTEGRATION_JIRA_URL` | `https://jira.example.com` | Optional Jira Data Center base URL. Unset by default, which uses Jira Cloud. See the [context-path limit](/self-hosting/integrations/jira#jira-data-center). |
+| `INTEGRATION_JIRA_CLIENT_ID` | `<client-id>` | Incoming application link client ID for Jira Data Center. |
+| `INTEGRATION_JIRA_CLIENT_SECRET` | `<client-secret>` | Incoming application link client secret for Jira Data Center. |
+
+### Linear
+
+| Variable | Example | Description |
+|----------|---------|-------------|
+| `INTEGRATION_LINEAR_CLIENT_ID` | `<client-id>` | Linear OAuth app client ID. |
+| `INTEGRATION_LINEAR_CLIENT_SECRET` | `<client-secret>` | Linear OAuth app client secret. |
+
+### Figma
+
+| Variable | Example | Description |
+|----------|---------|-------------|
+| `INTEGRATION_FIGMA_CLIENT_ID` | `<client-id>` | Figma OAuth app client ID. |
+| `INTEGRATION_FIGMA_CLIENT_SECRET` | `<client-secret>` | Figma OAuth app client secret. |
+
+### Azure DevOps
+
+| Variable | Example | Description |
+|----------|---------|-------------|
+| `INTEGRATION_MICROSOFT_CLIENT_ID` | `<client-id>` | Microsoft Entra application client ID for Azure DevOps. |
+| `INTEGRATION_MICROSOFT_CLIENT_SECRET` | `<client-secret-value>` | Microsoft Entra client secret value. |
+| `INTEGRATION_MICROSOFT_TENANT_ID` | `<tenant-id>` | Directory ID connected to the Azure DevOps organization. Required for a single-tenant app. If unset, uses `organizations`. A tenant domain is also accepted. |
+
 ## AI Configuration (Enterprise)
 
 | Variable                      | Example                        | Description                                                                                                                                                              |

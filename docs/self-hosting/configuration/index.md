@@ -159,6 +159,12 @@ IFRAME_EMBED_ALLOWED=true
 IFRAME_ALLOWED_ORIGINS=https://intranet.example.com,https://portal.example.com
 ```
 
+## Integrations
+
+To preview links from external tools, register a provider app and configure its credentials on the Docmost server. Follow the [integration setup guides](/self-hosting/integrations), then restart Docmost. Workspace installation and account connections are covered in the [user guide](/user-guide/integrations).
+
+See [integration environment variables](/self-hosting/environment-variables#integrations) for the configuration reference.
+
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.
 To disable telemetry:

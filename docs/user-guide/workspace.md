@@ -27,3 +27,6 @@ Each space within the workspace can define its own set of permissions:
 - **Can Edit**: Can modify content within the space but cannot manage members.
 - **Can View**: Read-only access to the space's content.
 
+### Integrations
+
+Workspace admins install and uninstall providers from **Settings** > **Integrations**. Each member connects their own account from **Settings** > **Account** > **Connections** to see link previews. See [Integrations](./integrations/index.md) for setup and supported providers.
