@@ -15,7 +15,7 @@ Replace `docmost.example.com` with your actual domain and `admin@example.com` wi
 ```yaml title="docker-compose.yml"
 services:
   traefik:
-    image: traefik:v3.6
+    image: traefik:v3.7
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
