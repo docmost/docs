@@ -44,8 +44,6 @@ services:
       APP_SECRET: 'REPLACE_WITH_LONG_SECRET'
       DATABASE_URL: 'postgresql://docmost:STRONG_DB_PASSWORD@db:5432/docmost'
       REDIS_URL: 'redis://redis:6379'
-    ports:
-      - "3000:3000"
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
