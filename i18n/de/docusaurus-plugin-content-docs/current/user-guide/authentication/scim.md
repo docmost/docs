@@ -137,7 +137,7 @@ Beim Deaktivieren von SCIM nimmt der Endpunkt keine Anfragen mehr an. Bereits pr
 Das Widerrufen eines Tokens macht es sofort ungültig. Jeder Identitätsanbieter, der das widerrufene Token verwendet, kann die Synchronisierung erst wieder durchführen, wenn ein neues Token ausgestellt wird.
 
 ### Audit-Protokollierung
-Die Erstellung und der Widerruf von SCIM-Token werden im Audit-Protokoll des Arbeitsbereichs aufgezeichnet.
+Die Erstellung und der Widerruf von SCIM-Token werden im [Audit-Protokoll](/user-guide/audit-logs) des Arbeitsbereichs aufgezeichnet.
 
 ## Fehlerbehebung
 
