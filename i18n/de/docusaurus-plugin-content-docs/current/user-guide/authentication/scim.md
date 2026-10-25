@@ -1,14 +1,10 @@
 ---
 sidebar_position: 5
 tags:
-   - Enterprise
+  - Enterprise
 ---
 
 # SCIM
-**Edition:** Enterprise
-
-## Überblick
-
 Docmost unterstützt das Protokoll System for Cross-domain Identity Management (SCIM 2.0), mit dem Sie Benutzer und Gruppen automatisch von Ihrem Identitätsanbieter provisionieren können.
 
 ## Hauptfunktionen

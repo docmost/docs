@@ -1,11 +1,11 @@
 ---
 sidebar_position: 3
 tags:
-   - Enterprise
+  - Business
+  - Enterprise
 ---
 
 # OIDC
-**Edition:** Enterprise
 
 Docmost unterstützt die Authentifizierung über OpenID Connect (OIDC) und ermöglicht so die Integration mit jedem Identitätsanbieter, der den OIDC-Standard unterstützt.
 

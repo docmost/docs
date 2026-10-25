@@ -114,7 +114,7 @@ AI_COMPLETION_MODEL=qwen2.5:7b
 
 ## Search
 
-By default, Docmost uses the database for full-text search. In the enterprise edition, can optionally configure Typesense as the search driver for improved search performance and relevance.
+By default, Docmost uses the database for full-text search. In the paid editions, you can optionally configure Typesense as the search driver for improved search performance and relevance.
 
 ### Using Typesense
 You can add the Typesense compose service to your existing Docmost docker-compose.yml file.
@@ -158,6 +158,12 @@ When `IFRAME_EMBED_ALLOWED=true` and no allowlist is provided, Docmost emits no 
 IFRAME_EMBED_ALLOWED=true
 IFRAME_ALLOWED_ORIGINS=https://intranet.example.com,https://portal.example.com
 ```
+
+## Integrations
+
+To preview links from external tools, follow the [integration guides](/self-hosting/integrations) for provider setup, workspace installation, and account connections.
+
+See [integration environment variables](/self-hosting/environment-variables#integrations) for the configuration reference.
 
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.

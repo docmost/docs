@@ -89,13 +89,68 @@ Um Ihre Anwendung zu konfigurieren, setzen Sie die folgenden Umgebungsvariablen.
 | `MAIL_FROM_ADDRESS` | `hello@example.com` | Die E-Mail-Adresse, von der E-Mails gesendet werden.            |
 | `MAIL_FROM_NAME`    | `Docmost`           | Der Name, unter dem E-Mails gesendet werden.                    |
 
-## AI-Konfiguration (Enterprise)
+## Integrationen {#integrations}
+
+Registrieren Sie eine Anbieter-App und setzen Sie deren Zugangsdaten, bevor ein Arbeitsbereich-Administrator die Integration installiert. Siehe [Integrationsanleitungen](/self-hosting/integrations). Starten Sie Docmost nach Änderungen an diesen Variablen neu. Setzen Sie `APP_URL` auf die Basisadresse, die Benutzer öffnen, zum Beispiel `https://docmost.example.com`. Die jeweilige Anleitung nennt die Callback-URL, die Sie registrieren müssen.
+
+### GitHub
+
+| Variable | Beispiel | Beschreibung |
+|----------|----------|--------------|
+| `INTEGRATION_GITHUB_CLIENT_ID` | `<client-id>` | Client-ID der GitHub-OAuth-App. |
+| `INTEGRATION_GITHUB_CLIENT_SECRET` | `<client-secret>` | Client-Secret der GitHub-OAuth-App. |
+| `INTEGRATION_GITHUB_URL` | `https://github.example.com` | Optionale Basis-URL von GitHub Enterprise Server. Standardwert: `https://github.com`. Ersetzt den Host für Anmeldung und Vorschauen. |
+
+### GitLab
+
+| Variable | Beispiel | Beschreibung |
+|----------|----------|--------------|
+| `INTEGRATION_GITLAB_CLIENT_ID` | `<application-id>` | ID der GitLab-OAuth-Anwendung. |
+| `INTEGRATION_GITLAB_CLIENT_SECRET` | `<application-secret>` | Secret der GitLab-OAuth-Anwendung. |
+| `INTEGRATION_GITLAB_URL` | `https://gitlab.example.com` | Optionale Basis-URL einer selbstverwalteten GitLab-Instanz. Standardwert: `https://gitlab.com`. Ersetzt den Host für Anmeldung und Vorschauen. |
+
+### Jira
+
+Verwenden Sie für Jira Cloud die Atlassian-Zugangsdaten. Mit `INTEGRATION_JIRA_URL` wird Jira Data Center ausgewählt, das stattdessen die Jira-Zugangsdaten verwendet.
+
+| Variable | Beispiel | Beschreibung |
+|----------|----------|--------------|
+| `INTEGRATION_ATLASSIAN_CLIENT_ID` | `<client-id>` | Client-ID der Atlassian-OAuth-2.0-App für Jira Cloud. |
+| `INTEGRATION_ATLASSIAN_CLIENT_SECRET` | `<client-secret>` | Client-Secret der Atlassian-OAuth-2.0-App für Jira Cloud. |
+| `INTEGRATION_JIRA_URL` | `https://jira.example.com` | Optionale Basis-URL von Jira Data Center. Standardmäßig nicht gesetzt; dann wird Jira Cloud verwendet. Siehe [Einschränkung für Kontextpfade](/self-hosting/integrations/jira#jira-data-center). |
+| `INTEGRATION_JIRA_CLIENT_ID` | `<client-id>` | Client-ID des eingehenden Anwendungslinks für Jira Data Center. |
+| `INTEGRATION_JIRA_CLIENT_SECRET` | `<client-secret>` | Client-Secret des eingehenden Anwendungslinks für Jira Data Center. |
+
+### Linear
+
+| Variable | Beispiel | Beschreibung |
+|----------|----------|--------------|
+| `INTEGRATION_LINEAR_CLIENT_ID` | `<client-id>` | Client-ID der Linear-OAuth-App. |
+| `INTEGRATION_LINEAR_CLIENT_SECRET` | `<client-secret>` | Client-Secret der Linear-OAuth-App. |
+
+### Figma
+
+| Variable | Beispiel | Beschreibung |
+|----------|----------|--------------|
+| `INTEGRATION_FIGMA_CLIENT_ID` | `<client-id>` | Client-ID der Figma-OAuth-App. |
+| `INTEGRATION_FIGMA_CLIENT_SECRET` | `<client-secret>` | Client-Secret der Figma-OAuth-App. |
+
+### Azure DevOps
+
+| Variable | Beispiel | Beschreibung |
+|----------|----------|--------------|
+| `INTEGRATION_MICROSOFT_CLIENT_ID` | `<client-id>` | Client-ID der Microsoft-Entra-Anwendung für Azure DevOps. |
+| `INTEGRATION_MICROSOFT_CLIENT_SECRET` | `<client-secret-value>` | Wert des geheimen Clientschlüssels der Microsoft-Entra-Anwendung für Azure DevOps. |
+| `INTEGRATION_MICROSOFT_TENANT_ID` | `<tenant-id>` | ID des mit der Azure-DevOps-Organisation verbundenen Verzeichnisses. Für eine Single-Tenant-App erforderlich. Ohne Angabe wird `organizations` verwendet. Eine Mandantendomäne ist ebenfalls zulässig. |
+
+## AI-Konfiguration
 
 | Variable                      | Beispiel                       | Beschreibung                                                                                                                                                            |
 |-------------------------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `AI_DRIVER`                   | `openai`                       | Der zu verwendende AI-Anbieter. Optionen: `openai`, `openai-compatible`, `gemini`, `ollama`.                                                                            |
 | `AI_EMBEDDING_MODEL`          | `text-embedding-3-small`       | Das für die Erzeugung von Vektor-Embeddings verwendete Modell.                                                                                                          |
 | `AI_COMPLETION_MODEL`         | `gpt-4o-mini`                  | Das für die Beantwortung von Fragen verwendete Modell.                                                                                                                  |
+| `AI_CHAT_MODEL`               | `your-chat-model`              | Optional. Das von KI-Chat verwendete Modell. Ohne Angabe wird `AI_COMPLETION_MODEL` verwendet. Muss Tool-Aufrufe unterstützen; für Bildanhänge ist außerdem Unterstützung für Bildeingaben erforderlich. |
 | `AI_EMBEDDING_DIMENSION`      | `1536`                         | Optional. Die Vektordimension für pgvector. Wird für voreingestellte Modelle automatisch erkannt. Unterstützte Werte: `768`, `1024`, `1536`, `2000`, `3072`.            |
 | `AI_EMBEDDING_SUPPORTS_MRL`   | `true`                         | Optional. Steuert, ob der Parameter `dimensions` an die API des Embedding-Modells gesendet wird. Standardmäßig wird die Modellvoreinstellung verwendet, falls verfügbar, andernfalls `true`. Auf `false` setzen für Modelle, die keinen `dimensions`-Parameter akzeptieren. |
 | `OPENAI_API_KEY`              | `sk-proj-xxxxx`                | Ihr OpenAI-API-Schlüssel. Erforderlich, wenn `AI_DRIVER` auf `openai` oder `openai-compatible` gesetzt ist.                                                             |
@@ -109,14 +164,14 @@ Die standardmäßige Draw.io-Einbettungs-URL ist `https://embed.diagrams.net`.
 |-----------| ------------------------ |----------------------------|
 | `DRAWIO_URL` | `https://embed.diagrams.net` | Die URL Ihres benutzerdefinierten draw.io-Servers. |
 
-## Suchkonfiguration (Enterprise)
+## Suchkonfiguration
 
 | Variable            | Beispiel                  | Beschreibung                                                                                                                                                                                   |
 |---------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `SEARCH_DRIVER`     | `typesense`               | Der zu verwendende Suchmaschinen-Treiber. Der Standardwert ist `postgres` (Datenbanksuche). `typesense` ist eine speziell entwickelte Suchmaschine mit tippfehlertoleranter, schneller Suche, die in der Enterprise Edition verfügbar ist. |
-| `TYPESENSE_URL`     | `http://localhost:8108`   | Die URL Ihres Typesense-Servers. Erforderlich, wenn `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                                     |
-| `TYPESENSE_API_KEY` | `your_api_key_here`       | Ihr Typesense-API-Schlüssel mit Lese-/Schreibberechtigungen. Erforderlich, wenn `SEARCH_DRIVER=typesense`. (Enterprise)                                                                         |
-| `TYPESENSE_LOCALE`  | `en`                      | Die Locale für Textanalyse und Suche. Der Standardwert ist `en`. Beispiele: `en`, `es`, `fr`, `de`, `ja`, `zh`, `ko` usw. Eine vollständige Liste finden Sie unter [Von Typesense unterstützte Sprachen](https://typesense.org/docs/latest/api/search.html#supported-languages). (Enterprise) |
+| `SEARCH_DRIVER`     | `typesense`               | Der zu verwendende Suchmaschinen-Treiber. Der Standardwert ist `postgres` (Datenbanksuche). `typesense` ist eine speziell entwickelte Suchmaschine mit tippfehlertoleranter, schneller Suche, die in den kostenpflichtigen Editionen verfügbar ist. |
+| `TYPESENSE_URL`     | `http://localhost:8108`   | Die URL Ihres Typesense-Servers. Erforderlich, wenn `SEARCH_DRIVER=typesense`. |
+| `TYPESENSE_API_KEY` | `your_api_key_here`       | Ihr Typesense-API-Schlüssel mit Lese-/Schreibberechtigungen. Erforderlich, wenn `SEARCH_DRIVER=typesense`. |
+| `TYPESENSE_LOCALE`  | `en`                      | Die Locale für Textanalyse und Suche. Der Standardwert ist `en`. Beispiele: `en`, `es`, `fr`, `de`, `ja`, `zh`, `ko` usw. Eine vollständige Liste finden Sie unter [Von Typesense unterstützte Sprachen](https://typesense.org/docs/latest/api/search.html#supported-languages). |
 
 ## SAML
 

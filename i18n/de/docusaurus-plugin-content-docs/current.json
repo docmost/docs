@@ -15,6 +15,10 @@
     "message": "AI",
     "description": "The label for category AI in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.Integrations": {
+    "message": "Integrationen",
+    "description": "The label for category Integrations in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.User Guide": {
     "message": "Benutzerhandbuch",
     "description": "The label for category User Guide in sidebar tutorialSidebar"
