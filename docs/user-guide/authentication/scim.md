@@ -137,7 +137,7 @@ Disabling SCIM stops the endpoint from accepting requests. Users, groups, and me
 Revoking a token invalidates it immediately. Any identity provider using the revoked token will fail to sync until a new token is issued.
 
 ### Audit logging
-SCIM token creation and revocation are recorded in the workspace audit log.
+SCIM token creation and revocation are recorded in the workspace [audit log](/user-guide/audit-logs).
 
 ## Troubleshooting
 
