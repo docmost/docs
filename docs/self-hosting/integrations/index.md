@@ -2,16 +2,46 @@ import DocCardList from '@theme/DocCardList';
 
 # Integrations
 
-Register a provider app and configure its credentials on the Docmost server before a workspace admin installs the integration. Choose a provider for its callback URL, permissions, and environment variables.
+Paste links from external tools as cards or inline mentions in Docmost pages. Members connect their own accounts to view previews. Public GitHub repositories can be previewed without connecting.
+
+Sharing a Docmost page does not give readers access to the linked resource.
 
 <DocCardList />
 
-## After setup
+## Install and connect
 
-Restart Docmost after changing the server configuration. A workspace admin then [installs the integration](/user-guide/integrations#install-and-connect), and each member connects their own account.
+First, follow the provider guide above to register its OAuth app and configure the Docmost server. Restart Docmost after changing the configuration. See the [environment variable reference](/self-hosting/environment-variables#integrations) for all integration settings.
 
-The [user guides](/user-guide/integrations) cover supported links, cards and mentions, account connections, and access. See [integration environment variables](../environment-variables.md#integrations) for the configuration reference.
+1. **Workspace admin:** open **Settings** > **Integrations**, choose **Install** beside the provider, and authorize access. This installs the integration for the workspace and connects your account.
+2. **Members:** open **Settings** > **Account** > **Connections**, choose **Connect** beside the provider, and sign in.
+
+You can also connect from a preview's **Connect** button. Hover over a mention to see it. Only installed integrations appear on the **Connections** page.
+
+## Cards and mentions
+
+Paste a supported URL into a paragraph. In **Paste as**, choose **Card**, **Mention**, or **URL**. To change it later, select the card or mention and use **Display as**.
+
+| Reader | What appears |
+|--------|--------------|
+| Connected, with access | A full preview |
+| Not connected | A label based on the URL and a connect button; public GitHub repositories show a full preview |
+| Connected without access, or anonymous | A label based on the URL |
+
+Previews are cached for up to five minutes, including after a permission change. Wait five minutes before reloading to see updated information.
+
+## Disconnect or uninstall
+
+To disconnect your account, open **Settings** > **Account** > **Connections** and choose **Disconnect** beside the provider. Other members keep their connections.
+
+To remove a provider from the workspace, an admin opens **Settings** > **Integrations** and chooses **Uninstall**. This removes all members' connections and stops loading previews. Existing links remain in pages.
 
 ## Troubleshooting
 
-For authorization failures, check the server log for `OAuth callback`, `OAuth completion`, or `Token exchange failed`. For preview failures after connecting, look for `Unfurl failed`. The provider guides above cover configuration errors.
+| Problem | What to do |
+|---------|------------|
+| The provider is missing from **Connections** | Ask a workspace admin to install it in **Settings** > **Integrations**. |
+| A pasted URL stays a normal link, or **Card** is unavailable | Check that the provider is installed and supports the URL. Paste into an empty paragraph without selecting text. |
+| **Install** fails with `Missing environment variable` | Set the credentials listed in the provider's setup guide and restart Docmost. |
+| **OAuth connection failed. Please try again.** | Try **Install** or **Connect** again in the same browser. If it keeps failing, check the client ID, secret, required scopes, and callback URL against the provider guide and your `APP_URL`. Look for `OAuth callback`, `OAuth completion`, or `Token exchange failed` in the server log for the provider's error. |
+| A preview is missing information | Open the link with the connected account to check access. After fixing access, wait five minutes before reloading. For other preview errors, look for `Unfurl failed` in the server log. |
+| **Connection expired** | Choose **Reconnect** on the **Connections** page. |

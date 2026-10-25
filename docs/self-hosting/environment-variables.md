@@ -143,13 +143,14 @@ For Jira Cloud, use the Atlassian credentials. Setting `INTEGRATION_JIRA_URL` se
 | `INTEGRATION_MICROSOFT_CLIENT_SECRET` | `<client-secret-value>` | Microsoft Entra client secret value. |
 | `INTEGRATION_MICROSOFT_TENANT_ID` | `<tenant-id>` | Directory ID connected to the Azure DevOps organization. Required for a single-tenant app. If unset, uses `organizations`. A tenant domain is also accepted. |
 
-## AI Configuration (Enterprise)
+## AI Configuration
 
 | Variable                      | Example                        | Description                                                                                                                                                              |
 |-------------------------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `AI_DRIVER`                   | `openai`                       | The AI provider to use. Options: `openai`, `openai-compatible`, `gemini`, `ollama`.                                                                                      |
 | `AI_EMBEDDING_MODEL`          | `text-embedding-3-small`       | The model used for generating vector embeddings.                                                                                                                         |
 | `AI_COMPLETION_MODEL`         | `gpt-4o-mini`                  | The model used for answering questions.                                                                                                                                  |
+| `AI_CHAT_MODEL`               | `your-chat-model`              | Optional. The model used by AI Chat. Defaults to `AI_COMPLETION_MODEL` when unset. Must support tool calling; image attachments also require image input support. |
 | `AI_EMBEDDING_DIMENSION`      | `1536`                         | Optional. The vector dimension for pgvector. Auto-detected for preset models. Supported values: `768`, `1024`, `1536`, `2000`, `3072`.                                   |
 | `AI_EMBEDDING_SUPPORTS_MRL`   | `true`                         | Optional. Controls whether the `dimensions` parameter is sent to the embedding model API. Defaults to model preset if available, otherwise `true`. Set to `false` for models that do not accept a `dimensions` parameter. |
 | `OPENAI_API_KEY`              | `sk-proj-xxxxx`                | Your OpenAI API key. Required when `AI_DRIVER` is `openai` or `openai-compatible`.                                                                                       |
@@ -163,14 +164,14 @@ The default Draw.io embed url is `https://embed.diagrams.net`.
 |-----------| ------------------------ |----------------------------|
 | `DRAWIO_URL` | `https://embed.diagrams.net` | Your custom draw.io server url. |
 
-## Search Configuration (Enterprise)
+## Search Configuration
 
-| Variable            | Example                   | Description                                                                                                                                                                                      |
-|---------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `SEARCH_DRIVER`     | `typesense`               | The search engine driver to use. Default is `postgres` (database search). `typesense` is a purpose-built search engine with typo-tolerant, fast search available in Enterprise edition.         |
-| `TYPESENSE_URL`     | `http://localhost:8108`   | The URL of your Typesense server. Required when `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                                         |
-| `TYPESENSE_API_KEY` | `your_api_key_here`       | Your Typesense API key with read/write permissions. Required when `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                       |
-| `TYPESENSE_LOCALE`  | `en`                      | The locale for text analysis and search. Default is `en`. Examples: `en`, `es`, `fr`, `de`, `ja`, `zh`, `ko`, etc. See [Typesense supported languages](https://typesense.org/docs/latest/api/search.html#supported-languages) for full list. (Enterprise) |
+| Variable            | Example                   | Description                                                                                                                                                                                                                                              |
+|---------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `SEARCH_DRIVER`     | `typesense`               | The search engine driver to use. Default is `postgres` (database search). `typesense` is a purpose-built search engine with typo-tolerant, fast search available in paid editions.                                                                       |
+| `TYPESENSE_URL`     | `http://localhost:8108`   | The URL of your Typesense server. Required when `SEARCH_DRIVER=typesense`.                                                                                                                                                               |
+| `TYPESENSE_API_KEY` | `your_api_key_here`       | Your Typesense API key with read/write permissions. Required when `SEARCH_DRIVER=typesense`.                                                                                                                                                             |
+| `TYPESENSE_LOCALE`  | `en`                      | The locale for text analysis and search. Default is `en`. Examples: `en`, `es`, `fr`, `de`, `ja`, `zh`, `ko`, etc. See [Typesense supported languages](https://typesense.org/docs/latest/api/search.html#supported-languages) for full list. |
 
 ## SAML
 

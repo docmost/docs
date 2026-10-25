@@ -1,11 +1,13 @@
 ---
+sidebar_position: 1
 tags:
-   - Enterprise
+    - business
+    - enterprise
 ---
 
 # AI-Suche einrichten
 
-Die AI-gestützte Suche und der AI Chat in Docmost verwenden Vektor-Embeddings, um eine semantische Suche über Ihren gesamten Arbeitsbereich zu ermöglichen. Dies ist eine Enterprise-Funktion, die einen gültigen Lizenzschlüssel erfordert.
+Die AI-gestützte Suche verwendet Vektor-Embeddings für die semantische Suche im Arbeitsbereich. KI-Chat kann diesen Index ebenfalls nutzen, um relevante Seiten zu finden. Diese kostenpflichtige Funktion erfordert einen gültigen Lizenzschlüssel. Informationen zur Konfiguration und Aktivierung des Chats finden Sie unter [KI-Chat einrichten](/self-hosting/ai/ai-chat).
 
 ## Voraussetzungen
 

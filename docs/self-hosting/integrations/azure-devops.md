@@ -6,7 +6,7 @@ tags:
 
 # Azure DevOps
 
-Configure a Microsoft Entra app for Azure DevOps previews in Docmost.
+Preview Azure DevOps work items and pull requests.
 
 ## Set up
 
@@ -16,8 +16,10 @@ Configure a Microsoft Entra app for Azure DevOps previews in Docmost.
 2. Add a [Web redirect URI](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-redirect-uri):
 
    ```text
-   <APP_URL>/api/integrations/oauth/azure_devops/callback
+   https://docmost.example.com/api/integrations/oauth/azure_devops/callback
    ```
+
+   Replace `https://docmost.example.com` with your Docmost URL (`APP_URL`).
 
 3. Copy the **Application (client) ID** and **Directory (tenant) ID**. [Create a client secret](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-credentials) and copy its **Value**.
 4. In the app's API permissions, add **Azure DevOps** delegated permissions `vso.work` and `vso.code`, both read permissions. Grant admin consent if your directory blocks user consent. See [Microsoft's Azure DevOps setup guidance](https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/entra-oauth?view=azure-devops).
@@ -32,27 +34,38 @@ INTEGRATION_MICROSOFT_TENANT_ID=<tenant-id>
 
 Set `APP_URL` to your Docmost base address, without a path, and restart Docmost. The tenant ID must be the directory ID connected to the Azure DevOps organization. A single-tenant app requires this variable; leaving it unset uses Microsoft's `organizations` endpoint.
 
-## Microsoft Entra client secret renewal
+Then [install Azure DevOps in your workspace](/self-hosting/integrations#install-and-connect).
+
+## Connect your account
+
+Open **Settings** > **Account** > **Connections**, choose **Connect** beside **Azure DevOps**, and sign in with your work account. The account must belong to the organization's Microsoft Entra directory and be a user in the Azure DevOps organization.
+
+## Supported links
+
+| Link | Example |
+|------|---------|
+| Work item | `https://dev.azure.com/<org>/<project>/_workitems/edit/5` |
+| Pull request | `https://dev.azure.com/<org>/<project>/_git/<repo>/pullrequest/42` |
+| Board with an open work item | `https://dev.azure.com/<org>/<project>/_boards/board/t/<team>/<board>?workitem=5` |
+| Backlog with an open work item | `https://dev.azure.com/<org>/<project>/_backlogs/backlog/<team>?workitem=5` |
+| Sprint with an open work item | `https://dev.azure.com/<org>/<project>/_sprints/taskboard/<team>?workitem=5` |
+| Legacy host | `https://<org>.visualstudio.com/DefaultCollection/<project>/_workitems/edit/5` |
+
+## Renew the client secret
 
 Before the Microsoft Entra client secret expires, create a new client secret in the same Entra app registration. Set `INTEGRATION_MICROSOFT_CLIENT_SECRET` to its **Value** and restart Docmost. Leave Docmost's `APP_SECRET` unchanged.
 
-## Install in a workspace
-
-After setup, a workspace admin can [install Azure DevOps](/user-guide/integrations#install-and-connect). Members then [connect their own accounts](/user-guide/integrations/azure-devops#connect-your-account).
-
 ## Troubleshooting
 
-| Symptom | Cause | Fix |
-|---------|-------|-----|
-| **Install** fails with `Missing environment variable` | App credentials are missing | Set the Microsoft client ID and secret variables above, then restart. |
-| **OAuth connection failed. Please try again.** | The Microsoft Entra client secret, callback, or authorization may be wrong | Check the server log for `OAuth callback for azure_devops returned no code` or `Token exchange failed for azure_devops`. Use the Microsoft error to identify the cause. |
-| Microsoft reports `AADSTS50194` | A single-tenant app is using a shared authority | Set `INTEGRATION_MICROSOFT_TENANT_ID` to the connected directory ID and restart. |
-| Microsoft reports `AADSTS50011` | Redirect URI mismatch | Match the Web redirect URI to the callback above and check `APP_URL`. |
-| Microsoft reports `AADSTS65001` or requests admin approval | Consent is missing or blocked | Ask the Entra admin to grant consent for the configured permissions, then connect again. |
-| Microsoft reports `AADSTS650052`, saying the directory lacks a service principal for Azure DevOps | No Azure DevOps organization has been connected to that directory | In Azure DevOps **Organization settings** > **Microsoft Entra ID**, [connect the organization to the directory](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops). Use that directory's tenant ID. |
-| **Connected**, but cards have no details; Azure DevOps returns a bare 401 | The account is personal, belongs to the wrong directory, or is not a user in the organization | Sign in with the work account that belongs to the connected directory and organization. A resource 401 does not expire the Docmost connection. Access refusals appear only in debug logs. |
-| Cards stop loading; the log says `Token refresh failed for azure_devops` with `invalid_client` | The Microsoft Entra client secret is wrong or expired | Set `INTEGRATION_MICROSOFT_CLIENT_SECRET` to the new Entra client secret's **Value** and restart Docmost. Existing connections can resume if their refresh tokens remain valid. |
-| **Connection expired**; the refresh log shows `invalid_grant` or `interaction_required` | Microsoft requires fresh authorization | Choose **Reconnect**. Ask the Entra admin to check sign-in and conditional access policies if it repeats. |
-| The server warns that `INTEGRATION_MICROSOFT_TENANT_ID is not a tenant id or domain` | The value has an invalid format | Set the directory ID without quotes or a URL, then restart. |
+| Problem | What to do |
+|---------|------------|
+| `AADSTS50194`: single-tenant app using a shared authority | Set `INTEGRATION_MICROSOFT_TENANT_ID` to the organization's directory ID and restart. |
+| `AADSTS50011`: redirect URI mismatch | Match the Web redirect URI to the callback above and check `APP_URL`. |
+| `AADSTS65001` or admin approval required | Ask the Entra admin to grant consent for the configured permissions, then connect again. |
+| `AADSTS650052`: directory lacks an Azure DevOps service principal | In Azure DevOps **Organization settings** > **Microsoft Entra ID**, [connect the organization to the directory](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops). Use that directory's tenant ID. |
+| Connected, but previews fail with HTTP 401 | Check that the member uses a work account in the correct directory and has access to the Azure DevOps organization. |
+| `Token refresh failed for azure_devops` with `invalid_client` | [Renew the client secret](#renew-the-client-secret). Existing connections can resume if their refresh tokens remain valid. |
+| **Connection expired** with `invalid_grant` or `interaction_required` | Choose **Reconnect**. If it repeats, ask the Entra admin to check sign-in and conditional access policies. |
+| `INTEGRATION_MICROSOFT_TENANT_ID is not a tenant id or domain` | Set the tenant ID to the directory ID without quotes or a URL, then restart. |
 
 Microsoft documents its [sign-in error codes](https://learn.microsoft.com/en-us/entra/identity-platform/reference-error-codes).

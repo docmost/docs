@@ -1,14 +1,13 @@
 ---
 sidebar_position: 14
+tags:
+  - business
+  - enterprise
 ---
 
 # Multi-Factor Authentication (MFA)
 
 Multi-factor authentication adds an extra layer of security to your account by requiring a verification code in addition to your password when signing in.
-
-:::note
-A valid Business or Enterprise license is required to unlock this feature.
-:::
 
 ## Supported Methods
 

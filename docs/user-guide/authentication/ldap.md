@@ -1,13 +1,11 @@
 ---
 sidebar_position: 4
 tags:
-   - Enterprise
+  - Business
+  - Enterprise
 ---
 
 # LDAP
-**Edition:** Enterprise
-
-## Overview
 
 Docmost supports LDAP (Lightweight Directory Access Protocol) authentication, allowing users to sign in using their existing corporate directory credentials.
 

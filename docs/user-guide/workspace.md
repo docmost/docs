@@ -29,4 +29,4 @@ Each space within the workspace can define its own set of permissions:
 
 ### Integrations
 
-Workspace admins install and uninstall providers from **Settings** > **Integrations**. Each member connects their own account from **Settings** > **Account** > **Connections** to see link previews. See [Integrations](./integrations/index.md) for setup and supported providers.
+Workspace admins install and uninstall providers from **Settings** > **Integrations**. Each member connects their own account from **Settings** > **Account** > **Connections** to see link previews. See [Integrations](/self-hosting/integrations) for setup and supported providers.

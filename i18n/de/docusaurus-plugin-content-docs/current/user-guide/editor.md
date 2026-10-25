@@ -71,6 +71,12 @@ Geben Sie `/` in einer neuen Zeile ein, um das Menü der Slash-Befehle zu öffne
 | **Google Sheets** | Betten Sie Google Sheets ein |
 | **Google Docs** | Betten Sie Google Docs ein |
 
+## Integrationslinks {#integration-links}
+
+Nachdem ein Administrator eine [Integration installiert hat](/self-hosting/integrations#install-and-connect), fügen Sie einen unterstützten Link in einen Absatz ein. Wählen Sie unter **Einfügen als** die Option **Karte**, **Erwähnung** oder **URL**. Wählen Sie später eine Karte oder Erwähnung aus, um die Darstellung über **Anzeigen als** zu ändern.
+
+Jeder Leser verbindet sein eigenes Anbieterkonto, um Vorschauen zu sehen. Leser ohne Zugriff sehen nur Informationen aus der URL. Unterstützte Links und Einrichtungsschritte finden Sie in den [Integrationsanleitungen](/self-hosting/integrations).
+
 ## Formatierungsleiste
 
 Wählen Sie Text aus, um die schwebende Formatierungsleiste anzuzeigen. Die Leiste bietet schnellen Zugriff auf:
@@ -88,7 +94,7 @@ Wählen Sie Text aus, um die schwebende Formatierungsleiste anzuzeigen. Die Leis
 - **Hervorhebungsfarbe** - Wählen Sie aus einer Palette von Hintergrund-Hervorhebungsfarben
 - **Kommentar** - Fügen Sie einen Inline-Kommentar zum ausgewählten Text hinzu
 
-## @-Erwähnungen
+## @-Erwähnungen {#mentions}
 
 Geben Sie `@` im Editor ein, um das Erwähnungsmenü zu öffnen. Das Menü zeigt zwei Abschnitte:
 

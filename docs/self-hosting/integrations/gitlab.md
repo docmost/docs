@@ -7,7 +7,7 @@ tags:
 
 # GitLab
 
-Configure a GitLab OAuth application for Docmost.
+Preview projects, merge requests, issues, commits, and project lists.
 
 ## Set up
 
@@ -15,8 +15,10 @@ Configure a GitLab OAuth application for Docmost.
 2. Add this redirect URI and select the `read_api` and `read_user` scopes:
 
    ```text
-   <APP_URL>/api/integrations/oauth/gitlab/callback
+   https://docmost.example.com/api/integrations/oauth/gitlab/callback
    ```
+
+   Replace `https://docmost.example.com` with your Docmost URL (`APP_URL`).
 
 3. Copy the application ID and secret. Set these on the Docmost server:
 
@@ -30,15 +32,21 @@ Configure a GitLab OAuth application for Docmost.
    Setting `INTEGRATION_GITLAB_URL` replaces GitLab.com support with your self-managed instance.
 
 4. Set `APP_URL` to your Docmost base address, without a path, and restart Docmost.
+5. [Install GitLab in your workspace](/self-hosting/integrations#install-and-connect).
 
-## Install in a workspace
+## Connect your account
 
-After setup, a workspace admin can [install GitLab](/user-guide/integrations#install-and-connect). Members then [connect their own accounts](/user-guide/integrations/gitlab#connect-your-account).
+Open **Settings** > **Account** > **Connections**, choose **Connect** beside **GitLab**, and sign in.
 
-## Troubleshooting
+## Supported links
 
-| Symptom | Cause | Fix |
-|---------|-------|-----|
-| **Install** fails with `Missing environment variable` | App credentials are missing | Set `INTEGRATION_GITLAB_CLIENT_ID` and `INTEGRATION_GITLAB_CLIENT_SECRET`, then restart. |
-| **OAuth connection failed. Please try again.** | The redirect URI, credentials, or allowed scopes may be wrong | Check the app's redirect URI, ID, secret, `read_api`, and `read_user`. The server log's `Token exchange failed for gitlab` message gives the provider's error. |
-| Self-managed links stay normal links | The configured host is wrong | Check `INTEGRATION_GITLAB_URL` and restart. An invalid URL logs a warning and falls back to GitLab.com. |
+| Link | Example |
+|------|---------|
+| Project | `https://gitlab.com/example-group/docs` |
+| Merge request | `https://gitlab.com/example-group/docs/-/merge_requests/42` |
+| Issue or work item | `https://gitlab.com/example-group/docs/-/issues/12`, `https://gitlab.com/example-group/docs/-/work_items/12` |
+| Commit | `https://gitlab.com/example-group/docs/-/commit/a1b2c3d` |
+| Commit in a merge request | `https://gitlab.com/example-group/docs/-/merge_requests/42/diffs?commit_id=a1b2c3d` |
+| Issues or merge requests list | `https://gitlab.com/example-group/docs/-/issues`, `https://gitlab.com/example-group/docs/-/merge_requests` |
+
+Links copied from an open work item drawer are also recognized when they include GitLab's `?show=` value.

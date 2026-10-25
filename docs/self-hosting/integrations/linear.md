@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Linear
 
-Configure a Linear OAuth application for Docmost.
+Preview Linear issues, projects, initiatives, and views.
 
 ## Set up
 
@@ -12,8 +12,10 @@ Configure a Linear OAuth application for Docmost.
 2. Add this redirect callback URL. Docmost requests the `read` scope:
 
    ```text
-   <APP_URL>/api/integrations/oauth/linear/callback
+   https://docmost.example.com/api/integrations/oauth/linear/callback
    ```
+
+   Replace `https://docmost.example.com` with your Docmost URL (`APP_URL`).
 
 3. Copy the client ID and secret. Set these on the Docmost server:
 
@@ -23,14 +25,19 @@ Configure a Linear OAuth application for Docmost.
    ```
 
 4. Set `APP_URL` to your Docmost base address, without a path, and restart Docmost.
+5. [Install Linear in your workspace](/self-hosting/integrations#install-and-connect).
 
-## Install in a workspace
+## Connect your account
 
-After setup, a workspace admin can [install Linear](/user-guide/integrations#install-and-connect). Members then [connect their own accounts](/user-guide/integrations/linear#connect-your-account).
+Open **Settings** > **Account** > **Connections**, choose **Connect** beside **Linear**, and sign in.
 
-## Troubleshooting
+## Supported links
 
-| Symptom | Cause | Fix |
-|---------|-------|-----|
-| **Install** fails with `Missing environment variable` | App credentials are missing | Set `INTEGRATION_LINEAR_CLIENT_ID` and `INTEGRATION_LINEAR_CLIENT_SECRET`, then restart. |
-| **OAuth connection failed. Please try again.** | App credentials or callback URL may be wrong | Check the client ID, secret, and registered redirect URL. The server log's `Token exchange failed for linear` message gives the provider's error. |
+| Link | Example |
+|------|---------|
+| Issue | `https://linear.app/example-team/issue/DOC-12/update-the-guide` |
+| Project | `https://linear.app/example-team/project/documentation-a1b2c3d4e5f6/overview` |
+| Initiative | `https://linear.app/example-team/initiative/onboarding-a1b2c3d4e5f6/overview` |
+| View | `https://linear.app/example-team/view/assigned-a1b2c3d4e5f6` |
+
+View links display a label based on the URL rather than a full preview.

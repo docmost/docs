@@ -27,3 +27,7 @@ Jeder Bereich innerhalb des Arbeitsbereichs kann seine eigenen Berechtigungen de
 - **Bearbeiten**: Kann Inhalte innerhalb des Bereichs ändern, aber keine Mitglieder verwalten.
 - **Ansehen**: Lesezugriff auf die Inhalte des Bereichs.
 
+### Integrationen {#integrations}
+
+Arbeitsbereich-Administratoren installieren und deinstallieren Anbieter unter **Einstellungen** > **Integrationen**. Jedes Mitglied verbindet sein eigenes Konto unter **Einstellungen** > **Konto** > **Verbindungen**, um Link-Vorschauen zu sehen. Einrichtung und unterstützte Anbieter finden Sie unter [Integrationen](/self-hosting/integrations).
+

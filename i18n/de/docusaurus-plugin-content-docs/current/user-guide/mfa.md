@@ -1,14 +1,13 @@
 ---
 sidebar_position: 14
+tags:
+  - business
+  - enterprise
 ---
 
 # Multi-Faktor-Authentifizierung (MFA)
 
 Die Multi-Faktor-Authentifizierung fügt Ihrem Konto eine zusätzliche Sicherheitsebene hinzu, indem beim Anmelden zusätzlich zu Ihrem Passwort ein Verifizierungscode erforderlich ist.
-
-:::note
-MFA ist eine Enterprise-Funktion. Eine aktive Enterprise-Lizenz ist erforderlich.
-:::
 
 ## Unterstützte Methoden
 

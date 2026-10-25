@@ -114,7 +114,7 @@ AI_COMPLETION_MODEL=qwen2.5:7b
 
 ## Suche
 
-Standardmäßig verwendet Docmost die Datenbank für die Volltextsuche. In der Enterprise Edition können Sie optional Typesense als Suchtreiber konfigurieren, um die Suchleistung und Relevanz zu verbessern.
+Standardmäßig verwendet Docmost die Datenbank für die Volltextsuche. In den kostenpflichtigen Editionen können Sie optional Typesense als Suchtreiber konfigurieren, um die Suchleistung und Relevanz zu verbessern.
 
 ### Typesense verwenden
 Sie können den Typesense-Compose-Dienst zu Ihrer bestehenden Docmost-Datei docker-compose.yml hinzufügen.
@@ -158,6 +158,12 @@ Wenn `IFRAME_EMBED_ALLOWED=true` gesetzt ist und keine Zulassungsliste angegeben
 IFRAME_EMBED_ALLOWED=true
 IFRAME_ALLOWED_ORIGINS=https://intranet.example.com,https://portal.example.com
 ```
+
+## Integrationen {#integrations}
+
+Die [Integrationsanleitungen](/self-hosting/integrations) beschreiben die Anbietereinrichtung, die Installation im Arbeitsbereich und das Verbinden von Konten für Link-Vorschauen aus externen Tools.
+
+Die Konfigurationsreferenz finden Sie unter [Umgebungsvariablen für Integrationen](/self-hosting/environment-variables#integrations).
 
 ## Telemetrie
 Wir erfassen anonym die aktive Version, die Anzahl der Benutzer, die Anzahl der Seiten sowie die Anzahl der Bereiche und Arbeitsbereiche.

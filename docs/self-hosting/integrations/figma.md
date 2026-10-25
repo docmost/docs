@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Figma
 
-Configure a Figma OAuth app for Docmost.
+Preview Figma design files, prototypes, and FigJam boards.
 
 ## Set up
 
@@ -12,8 +12,10 @@ Configure a Figma OAuth app for Docmost.
 2. Add this redirect URL and select the [`file_metadata:read` scope](https://developers.figma.com/docs/rest-api/scopes/):
 
    ```text
-   <APP_URL>/api/integrations/oauth/figma/callback
+   https://docmost.example.com/api/integrations/oauth/figma/callback
    ```
+
+   Replace `https://docmost.example.com` with your Docmost URL (`APP_URL`).
 
 3. Publish the app. A private app serves its team or organization. A public app needs Figma approval before other users can authorize it. A draft app is limited to testing by its owner and plan admins.
 4. Set these on the Docmost server:
@@ -24,15 +26,19 @@ Configure a Figma OAuth app for Docmost.
    ```
 
 5. Set `APP_URL` to your Docmost base address, without a path, and restart Docmost.
+6. [Install Figma in your workspace](/self-hosting/integrations#install-and-connect).
 
-## Install in a workspace
+## Connect your account
 
-After setup, a workspace admin can [install Figma](/user-guide/integrations#install-and-connect). Members then [connect their own accounts](/user-guide/integrations/figma#connect-your-account).
+Open **Settings** > **Account** > **Connections**, choose **Connect** beside **Figma**, and sign in.
 
-## Troubleshooting
+If you cannot authorize the app, ask an admin to check its [publishing settings](#set-up).
 
-| Symptom | Cause | Fix |
-|---------|-------|-----|
-| **Install** fails with `Missing environment variable` | App credentials are missing | Set `INTEGRATION_FIGMA_CLIENT_ID` and `INTEGRATION_FIGMA_CLIENT_SECRET`, then restart. |
-| Other members cannot authorize the app | The app is in draft, or its audience excludes them | Publish privately for the associated team or organization, or publish publicly and complete Figma's review. |
-| **OAuth connection failed. Please try again.** | Credentials, callback URL, or token exchange may be failing | Check the app's credentials and redirect URL. If correct, send the server log's `Token exchange failed for figma` error to Docmost support. |
+## Supported links
+
+| Link | Example |
+|------|---------|
+| Design | `https://www.figma.com/design/AbCdEfGhIjKlMnOpQrStUv/Onboarding` |
+| File | `https://www.figma.com/file/AbCdEfGhIjKlMnOpQrStUv/Onboarding` |
+| Prototype | `https://www.figma.com/proto/AbCdEfGhIjKlMnOpQrStUv/Onboarding` |
+| FigJam board | `https://www.figma.com/board/AbCdEfGhIjKlMnOpQrStUv/Planning` |

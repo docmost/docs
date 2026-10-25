@@ -1,12 +1,11 @@
 ---
 sidebar_position: 2
 tags:
-   - Enterprise
+  - Business
+  - Enterprise
 ---
 
 # SAML
-
-**Edition:** Enterprise
 
 Docmost unterstützt die Authentifizierung über die Security Assertion Markup Language (SAML 2.0) und ermöglicht so die Integration mit Identitätsanbietern (IdPs), die das SAML-Protokoll unterstützen.
 <p align="center">

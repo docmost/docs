@@ -1,25 +1,59 @@
 ---
 sidebar_position: 12
 tags:
+  - business
   - enterprise
 ---
 
 # AI
 
-Docmost enthält AI-gestützte Funktionen, die Ihnen beim Schreiben, Bearbeiten und Durchsuchen der Inhalte Ihres Arbeitsbereichs helfen. AI-Funktionen sind in zwei Bereichen verfügbar: im Editor (Ask AI) und in der Suche (AI Answers). Da Docmost selbst gehostet wird, können Sie wählen, ob Sie cloudbasierte AI-Modelle (OpenAI, Google Gemini) oder lokale LLMs (über Ollama) verwenden möchten — so behalten Sie die volle Kontrolle über Ihre Daten.
+Docmost bietet KI-Funktionen zum Schreiben, Bearbeiten und Durchsuchen der Inhalte Ihres Arbeitsbereichs: **KI fragen (Ask AI)** im Editor, **KI-Antworten (AI Answers)** in der Suche und **KI-Chat** für Gespräche über Ihren Arbeitsbereich. Selbst gehostete Instanzen können OpenAI, OpenAI-kompatible Anbieter, Google Gemini oder lokale Modelle über Ollama verwenden.
 
 :::note
-AI ist eine Enterprise-Funktion. Eine aktive Enterprise-Lizenz ist erforderlich. AI-Funktionen erfordern außerdem, dass ein AI-Anbieter von einem Arbeitsbereich-Administrator konfiguriert wird. Informationen zur Anbieterkonfiguration finden Sie im Leitfaden [AI Search Setup](/self-hosting/ai/ai-search).
+KI-Funktionen sind in den Editionen Business und Enterprise verfügbar. Selbst gehostete Instanzen benötigen eine gültige Lizenz und einen konfigurierten KI-Anbieter. Siehe [AI-Suche einrichten](/self-hosting/ai/ai-search) und [KI-Chat einrichten](/self-hosting/ai/ai-chat).
 :::
 
 ## AI-Einstellungen (Admin)
 
-Arbeitsbereich-Administratoren können AI-Funktionen unter **Einstellungen** > **AI settings** aktivieren oder deaktivieren. Es gibt zwei unabhängige Schalter:
+Arbeitsbereich-Administratoren können KI-Funktionen unter **Einstellungen** > **KI-Einstellungen** aktivieren oder deaktivieren:
 
-- **AI-powered search (AI Answers)** — Verwendet Vektor-Embeddings, um semantische Suchfunktionen über die Inhalte Ihres Arbeitsbereichs hinweg bereitzustellen. Wenn aktiviert, können Benutzer im Suchdialog Fragen in natürlicher Sprache stellen und erhalten AI-generierte Antworten basierend auf den Seiten des Arbeitsbereichs.
-- **Generative AI (Ask AI)** — Aktiviert AI-gestützte Inhaltserstellung im Editor. Wenn aktiviert, können Benutzer Text direkt im Editor generieren, verbessern, übersetzen und transformieren.
+- **KI-unterstützte Suche (KI-Antworten)** — Verwendet Vektor-Embeddings für die semantische Suche in den Inhalten des Arbeitsbereichs. Benutzer können im Suchdialog Fragen in natürlicher Sprache stellen und erhalten KI-generierte Antworten auf Grundlage der Seiten des Arbeitsbereichs.
+- **Generative KI (KI fragen)** — Aktiviert die KI-gestützte Inhaltserstellung im Editor. Benutzer können Texte direkt im Editor erstellen, verbessern, übersetzen und umformen.
+- **KI-Chat** — Ermöglicht Gespräche mit der KI, um Informationen zu finden, Folgefragen zu stellen und Seiten zu erstellen oder zu bearbeiten.
 
-Jede Funktion kann unabhängig ein- oder ausgeschaltet werden.
+Jede Funktion kann unabhängig ein- oder ausgeschaltet werden. Der Schalter für die KI-gestützte Suche wird nur auf selbst gehosteten Instanzen angezeigt. Zusätzliche [KI-Chat-Einstellungen](/self-hosting/ai/ai-chat#admin-controls) sind mit Enterprise und Cloud Business verfügbar.
+
+## KI-Chat {#ai-chat}
+
+Mit KI-Chat können Sie Fragen zu Ihrem Arbeitsbereich stellen und das Gespräch mit Folgefragen fortsetzen. KI-Chat kann Seiten finden und zusammenfassen, Fragen zu ihren Inhalten beantworten und Seiten für Sie erstellen oder aktualisieren.
+
+### Chat starten {#start-a-chat}
+
+1. Klicken Sie in der oberen Navigation auf **KI-Chat**.
+2. Geben Sie eine Frage ein, zum Beispiel „Wie läuft unser Onboarding ab?“
+3. Drücken Sie die Eingabetaste oder klicken Sie auf die Schaltfläche zum Senden.
+4. Stellen Sie Folgefragen im selben Chat. Mit Umschalt + Eingabetaste fügen Sie einen Zeilenumbruch ein.
+
+Wenn Sie KI-Chat beim Anzeigen einer Seite öffnen, erscheint er in einem Seitenbereich. Die aktuelle Seite wird als Kontext für das neue Gespräch hinzugefügt. Sie können die Seite vor dem Senden aus dem Eingabefeld entfernen. Verwenden Sie die Schnellaktionen **Diese Seite zusammenfassen**, **Diese Seite übersetzen** oder **Für Erkenntnisse analysieren**. Mit **Ganze Seite öffnen** setzen Sie das Gespräch in der vollständigen Chat-Ansicht fort.
+
+### Seiten und Dateien hinzufügen {#add-pages-and-files}
+
+Geben Sie `@` ein und wählen Sie eine Seite aus, um sie in Ihre Frage einzubeziehen. Alternativ können Sie **+** > **Eine Seite einfügen** verwenden.
+
+Um Fragen zu einer Datei zu stellen, wählen Sie **+** > **Dateien hinzufügen**. Sie können bis zu fünf Dateien pro Nachricht anhängen: PDF, Word (`.docx`), Text, CSV, Markdown und Bilder (`.png`, `.jpg`, `.jpeg`, `.webp`). Das konfigurierte Modell muss Bildeingaben unterstützen, um Bilder auswerten zu können.
+
+### Seiten erstellen und bearbeiten {#create-and-edit-pages}
+
+Bitten Sie KI-Chat, eine Seite in einem bestimmten Bereich zu erstellen oder eine vorhandene Seite zu aktualisieren. Zum Beispiel:
+
+- „Erstelle im Bereich Personal eine Seite mit dem Titel Onboarding-Checkliste auf Grundlage dieser Notizen.“
+- „Füge am Ende dieser Seite eine Zusammenfassung hinzu.“ Erwähnen Sie die Seite mit `@`, um sie anzugeben.
+
+KI-Chat kann nur Seiten lesen, auf die Sie Zugriff haben, und nur dort Seiten erstellen oder bearbeiten, wo Sie die nötigen Berechtigungen haben. Wenn ein Administrator die Option **Schreibgeschützter Modus** aktiviert, kann KI-Chat Inhalte im Chat entwerfen, aber keine Änderungen an Seiten speichern.
+
+### Chatverlauf {#chat-history}
+
+Gespräche werden in Ihrem Konto gespeichert. In der vollständigen Chat-Ansicht können Sie über die Seitenleiste frühere Chats öffnen oder durchsuchen. Über das Menü eines Chats können Sie ihn umbenennen oder löschen. Klicken Sie auf **Neuer Chat**, um ein neues Gespräch zu starten. Im Seitenbereich öffnen Sie den Verlauf durch einen Klick auf den Chattitel.
 
 ## Ask AI (Editor)
 
