@@ -157,11 +157,38 @@ If you encounter any issues, feel free to create a discussion on the [GitHub rep
 
 ## Upgrade
 
-To upgrade to the latest Docmost version, run the following commands:
+Run the commands below from the directory containing `docker-compose.yml`.
+
+### Using latest
+
+If your image is `docmost/docmost:latest`, run:
 
 ```shell
-docker pull docmost/docmost:latest
-docker compose up --force-recreate --build docmost -d
+docker compose pull docmost
+docker compose up -d --force-recreate docmost
+```
+
+### Using a specific version
+
+Change the `docmost` image tag in `docker-compose.yml` to the version you want to install. See [GitHub Releases](https://github.com/docmost/docmost/releases) for available versions.
+
+For example, to upgrade from `0.96.0` to `0.97.0`, change:
+
+```yaml
+image: docmost/docmost:0.96.0
+```
+
+to:
+
+```yaml
+image: docmost/docmost:0.97.0
+```
+
+Save the file, then run:
+
+```shell
+docker compose pull docmost
+docker compose up -d --force-recreate docmost
 ```
 
 ## Helpful docker commands

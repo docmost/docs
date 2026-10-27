@@ -157,11 +157,38 @@ Wenn Sie auf Probleme stoßen, können Sie gerne eine Diskussion im [GitHub-Repo
 
 ## Aktualisierung
 
-Um auf die neueste Docmost-Version zu aktualisieren, führen Sie die folgenden Befehle aus:
+Führen Sie die folgenden Befehle im Verzeichnis aus, das `docker-compose.yml` enthält.
+
+### Mit latest {#using-latest}
+
+Wenn Ihr Image `docmost/docmost:latest` ist, führen Sie folgende Befehle aus:
 
 ```shell
-docker pull docmost/docmost:latest
-docker compose up --force-recreate --build docmost -d
+docker compose pull docmost
+docker compose up -d --force-recreate docmost
+```
+
+### Mit einer bestimmten Version {#using-a-specific-version}
+
+Ändern Sie den Image-Tag des Dienstes `docmost` in `docker-compose.yml` auf die gewünschte Version. Verfügbare Versionen finden Sie unter [GitHub Releases](https://github.com/docmost/docmost/releases).
+
+Um beispielsweise von `0.96.0` auf `0.97.0` zu aktualisieren, ändern Sie:
+
+```yaml
+image: docmost/docmost:0.96.0
+```
+
+zu:
+
+```yaml
+image: docmost/docmost:0.97.0
+```
+
+Speichern Sie die Datei und führen Sie anschließend folgende Befehle aus:
+
+```shell
+docker compose pull docmost
+docker compose up -d --force-recreate docmost
 ```
 
 ## Nützliche Docker-Befehle
