@@ -15,7 +15,7 @@ So erstellen Sie eine neue Seite:
 3. Klicken Sie auf den Titelbereich, um Ihrer Seite einen Namen zu geben.
 4. Beginnen Sie im Textbereich zu schreiben. Geben Sie `/` ein, um auf die Slash-Befehle zuzugreifen.
 
-Um mit wiederverwendbaren Inhalten zu beginnen, verwenden Sie eine [Seitenvorlage](/user-guide/pages/page-templates).
+Um mit wiederverwendbaren Inhalten zu beginnen, verwenden Sie eine [Seitenvorlage](/user-guide/pages/templates).
 
 ### Eine Unterseite erstellen
 
