@@ -15,7 +15,7 @@ To create a new page:
 3. Click the title area to give your page a name.
 4. Start writing in the body area. Type `/` to access slash commands.
 
-To start with reusable content, use a [page template](/user-guide/pages/page-templates).
+To start with reusable content, use a [page template](/user-guide/pages/templates).
 
 ### Creating a Sub-page
 
