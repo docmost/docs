@@ -70,10 +70,11 @@ Geben Sie `/` in einer neuen Zeile ein, um das Menü der Slash-Befehle zu öffne
 | **Google Drive** | Betten Sie Google-Drive-Inhalte ein |
 | **Google Sheets** | Betten Sie Google Sheets ein |
 | **Google Docs** | Betten Sie Google Docs ein |
+| **SharePoint-Datei** | Betten Sie SharePoint- oder OneDrive-Dateien ein. Erfordert die [Microsoft-365-Integration](/self-hosting/integrations/microsoft-365) |
 
 ## Integrationslinks {#integration-links}
 
-Nachdem ein Administrator eine [Integration installiert hat](/self-hosting/integrations#install-and-connect), fügen Sie einen unterstützten Link in einen Absatz ein. Wählen Sie unter **Einfügen als** die Option **Karte**, **Erwähnung** oder **URL**. Wählen Sie später eine Karte oder Erwähnung aus, um die Darstellung über **Anzeigen als** zu ändern.
+Nachdem ein Administrator eine [Integration installiert hat](/self-hosting/integrations#install-and-connect), fügen Sie einen unterstützten Link in einen Absatz ein. Wählen Sie unter **Einfügen als** die Option **Karte**, **Erwähnung** oder **URL**. Bei SharePoint- und OneDrive-Dateien steht außerdem **Einbetten** zur Wahl. Wählen Sie später eine Karte oder Erwähnung aus, um die Darstellung über **Anzeigen als** zu ändern.
 
 Jeder Leser verbindet sein eigenes Anbieterkonto, um Vorschauen zu sehen. Leser ohne Zugriff sehen nur Informationen aus der URL. Unterstützte Links und Einrichtungsschritte finden Sie in den [Integrationsanleitungen](/self-hosting/integrations).
 

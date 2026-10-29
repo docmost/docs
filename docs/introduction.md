@@ -38,7 +38,7 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
   - Notion import
   - Confluence import
   - PDF & DOCX import
-- **Integrations**: (GitHub, GitLab, Jira, Azure Devops, Linear, Figma)
+- **Integrations**: (GitHub, GitLab, Jira, Azure DevOps, Linear, Figma, Microsoft 365)
 - **Print to PDF**: Generate PDF versions of pages using the browser print dialog.
 - **@ Mentions**: Mention team members and link to pages directly in the editor.
 - **Markdown Shortcuts**: Type Markdown syntax directly in the editor and it converts to rich text automatically.

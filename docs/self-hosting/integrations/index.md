@@ -19,7 +19,7 @@ You can also connect from a preview's **Connect** button. Hover over a mention t
 
 ## Cards and mentions
 
-Paste a supported URL into a paragraph. In **Paste as**, choose **Card**, **Mention**, or **URL**. To change it later, select the card or mention and use **Display as**.
+Paste a supported URL into a paragraph. In **Paste as**, choose **Card**, **Mention**, or **URL**. To change it later, select the card or mention and use **Display as**. SharePoint and OneDrive files can also be [embedded](/self-hosting/integrations/microsoft-365#add-files-to-a-page).
 
 | Reader | What appears |
 |--------|--------------|

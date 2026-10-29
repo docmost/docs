@@ -70,10 +70,11 @@ Type `/` on a new line to open the slash command menu. You can also type to filt
 | **Google Drive** | Embed Google Drive content |
 | **Google Sheets** | Embed Google Sheets |
 | **Google Docs** | Embed Google Docs |
+| **SharePoint file** | Embed SharePoint or OneDrive files. Requires the [Microsoft 365 integration](/self-hosting/integrations/microsoft-365) |
 
 ## Integration Links
 
-After an admin [installs an integration](/self-hosting/integrations#install-and-connect), paste a supported link into a paragraph. Choose **Card**, **Mention**, or **URL** in **Paste as**. Select a card or mention later to change **Display as**.
+After an admin [installs an integration](/self-hosting/integrations#install-and-connect), paste a supported link into a paragraph. Choose **Card**, **Mention**, or **URL** in **Paste as**. For SharePoint and OneDrive files, you can also choose **Embed**. Select a card or mention later to change **Display as**.
 
 Each reader connects their own provider account to see previews. Readers without access see only information from the URL. See the [integration guides](/self-hosting/integrations) for supported links and setup.
 

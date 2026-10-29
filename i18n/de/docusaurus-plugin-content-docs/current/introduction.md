@@ -38,7 +38,7 @@ Docmost unterstützt Bereiche. Sie können je nach Bedarf Bereiche für verschie
   - Notion-Import
   - Confluence-Import (Enterprise)
   - PDF- & DOCX-Import (Enterprise)
-- **Integrationen**: GitHub, GitLab, Jira, Azure DevOps, Linear und Figma.
+- **Integrationen**: GitHub, GitLab, Jira, Azure DevOps, Linear, Figma und Microsoft 365.
 - **Druck als PDF**: Erstellen Sie PDF-Versionen von Seiten über den Druckdialog des Browsers.
 - **@-Erwähnungen**: Erwähnen Sie Teammitglieder und verlinken Sie direkt im Editor auf Seiten.
 - **Markdown-Tastenkürzel**: Geben Sie Markdown-Syntax direkt im Editor ein, und sie wird automatisch in Rich Text umgewandelt.
