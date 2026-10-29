@@ -1,5 +1,6 @@
 ---
-sidebar_position: 7
+sidebar_position: 1.5
+slug: /user-guide/editor
 ---
 
 # Editor
@@ -113,7 +114,7 @@ The editor supports three diagram tools that you can insert via the `/` slash co
 - **Draw.io (diagrams.net)** - Create visual diagrams with a full-featured drag-and-drop editor.
 - **Excalidraw** - Create hand-drawn style whiteboard diagrams.
 
-For more details, see the [Diagrams](./diagrams) page.
+For more details, see the [Diagrams](/user-guide/diagrams) page.
 
 ## Anchors
 
