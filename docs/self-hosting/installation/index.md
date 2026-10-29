@@ -157,6 +157,8 @@ If you encounter any issues, feel free to create a discussion on the [GitHub rep
 
 ## Upgrade
 
+We recommend [backing up your database](/self-hosting/backups) before upgrading to a new release.
+
 Run the commands below from the directory containing `docker-compose.yml`.
 
 ### Using latest
