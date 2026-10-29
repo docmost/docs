@@ -1,5 +1,6 @@
 ---
-sidebar_position: 7
+sidebar_position: 1.5
+slug: /user-guide/editor
 ---
 
 # Editor
@@ -113,7 +114,7 @@ Der Editor unterstützt drei Diagramm-Tools, die Sie über das `/`-Slash-Befehls
 - **Draw.io (diagrams.net)** - Erstellen Sie visuelle Diagramme mit einem voll ausgestatteten Drag-and-Drop-Editor.
 - **Excalidraw** - Erstellen Sie Whiteboard-Diagramme im handgezeichneten Stil.
 
-Weitere Details finden Sie auf der Seite [Diagramme](./diagrams).
+Weitere Details finden Sie auf der Seite [Diagramme](/user-guide/diagrams).
 
 ## Anker
 

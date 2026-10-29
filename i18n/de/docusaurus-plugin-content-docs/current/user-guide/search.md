@@ -22,23 +22,35 @@ Es gibt mehrere Möglichkeiten, den Suchdialog zu öffnen:
 
 ## Filter
 
-Sie können Ihre Suchergebnisse mithilfe von zwei Filtern unterhalb des Suchfelds eingrenzen:
+Grenzen Sie die Ergebnisse mit den Filtern unterhalb des Suchfelds ein. Sie können Filter kombinieren.
 
 ### Bereichsfilter
 
-Klicken Sie auf das Dropdown-Menü **Space**, um auszuwählen, wo gesucht werden soll:
+Klicken Sie auf das Dropdown-Menü **Bereich**, um auszuwählen, wo gesucht werden soll:
 
-- **All spaces** – In allen Bereichen suchen, auf die Sie Zugriff haben.
-- **Specific space** – Ergebnisse auf einen einzelnen Bereich beschränken. Standardmäßig ist dies auf den Bereich eingestellt, den Sie gerade ansehen.
+- **Alle Bereiche** – In allen Bereichen suchen, auf die Sie Zugriff haben.
+- **Bestimmter Bereich** – Ergebnisse auf einen einzelnen Bereich beschränken. Standardmäßig ist dies auf den Bereich eingestellt, den Sie gerade ansehen.
 
-Das Dropdown-Menü enthält ein Suchfeld **Find a space**, um schnell den gewünschten Bereich zu finden.
+Das Dropdown-Menü enthält ein Suchfeld **Einen Bereich finden**, um schnell den gewünschten Bereich zu finden.
 
 ### Typfilter
 
-Klicken Sie auf das Dropdown-Menü **Type**, um nach Inhaltstyp zu filtern:
+Klicken Sie auf das Dropdown-Menü **Typ**, um nach Inhaltstyp zu filtern:
 
-- **Pages** – Seitentitel und -inhalte durchsuchen.
-- **Attachments** – Nach hochgeladenen Dateien und Anhängen suchen.
+- **Seiten** – Seitentitel und -inhalte durchsuchen.
+- **Anhänge** – Nach hochgeladenen Dateien und Anhängen suchen.
+
+### Nur Titel {#title-only}
+
+Klicken Sie auf **Nur Titel**, um Seitentitel oder Dateinamen von Anhängen zu durchsuchen.
+
+### Erstellerfilter {#creator-filter}
+
+Wählen Sie **Filter > Erstellt von**, um Seiten zu finden, die eine Person erstellt hat, oder Anhänge, die sie hochgeladen hat.
+
+### Beschriftungsfilter {#label-filter}
+
+Wählen Sie **Filter > Beschriftungen** und dann eine oder mehrere Beschriftungen. Die Ergebnisse enthalten Seiten mit mindestens einer der ausgewählten Beschriftungen. Unter [Seitenbeschriftungen](/user-guide/pages/labels#find-pages-by-label) erfahren Sie, wie Sie Beschriftungen zu einer Seite hinzufügen oder davon entfernen.
 
 ## AI Answers
 

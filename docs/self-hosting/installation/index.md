@@ -9,7 +9,7 @@ Docker is the recommended mode of installation. If you are a developer, you may 
 
 
 :::tip[Enterprise trial]
-Unlock enterprise features such as Bases, SSO, AI, Audit logs, and SCIM provisioning. Start an enterprise trial at [customers.docmost.com](https://customers.docmost.com/) to generate a license key.
+Unlock paid features such as Bases, SSO, AI, Audit logs, and SCIM provisioning. Start an enterprise trial at [customers.docmost.com](https://customers.docmost.com/) to generate a license key.
 :::
 
 ## Prerequisites
@@ -192,6 +192,12 @@ docker compose up -d --force-recreate docmost
 ```
 
 ## Helpful docker commands
+
+To view Docmost logs:
+
+```shell
+docker compose logs -f docmost
+```
 
 To stop the services:
 

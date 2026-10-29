@@ -34,6 +34,7 @@ At the top of every page you will find:
 - **Share** - Manage public sharing settings for the page (when enabled at the workspace level).
 - **Comments** - Open the comments panel to view, add, or resolve comments.
 - **Table of contents** - Open the table of contents sidebar, auto-generated from headings.
+- **Details (ⓘ)** - View page information, backlinks, and [labels](/user-guide/pages/labels).
 - **Page menu (...)** - Access additional page actions.
 
 ## Page Menu

@@ -22,7 +22,7 @@ Choose your preferred interface language. Docmost supports multiple languages. S
 
 Toggle this option to expand pages to the full width of the browser window. When disabled, pages are displayed with a centered, narrower content width for improved readability.
 
-This setting can also be toggled per page from the page menu (**...**) using the **Full width** option.
+You can also change this preference from the page menu (`…`) using **Full width**.
 
 ## Default Page Edit Mode
 
@@ -30,3 +30,21 @@ Choose the default mode when opening a page:
 
 - **Edit** — Pages open in edit mode, ready for changes.
 - **Read** — Pages open in read-only mode. This helps avoid accidental edits. You can switch to edit mode from the page toolbar when needed.
+
+## Fixed Editor Toolbar
+
+Enable **Fixed editor toolbar** to show formatting controls above the editor while editing a page.
+
+## Email Notifications
+
+Under **Email notifications**, choose which emails you receive:
+
+| Setting | When you receive an email |
+|---------|---------------------------|
+| **Page updates** | Pages you watch are updated, including pages in spaces you watch. |
+| **Page mentions** | Someone mentions you on a page. |
+| **Comment mentions** | Someone mentions you in a comment. |
+| **New comments** | Someone comments on a page you watch or replies in a thread you participate in. |
+| **Resolved comments** | Someone resolves your comment. |
+
+The **Page updates** setting controls email and in-app notifications about changes to watched pages.

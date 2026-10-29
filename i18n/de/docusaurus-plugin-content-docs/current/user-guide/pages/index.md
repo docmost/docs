@@ -34,6 +34,7 @@ Oben auf jeder Seite finden Sie:
 - **Teilen** – Verwalten Sie die Einstellungen für die öffentliche Freigabe der Seite (sofern auf Arbeitsbereichsebene aktiviert).
 - **Kommentare** – Öffnen Sie das Kommentarfeld, um Kommentare anzuzeigen, hinzuzufügen oder aufzulösen.
 - **Inhaltsverzeichnis** – Öffnen Sie die Seitenleiste mit dem Inhaltsverzeichnis, das automatisch aus den Überschriften generiert wird.
+- **Details (ⓘ)** – Zeigen Sie Seiteninformationen, Rückverweise und [Beschriftungen](/user-guide/pages/labels) an.
 - **Seitenmenü (...)** – Greifen Sie auf zusätzliche Seitenaktionen zu.
 
 ## Seitenmenü
