@@ -18,6 +18,8 @@ Wählen Sie Ihr bevorzugtes Farbschema für die Benutzeroberfläche.
 
 Wählen Sie Ihre bevorzugte Sprache für die Benutzeroberfläche. Docmost unterstützt mehrere Sprachen. Wählen Sie eine Sprache aus dem Dropdown-Menü, um die Benutzeroberfläche umzustellen.
 
+Neue Mitglieder starten mit der [Standardsprache des Arbeitsbereichs](/user-guide/translations#workspace-default-language).
+
 ## Volle Seitenbreite
 
 Aktivieren Sie diese Option, um Seiten auf die volle Breite des Browserfensters zu erweitern. Wenn die Option deaktiviert ist, werden Seiten mit einer zentrierten, schmaleren Inhaltsbreite für bessere Lesbarkeit angezeigt.

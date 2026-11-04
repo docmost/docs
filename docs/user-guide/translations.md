@@ -29,3 +29,12 @@ Language settings can be managed by each user from the "Settings > Preferences" 
 Translations are maintained and improved via the Crowdin platform. This means anyone can help improve the language translations.
 To join the translation effort:
 👉 [Docmost Crowdin Project](https://crowdin.com/project/docmost)
+
+## Workspace default language
+
+Workspace admins can set a default language under **Settings** > **General** > **Default language**.
+
+- New members start with this language. They can still change it in **Settings** > **Preferences**.
+- People who are not signed in see the login page, the invitation page and [shared pages](/user-guide/pages#sharing) in this language.
+- Signed-in members see shared pages in their own language.
+- Existing members keep their current language.
