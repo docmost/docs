@@ -146,6 +146,8 @@ Bei deaktiviertem Export sind diese Aktionen blockiert:
 
 Diese Aktionen sind auch über die REST-API blockiert. In der Benutzeroberfläche bleiben diese Aktionen sichtbar, sind aber deaktiviert. Bewegen Sie den Mauszeiger über eine Aktion, um zu sehen, ob der Export vom Arbeitsbereich oder vom Bereich deaktiviert wurde.
 
-Das Lesen von Seiten funktioniert weiterhin, auch über die API, MCP und den KI-Chat. Auch der Druckbefehl des Browsers und das manuelle Kopieren von Text funktionieren weiterhin, und öffentliche Seiten sowie Anhänge sind nicht betroffen. Mitglieder mit Bearbeitungsrechten können Seiten weiterhin in einen anderen Bereich kopieren oder verschieben. Verwenden Sie daher die Einstellung auf Arbeitsbereichsebene, um den Export überall zu blockieren.
+Auch das Drucken über den Browser ist auf betroffenen Seiten blockiert. Die Tastenkombination zum Drucken (Strg+P bzw. Cmd+P) zeigt stattdessen eine Meldung an, und beim Drucken über das Browsermenü wird nur ein Hinweis gedruckt, dass der Export deaktiviert ist.
+
+Das Lesen von Seiten funktioniert weiterhin, auch über die API, MCP und den KI-Chat. Auch das manuelle Kopieren von Text funktioniert weiterhin, und öffentliche Seiten sowie Anhänge sind nicht betroffen. Mitglieder mit Bearbeitungsrechten können Seiten weiterhin in einen anderen Bereich kopieren oder verschieben. Verwenden Sie daher die Einstellung auf Arbeitsbereichsebene, um den Export überall zu blockieren.
 
 Zum Aktivieren von **Disable export** ist eine Enterprise-Lizenz erforderlich (Enterprise bei Self-Hosting oder Cloud Business). Zum Deaktivieren ist nie eine Lizenz erforderlich. Änderungen an der Einstellung werden im [Audit-Protokoll](/user-guide/audit-logs) aufgezeichnet.

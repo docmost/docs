@@ -146,6 +146,8 @@ When export is disabled, these actions are blocked:
 
 These actions are blocked in the REST API as well. In the interface, these actions stay visible but disabled. Hover over an action to see whether export was disabled by the workspace or by the space.
 
-Reading pages still works, including through the API, MCP, and AI chat. The browser's own print command and copying text by hand also still work, and public pages and attachments are unaffected. Editors can still copy or move pages to another space, so use the workspace setting to block export everywhere.
+Printing from the browser is blocked on affected pages too. The print shortcut (Ctrl+P or Cmd+P) shows a message instead, and printing from the browser menu prints only a note that export is disabled.
+
+Reading pages still works, including through the API, MCP, and AI chat. Copying text by hand also still works, and public pages and attachments are unaffected. Editors can still copy or move pages to another space, so use the workspace setting to block export everywhere.
 
 Turning on **Disable export** requires an Enterprise license (self-hosted Enterprise or Cloud Business). Turning it off never requires a license. Changes to the setting are recorded in the [audit log](/user-guide/audit-logs).
