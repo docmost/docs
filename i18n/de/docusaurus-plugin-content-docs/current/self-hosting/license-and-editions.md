@@ -31,8 +31,7 @@ Um die Enterprise Edition zu aktivieren oder darauf zu aktualisieren:
 
 1. Gehen Sie zu **Einstellungen** > **Lizenz & Edition**.
 2. Klicken Sie auf die Schaltfläche **Lizenz hinzufügen**.
-3. Fügen Sie im Dialog Ihren Enterprise-Lizenzschlüssel in das Feld **Lizenzschlüssel** ein.
-4. Klicken Sie auf **Speichern**.
+3. Fügen Sie Ihren Enterprise-Lizenzschlüssel in das Feld **Lizenzschlüssel** ein und klicken Sie auf **Speichern**, oder klicken Sie auf **Lizenzdatei hochladen** und wählen Sie Ihre Lizenzdatei (`.license` oder `.txt`) aus.
 
 Nach der Aktivierung zeigt die Seite Ihre Lizenzdetails an, einschließlich Edition, Name des Lizenznehmers, Anzahl der Plätze, Ausstellungs- und Ablaufdatum, Lizenz-ID und Status.
 
@@ -62,8 +61,7 @@ Lizenzschlüssel werden offline validiert und erfordern keine Internetverbindung
 
 1. Gehen Sie zu **Einstellungen** > **Lizenz & Edition**.
 2. Klicken Sie auf **Lizenz aktualisieren**.
-3. Fügen Sie den neuen Lizenzschlüssel ein.
-4. Klicken Sie auf **Speichern**.
+3. Fügen Sie den neuen Lizenzschlüssel ein und klicken Sie auf **Speichern**, oder klicken Sie auf **Lizenzdatei hochladen** und wählen Sie die neue Lizenzdatei aus.
 
 Der neue Schlüssel ersetzt den vorherigen, und die aktualisierten Lizenzdetails werden sofort angezeigt.
 
