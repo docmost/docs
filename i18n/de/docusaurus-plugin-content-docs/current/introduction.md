@@ -64,7 +64,7 @@ Docmost unterstützt Bereiche. Sie können je nach Bedarf Bereiche für verschie
 - **Volltextsuche in Anhängen** — Durchsuchen Sie Inhalte in PDF- und DOCX-Dateianhängen.
 - **Kommentare auflösen** — Markieren Sie Kommentar-Threads als aufgelöst.
 - **Öffentliches Teilen deaktivieren** — Steuern Sie das öffentliche Teilen auf Arbeitsbereichs- oder Bereichsebene.
-- **Disable export** — Blockieren Sie den Export von Inhalten auf Arbeitsbereichs- oder Bereichsebene.
+- **Export deaktivieren** — Blockieren Sie den Export von Inhalten auf Arbeitsbereichs- oder Bereichsebene.
 - **Confluence-Importer** — Importieren Sie Confluence-Bereiche unter Beibehaltung von Formatierung, Hierarchie und Anhängen.
 - **DOCX-Importer** — Importieren Sie Microsoft-Word-Dokumente.
 - **PDF-Importer** — Importieren Sie PDF-Dateien in Seiten.

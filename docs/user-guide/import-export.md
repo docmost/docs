@@ -131,10 +131,10 @@ To generate a PDF version of a page:
 
 Export can be disabled at two levels:
 
-- **Workspace level** - Workspace owners and admins can turn on **Disable export** in **Settings > Security**.
+- **Workspace level** - Workspace owners and admins can turn on **Disable export** in **Settings > Security & SSO**.
 - **Space level** - Space admins can turn on **Disable export** in **Space settings > Security**.
 
-If export is disabled at either level, nobody can export from the affected pages, admins included. The workspace setting takes precedence: while it is on, the space setting is locked. Space admins can only add the restriction for their space, never lift the workspace one.
+If export is disabled at either level, nobody can export from the affected pages, admins included. The workspace setting takes precedence: while it is on, the space setting is locked. Space admins can turn it on or off for their own space, but cannot lift the workspace setting.
 
 When export is disabled, these actions are blocked:
 
