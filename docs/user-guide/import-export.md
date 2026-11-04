@@ -126,3 +126,26 @@ To generate a PDF version of a page:
 2. Click the **page menu (...)** at the top right.
 3. Click **Print PDF**.
 4. Use your browser's print dialog to save as PDF.
+
+### Disabling Export
+
+Export can be disabled at two levels:
+
+- **Workspace level** - Workspace owners and admins can turn on **Disable export** in **Settings > Security**.
+- **Space level** - Space admins can turn on **Disable export** in **Space settings > Security**.
+
+If export is disabled at either level, nobody can export from the affected pages, admins included. The workspace setting takes precedence: while it is on, the space setting is locked. Space admins can only add the restriction for their space, never lift the workspace one.
+
+When export is disabled, these actions are blocked:
+
+- Page export (Markdown, HTML, and Word)
+- Space export
+- Base export as CSV
+- PDF export through the API
+- **Print PDF** and **Copy as Markdown** in the page menu
+
+The REST API is blocked as well. In the interface, these actions stay visible but disabled. Hover over an action to see whether export was disabled by the workspace or by the space.
+
+Reading pages, the browser's own print command, and copying text by hand still work, and public pages and attachments are unaffected.
+
+Turning on **Disable export** requires an Enterprise license (self-hosted Enterprise or Cloud Business). Turning it off never requires a license. Changes to the setting are recorded in the [audit log](/user-guide/audit-logs).

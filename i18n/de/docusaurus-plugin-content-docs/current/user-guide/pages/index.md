@@ -144,6 +144,8 @@ So exportieren Sie eine Seite:
 3. Wählen Sie das Exportformat und die Optionen aus.
 4. Klicken Sie auf **Exportieren**, um den Download zu starten.
 
+Administratoren können den Export für den gesamten Arbeitsbereich oder für einzelne Bereiche [deaktivieren](/user-guide/import-export#export-deaktivieren).
+
 ## Seiten verschieben
 
 Sie können eine Seite in einen anderen Bereich verschieben oder ihre Position in der Hierarchie ändern:

@@ -126,3 +126,26 @@ So erzeugen Sie eine PDF-Version einer Seite:
 2. Klicken Sie oben rechts auf das **Seitenmenü (...)**.
 3. Klicken Sie auf **Print PDF**.
 4. Verwenden Sie den Druckdialog Ihres Browsers, um als PDF zu speichern.
+
+### Export deaktivieren
+
+Der Export kann auf zwei Ebenen deaktiviert werden:
+
+- **Arbeitsbereichsebene** – Eigentümer und Administratoren des Arbeitsbereichs können **Disable export** unter **Einstellungen > Sicherheit** aktivieren.
+- **Bereichsebene** – Bereichsadministratoren können **Disable export** unter **Bereichseinstellungen > Sicherheit** aktivieren.
+
+Ist der Export auf einer der beiden Ebenen deaktiviert, kann niemand die betroffenen Seiten exportieren, auch Administratoren nicht. Die Einstellung auf Arbeitsbereichsebene hat Vorrang: Solange sie aktiv ist, ist die Einstellung auf Bereichsebene gesperrt. Bereichsadministratoren können die Einschränkung nur für ihren eigenen Bereich hinzufügen und die des Arbeitsbereichs nie aufheben.
+
+Bei deaktiviertem Export sind diese Aktionen blockiert:
+
+- Seitenexport (Markdown, HTML und Word)
+- Bereichsexport
+- Export von Bases als CSV
+- PDF-Export über die API
+- **Print PDF** und **Copy as Markdown** im Seitenmenü
+
+Auch die REST-API ist blockiert. In der Benutzeroberfläche bleiben diese Aktionen sichtbar, sind aber deaktiviert. Bewegen Sie den Mauszeiger über eine Aktion, um zu sehen, ob der Export vom Arbeitsbereich oder vom Bereich deaktiviert wurde.
+
+Das Lesen von Seiten, der Druckbefehl Ihres Browsers und das manuelle Kopieren von Text bleiben möglich, und öffentliche Seiten und Anhänge sind nicht betroffen.
+
+Zum Aktivieren von **Disable export** ist eine Enterprise-Lizenz erforderlich (Enterprise bei Self-Hosting oder Cloud Business). Zum Deaktivieren ist nie eine Lizenz erforderlich. Änderungen an der Einstellung werden im [Audit-Protokoll](/user-guide/audit-logs) aufgezeichnet.
