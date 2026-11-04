@@ -124,7 +124,7 @@ So erzeugen Sie eine PDF-Version einer Seite:
 
 1. Öffnen Sie die Seite.
 2. Klicken Sie oben rechts auf das **Seitenmenü (...)**.
-3. Klicken Sie auf **Print PDF**.
+3. Klicken Sie auf **PDF drucken**.
 4. Verwenden Sie den Druckdialog Ihres Browsers, um als PDF zu speichern.
 
 ### Export deaktivieren
@@ -144,8 +144,8 @@ Bei deaktiviertem Export sind diese Aktionen blockiert:
 - PDF-Export über die API
 - **PDF drucken** und **Als Markdown kopieren** im Seitenmenü
 
-Auch die REST-API ist blockiert. In der Benutzeroberfläche bleiben diese Aktionen sichtbar, sind aber deaktiviert. Bewegen Sie den Mauszeiger über eine Aktion, um zu sehen, ob der Export vom Arbeitsbereich oder vom Bereich deaktiviert wurde.
+Diese Aktionen sind auch über die REST-API blockiert. In der Benutzeroberfläche bleiben diese Aktionen sichtbar, sind aber deaktiviert. Bewegen Sie den Mauszeiger über eine Aktion, um zu sehen, ob der Export vom Arbeitsbereich oder vom Bereich deaktiviert wurde.
 
-Das Lesen von Seiten, der Druckbefehl Ihres Browsers und das manuelle Kopieren von Text bleiben möglich, und öffentliche Seiten und Anhänge sind nicht betroffen.
+Das Lesen von Seiten funktioniert weiterhin, auch über die API, MCP und den KI-Chat. Auch der Druckbefehl des Browsers und das manuelle Kopieren von Text funktionieren weiterhin, und öffentliche Seiten sowie Anhänge sind nicht betroffen. Mitglieder mit Bearbeitungsrechten können Seiten weiterhin in einen anderen Bereich kopieren oder verschieben. Verwenden Sie daher die Einstellung auf Arbeitsbereichsebene, um den Export überall zu blockieren.
 
 Zum Aktivieren von **Disable export** ist eine Enterprise-Lizenz erforderlich (Enterprise bei Self-Hosting oder Cloud Business). Zum Deaktivieren ist nie eine Lizenz erforderlich. Änderungen an der Einstellung werden im [Audit-Protokoll](/user-guide/audit-logs) aufgezeichnet.
