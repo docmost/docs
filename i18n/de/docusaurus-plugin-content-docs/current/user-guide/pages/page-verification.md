@@ -95,7 +95,7 @@ Sie können ihn öffnen über:
 - die Benachrichtigungen zu einer Seite, die nach der Genehmigung oder Verifizierung geändert wurde, und zu einer Seite, die zu Ihrer Genehmigung eingereicht wurde
 - die Links in den E-Mails zu diesen Benachrichtigungen
 
-Docmost speichert bei jeder Einreichung, Genehmigung und Verifizierung eine Version der Seite, und die Prüfung vergleicht mit diesen Versionen.
+Docmost speichert bei jeder Einreichung, Genehmigung, Ablehnung und Verifizierung eine Version der Seite, und die Prüfung vergleicht mit diesen Versionen.
 
 Manche Änderungen werden nicht hervorgehoben: reine Formatierungsänderungen wie Fettdruck, Links, Überschriftenebenen, Kontrollkästchen, Bilder und Formeln. Hat eine Seite nur solche Änderungen, weist der Dialog darauf hin, dass einige Änderungen nicht hervorgehoben werden können. Kommentare, der Öffnungszustand aufklappbarer Blöcke und leere Zeilen am Ende zählen nie als Änderung. Diagramme zeigen immer ihre neueste Zeichnung.
 

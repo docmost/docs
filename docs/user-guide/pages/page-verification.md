@@ -95,7 +95,7 @@ You can open it from:
 - the notifications for a page that changed after approval or verification, and for a page submitted for your approval
 - the links in the emails for those notifications
 
-Docmost saves a version of the page every time it is submitted, approved or verified, and the review compares against these versions.
+Docmost saves a version of the page every time it is submitted, approved, rejected or verified, and the review compares against these versions.
 
 Some changes are not highlighted: formatting-only changes such as bold text, links, heading levels, checkboxes, images and formulas. When a page has only such changes, the dialog tells you that some changes can't be highlighted. Comments, toggle open state and empty trailing lines never count as changes. Diagrams always show their latest drawing.
 
