@@ -76,6 +76,35 @@ Changes that were typed before someone clicked **Submit for approval** or **Appr
 
 Pages that are obsolete, in draft, or whose verification has already expired keep their status when they are edited.
 
+## Review changes
+
+**Review changes** shows what changed on a page since it was last approved or verified. It compares the current page with the last approved version (approval workflow) or the last verified version (recurring verification). Text, structure and title changes are highlighted. Use the switch to turn highlighting on or off, and the arrows to step through the changes.
+
+The button is offered when there is something to review:
+
+- approval workflow: the page is in **Draft** after a change or a rejection, or **In approval**
+- recurring verification: the page shows **Unverified changes** or its verification has expired
+
+When an approver rejects a page, the dialog can also compare the current page with the rejected version. Use the **Approved version** / **Rejected version** switch, which appears only when both versions exist. A page that was never approved but was rejected compares with the rejected version.
+
+Anyone who can view the page can open the dialog. Approving and rejecting still happen in the verification window. When the dialog was opened from a notification or an email link and you can act on the page, it has an **Open verification** button.
+
+You can open it from:
+
+- the **Review changes** button in the verification window
+- the notifications for a page that changed after approval or verification, and for a page submitted for your approval
+- the links in the emails for those notifications
+
+Docmost saves a version of the page every time it is submitted, approved or verified, and the review compares against these versions.
+
+Some changes are not highlighted: formatting-only changes such as bold text, links, heading levels, checkboxes, images and formulas. When a page has only such changes, the dialog tells you that some changes can't be highlighted. Comments, toggle open state and empty trailing lines never count as changes. Diagrams always show their latest drawing.
+
+If someone undoes an edit and the page matches the approved version again, the dialog says so. The status stays **Draft** or **Unverified changes** until the page is approved or verified again.
+
+:::note
+Pages that were approved or verified before this feature have no saved approved version. Docmost saves the approved state the first time such a page changes, so the review works from then on. Pages that were already in approval or already changed when the update arrived get a review after their next approval.
+:::
+
 ## Editing a verified page
 
 Pages that are **Verified**, **Review needed**, **Approved** or **In approval** open in read mode for everyone, even if your default page edit mode is Edit.

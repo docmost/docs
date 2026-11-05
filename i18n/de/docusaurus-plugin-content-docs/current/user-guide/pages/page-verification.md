@@ -76,6 +76,35 @@ Diese Aktionen zählen nicht als Änderung:
 
 Seiten, die veraltet sind, sich im Entwurf befinden oder deren Verifizierung bereits abgelaufen ist, behalten ihren Status, wenn sie bearbeitet werden.
 
+## Änderungen prüfen
+
+**Änderungen prüfen** zeigt, was sich auf einer Seite seit der letzten Genehmigung oder Verifizierung geändert hat. Dazu wird die aktuelle Seite mit der zuletzt genehmigten Version (Genehmigungsworkflow) oder der zuletzt verifizierten Version (wiederkehrende Verifizierung) verglichen. Änderungen an Text, Struktur und Titel werden hervorgehoben. Mit dem Schalter schalten Sie die Hervorhebung ein oder aus, mit den Pfeilen springen Sie von Änderung zu Änderung.
+
+Die Schaltfläche wird angeboten, wenn es etwas zu prüfen gibt:
+
+- Genehmigungsworkflow: Die Seite ist nach einer Änderung oder Ablehnung im **Entwurf** oder **In Genehmigung**
+- Wiederkehrende Verifizierung: Die Seite zeigt **Nicht verifizierte Änderungen**, oder ihre Verifizierung ist abgelaufen
+
+Wenn ein Prüfer eine Seite ablehnt, kann der Dialog die aktuelle Seite auch mit der abgelehnten Version vergleichen. Verwenden Sie dazu den Schalter **Genehmigte Version** / **Abgelehnte Version**, der nur erscheint, wenn beide Versionen vorhanden sind. Eine Seite, die nie genehmigt, aber abgelehnt wurde, wird mit der abgelehnten Version verglichen.
+
+Jeder, der die Seite anzeigen kann, kann den Dialog öffnen. Genehmigt und abgelehnt wird weiterhin im Verifizierungsfenster. Wurde der Dialog über eine Benachrichtigung oder einen E-Mail-Link geöffnet und Sie können auf der Seite handeln, enthält er die Schaltfläche **Verifizierung öffnen**.
+
+Sie können ihn öffnen über:
+
+- die Schaltfläche **Änderungen prüfen** im Verifizierungsfenster
+- die Benachrichtigungen zu einer Seite, die nach der Genehmigung oder Verifizierung geändert wurde, und zu einer Seite, die zu Ihrer Genehmigung eingereicht wurde
+- die Links in den E-Mails zu diesen Benachrichtigungen
+
+Docmost speichert bei jeder Einreichung, Genehmigung und Verifizierung eine Version der Seite, und die Prüfung vergleicht mit diesen Versionen.
+
+Manche Änderungen werden nicht hervorgehoben: reine Formatierungsänderungen wie Fettdruck, Links, Überschriftenebenen, Kontrollkästchen, Bilder und Formeln. Hat eine Seite nur solche Änderungen, weist der Dialog darauf hin, dass einige Änderungen nicht hervorgehoben werden können. Kommentare, der Öffnungszustand aufklappbarer Blöcke und leere Zeilen am Ende zählen nie als Änderung. Diagramme zeigen immer ihre neueste Zeichnung.
+
+Wenn jemand eine Änderung rückgängig macht und die Seite wieder mit der genehmigten Version übereinstimmt, weist der Dialog darauf hin. Der Status bleibt **Entwurf** oder **Nicht verifizierte Änderungen**, bis die Seite erneut genehmigt oder verifiziert wird.
+
+:::note
+Seiten, die vor dieser Funktion genehmigt oder verifiziert wurden, haben keine gespeicherte genehmigte Version. Docmost speichert den genehmigten Stand, sobald sich eine solche Seite zum ersten Mal ändert, sodass die Prüfung ab dann funktioniert. Seiten, die beim Update bereits in Genehmigung oder bereits geändert waren, erhalten eine Prüfung nach ihrer nächsten Genehmigung.
+:::
+
 ## Eine verifizierte Seite bearbeiten
 
 Seiten mit dem Status **Verifiziert**, **Prüfung erforderlich**, **Genehmigt** oder **In Genehmigung** öffnen sich für alle im Lesemodus, auch wenn Ihr Standard-Bearbeitungsmodus für Seiten **Bearbeiten** ist.
