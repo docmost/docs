@@ -28,7 +28,7 @@ You need edit access to the page.
 3. Add up to five verifiers.
 4. For recurring verification, choose when the verification expires, confirm that you reviewed the page, and click **Verify**. For the approval workflow, click **Set up**. The page starts as a draft.
 
-To change verifiers or the expiry, or to remove verification, click the status next to the author's name.
+To change verifiers or the expiry, or to remove verification, click the status next to the author's name. Only the person who set up verification and space admins can make these changes or mark the page obsolete.
 
 ## Who can verify and approve
 

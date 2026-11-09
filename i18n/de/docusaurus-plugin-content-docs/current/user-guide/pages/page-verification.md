@@ -28,7 +28,7 @@ Sie benötigen Bearbeitungszugriff auf die Seite.
 3. Fügen Sie bis zu fünf Prüfer hinzu.
 4. Bei der wiederkehrenden Verifizierung legen Sie fest, wann die Verifizierung abläuft, bestätigen, dass Sie die Seite geprüft haben, und klicken auf **Bestätigen**. Beim Genehmigungsworkflow klicken Sie auf **Einrichten**. Die Seite beginnt als Entwurf.
 
-Um Prüfer oder das Ablaufdatum zu ändern oder die Verifizierung zu entfernen, klicken Sie auf den Status neben dem Namen des Autors.
+Um Prüfer oder das Ablaufdatum zu ändern oder die Verifizierung zu entfernen, klicken Sie auf den Status neben dem Namen des Autors. Nur die Person, die die Verifizierung eingerichtet hat, und Bereichsadministratoren können diese Änderungen vornehmen oder die Seite als **Veraltet** markieren.
 
 ## Wer verifizieren und genehmigen kann
 
