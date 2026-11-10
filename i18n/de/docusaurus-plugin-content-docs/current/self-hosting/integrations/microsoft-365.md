@@ -22,9 +22,7 @@ Zeigen Sie Vorschauen von SharePoint- und OneDrive-Links an und betten Sie Share
    Ersetzen Sie `https://docmost.example.com` durch Ihre Docmost-URL (`APP_URL`).
 
 3. Kopieren Sie die **Anwendungs-ID (Client)** und die **Verzeichnis-ID (Mandant)**. [Erstellen Sie einen geheimen Clientschlüssel](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-credentials) und kopieren Sie dessen **Wert**.
-4. Fügen Sie in den API-Berechtigungen der App die delegierten **Microsoft-Graph**-Berechtigungen `User.Read`, `User.ReadBasic.All` und `Sites.ReadWrite.All` hinzu. Docmost fordert außerdem `openid`, `profile`, `email` und `offline_access` an. Erteilen Sie die Administratorzustimmung, wenn Ihr Verzeichnis die Benutzerzustimmung blockiert.
-
-Microsoft Graph verlangt zum Öffnen von Freigabelinks eine Schreibberechtigung. Docmost liest Dateien jedoch nur und ändert sie nie.
+4. Fügen Sie in den API-Berechtigungen der App die delegierten **Microsoft-Graph**-Berechtigungen `User.Read`, `User.ReadBasic.All` und `Sites.Read.All` hinzu. Docmost fordert außerdem `openid`, `profile`, `email` und `offline_access` an. Erteilen Sie die Administratorzustimmung, wenn Ihr Verzeichnis die Benutzerzustimmung blockiert.
 
 ### Docmost konfigurieren {#configure-docmost}
 

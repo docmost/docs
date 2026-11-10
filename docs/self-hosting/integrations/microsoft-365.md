@@ -22,9 +22,7 @@ Preview SharePoint and OneDrive links, and embed SharePoint and OneDrive files i
    Replace `https://docmost.example.com` with your Docmost URL (`APP_URL`).
 
 3. Copy the **Application (client) ID** and **Directory (tenant) ID**. [Create a client secret](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-credentials) and copy its **Value**.
-4. In the app's API permissions, add the **Microsoft Graph** delegated permissions `User.Read`, `User.ReadBasic.All`, and `Sites.ReadWrite.All`. Docmost also requests `openid`, `profile`, `email`, and `offline_access`. Grant admin consent if your directory blocks user consent.
-
-Microsoft Graph requires a write permission to open sharing links, although Docmost only reads files and never changes them.
+4. In the app's API permissions, add the **Microsoft Graph** delegated permissions `User.Read`, `User.ReadBasic.All`, and `Sites.Read.All`. Docmost also requests `openid`, `profile`, `email`, and `offline_access`. Grant admin consent if your directory blocks user consent.
 
 ### Configure Docmost
 
