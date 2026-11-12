@@ -36,8 +36,7 @@ To activate or upgrade to the Business/Enterprise edition:
 
 1. Go to **Settings** > **License & Edition**.
 2. Click the **Add license** button.
-3. In the dialog, paste your Business or Enterprise license key into the **License key** field.
-4. Click **Save**.
+3. Paste your Business or Enterprise license key into the **License key** field and click **Save**, or click **Upload license file** and select your license file (`.license` or `.txt`).
 
 Once activated, the page displays your license details including the edition, licensee name, seat count, issue and expiry dates, license ID, and status.
 
@@ -67,8 +66,7 @@ License keys are validated offline and do not require an internet connection. Wh
 
 1. Go to **Settings** > **License & Edition**.
 2. Click **Update license**.
-3. Paste the new license key.
-4. Click **Save**.
+3. Paste the new license key and click **Save**, or click **Upload license file** and select the new license file.
 
 The new key replaces the previous one and the updated license details are displayed immediately.
 
