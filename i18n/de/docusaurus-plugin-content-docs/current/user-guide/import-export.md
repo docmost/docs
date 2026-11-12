@@ -124,5 +124,30 @@ So erzeugen Sie eine PDF-Version einer Seite:
 
 1. Öffnen Sie die Seite.
 2. Klicken Sie oben rechts auf das **Seitenmenü (...)**.
-3. Klicken Sie auf **Print PDF**.
+3. Klicken Sie auf **PDF drucken**.
 4. Verwenden Sie den Druckdialog Ihres Browsers, um als PDF zu speichern.
+
+### Export deaktivieren
+
+Der Export kann auf zwei Ebenen deaktiviert werden:
+
+- **Arbeitsbereichsebene** – Eigentümer und Administratoren des Arbeitsbereichs können **Disable export** unter **Einstellungen > Security & SSO** aktivieren.
+- **Bereichsebene** – Bereichsadministratoren können **Disable export** unter **Bereichseinstellungen > Sicherheit** aktivieren.
+
+Ist der Export auf einer der beiden Ebenen deaktiviert, kann niemand die betroffenen Seiten exportieren, auch Administratoren nicht. Die Einstellung auf Arbeitsbereichsebene hat Vorrang: Solange sie aktiv ist, ist die Einstellung auf Bereichsebene gesperrt. Bereichsadministratoren können die Einstellung für ihren eigenen Bereich ein- oder ausschalten, die des Arbeitsbereichs aber nicht aufheben.
+
+Bei deaktiviertem Export sind diese Aktionen blockiert:
+
+- Seitenexport (Markdown, HTML und Word)
+- Bereichsexport
+- Export von Bases als CSV
+- PDF-Export über die API
+- **PDF drucken** und **Als Markdown kopieren** im Seitenmenü
+
+Diese Aktionen sind auch über die REST-API blockiert. In der Benutzeroberfläche bleiben diese Aktionen sichtbar, sind aber deaktiviert. Bewegen Sie den Mauszeiger über eine Aktion, um zu sehen, ob der Export vom Arbeitsbereich oder vom Bereich deaktiviert wurde.
+
+Auch das Drucken über den Browser ist auf betroffenen Seiten blockiert. Das gilt auch für Seiten, die eine Base oder einen synchronisierten Block aus einem Bereich mit deaktiviertem Export anzeigen, sowie für die Vorschau im Papierkorb und bei Vorlagen. Die Tastenkombination zum Drucken (Strg+P bzw. Cmd+P) zeigt stattdessen eine Meldung an, und beim Drucken über das Browsermenü wird nur ein Hinweis gedruckt, dass der Export deaktiviert ist.
+
+Das Lesen von Seiten funktioniert weiterhin, auch über die API, MCP und den KI-Chat. Auch das manuelle Kopieren von Text funktioniert weiterhin, und öffentliche Seiten sowie Anhänge sind nicht betroffen. Mitglieder mit Bearbeitungsrechten können Seiten weiterhin in einen anderen Bereich kopieren oder verschieben. Verwenden Sie daher die Einstellung auf Arbeitsbereichsebene, um den Export überall zu blockieren.
+
+Zum Aktivieren von **Disable export** ist eine Enterprise-Lizenz erforderlich (Enterprise bei Self-Hosting oder Cloud Business). Zum Deaktivieren ist nie eine Lizenz erforderlich. Änderungen an der Einstellung werden im [Audit-Protokoll](/user-guide/audit-logs) aufgezeichnet.

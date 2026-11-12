@@ -64,6 +64,7 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **Full-text search in attachments** — Search content inside PDF and DOCX file attachments.
 - **Resolve comments** — Mark comment threads as resolved.
 - **Disable public sharing** — Control public sharing at the workspace or space level.
+- **Disable export** — Block exporting content at the workspace or space level.
 - **Confluence importer** — Import Confluence spaces with preserved formatting, hierarchy, and attachments.
 - **DOCX importer** — Import Microsoft Word documents.
 - **PDF importer** — Import PDF files into pages.
