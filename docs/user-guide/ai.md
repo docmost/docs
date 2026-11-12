@@ -21,7 +21,7 @@ Workspace admins can enable or disable AI features from **Settings** > **AI sett
 - **Generative AI (Ask AI)** — Enables AI-powered content generation in the editor. When enabled, users can generate, improve, translate and transform text directly within the editor.
 - **AI Chat** — Enables conversations with AI to find information, ask follow-up questions, and create or edit pages.
 
-Each feature can be toggled on or off independently. The AI-powered search toggle is only shown on self-hosted instances. Additional [AI Chat controls](/self-hosting/ai/ai-chat#admin-controls) are available on Enterprise and Cloud Business.
+Each feature can be toggled on or off independently. Additional [AI Chat controls](/self-hosting/ai/ai-chat#admin-controls) are available.
 
 ## AI Chat
 
