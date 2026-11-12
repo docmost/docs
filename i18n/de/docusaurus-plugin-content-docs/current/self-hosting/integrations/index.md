@@ -19,7 +19,7 @@ Sie können Ihr Konto auch über die Schaltfläche **Verbinden** in einer Vorsch
 
 ## Karten und Erwähnungen {#cards-and-mentions}
 
-Fügen Sie eine unterstützte URL in einen Absatz ein. Wählen Sie unter **Einfügen als** die Option **Karte**, **Erwähnung** oder **URL**. Um die Darstellung später zu ändern, wählen Sie die Karte oder Erwähnung aus und verwenden Sie **Anzeigen als**.
+Fügen Sie eine unterstützte URL in einen Absatz ein. Wählen Sie unter **Einfügen als** die Option **Karte**, **Erwähnung** oder **URL**. Um die Darstellung später zu ändern, wählen Sie die Karte oder Erwähnung aus und verwenden Sie **Anzeigen als**. SharePoint- und OneDrive-Dateien lassen sich außerdem [einbetten](/self-hosting/integrations/microsoft-365#add-files-to-a-page).
 
 | Leser | Darstellung |
 |-------|-------------|

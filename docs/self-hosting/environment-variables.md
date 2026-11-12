@@ -135,13 +135,15 @@ For Jira Cloud, use the Atlassian credentials. Setting `INTEGRATION_JIRA_URL` se
 | `INTEGRATION_FIGMA_CLIENT_ID` | `<client-id>` | Figma OAuth app client ID. |
 | `INTEGRATION_FIGMA_CLIENT_SECRET` | `<client-secret>` | Figma OAuth app client secret. |
 
-### Azure DevOps
+### Azure DevOps and Microsoft 365
+
+Both integrations use these variables, so one Entra app can serve both.
 
 | Variable | Example | Description |
 |----------|---------|-------------|
-| `INTEGRATION_MICROSOFT_CLIENT_ID` | `<client-id>` | Microsoft Entra application client ID for Azure DevOps. |
+| `INTEGRATION_MICROSOFT_CLIENT_ID` | `<client-id>` | Microsoft Entra application client ID. |
 | `INTEGRATION_MICROSOFT_CLIENT_SECRET` | `<client-secret-value>` | Microsoft Entra client secret value. |
-| `INTEGRATION_MICROSOFT_TENANT_ID` | `<tenant-id>` | Directory ID connected to the Azure DevOps organization. Required for a single-tenant app. If unset, uses `organizations`. A tenant domain is also accepted. |
+| `INTEGRATION_MICROSOFT_TENANT_ID` | `<tenant-id>` | Directory ID used for sign-in. For Azure DevOps, the directory connected to the organization. Required for a single-tenant app. If unset, uses `organizations`. A tenant domain is also accepted. Microsoft 365 keeps the directory saved when it was installed. |
 
 ## AI Configuration
 
