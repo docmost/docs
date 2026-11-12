@@ -27,8 +27,7 @@ Each user can create personal API keys to authenticate with the API. API keys ar
    - 60 days
    - 90 days
    - 365 days
-   - Custom
-   - No expiration
+   - Custom (a date up to 3 years from today)
 5. Click **Create**.
 
 The API key is displayed once after creation. Copy it and store it securely — it cannot be viewed again.
@@ -39,7 +38,7 @@ Your API keys are listed under **Settings** > **API keys** with the following de
 
 - **Name** — The descriptive name you assigned to the key.
 - **Last used** — When the key was last used to make an API request.
-- **Expires** — The expiry date, or "Never" if the key has no expiration.
+- **Expires** — The expiry date, or "Never" for older keys created without one.
 - **Created** — When the key was created.
 
 Click the **...** menu on any key to:
