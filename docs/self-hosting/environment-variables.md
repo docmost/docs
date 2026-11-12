@@ -14,7 +14,7 @@ To configure your application, set the following environment variables. These va
 | `APP_SECRET`           | `LONG_SECRET_KEY`             | A secure key for application security (32 chars minimum).  Generate with `openssl rand -hex 32`. |
 | `PORT`                | `3000`                        | The port on which the application will run.                                                      |
 | `JWT_TOKEN_EXPIRES_IN` | `30d`                         | The expiration time for JSON Web Tokens (JWT). The default is 30 days.                           |
-| `PAGE_HISTORY_INTERVAL` | `1m`                         | How often page history is saved during an edit session. The default is 5 minutes and the minimum is 1 minute. |
+| `PAGE_HISTORY_INTERVAL` | `5m`                         | How often page history is saved during an edit session. The default is 5 minutes and the minimum is 1 minute. |
 
 ## Database Configuration
 
