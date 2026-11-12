@@ -22,7 +22,7 @@ There are several ways to open the search dialog:
 
 ## Filters
 
-You can narrow your search results using two filters below the search field:
+Use the filters below the search field to narrow results. You can combine filters.
 
 ### Space Filter
 
@@ -39,6 +39,18 @@ Click the **Type** dropdown to filter by content type:
 
 - **Pages** — Search page titles and content.
 - **Attachments** — Search for uploaded files and attachments.
+
+### Title Only
+
+Click **Title only** to search page titles or attachment filenames.
+
+### Creator Filter
+
+Choose **Filter > Created by** to find pages created or attachments uploaded by a person.
+
+### Label Filter
+
+Choose **Filter > Labels** and select one or more labels. Results include pages with any of the selected labels. See [Page Labels](/user-guide/pages/labels#find-pages-by-label) to add or remove labels on a page.
 
 ## AI Answers
 

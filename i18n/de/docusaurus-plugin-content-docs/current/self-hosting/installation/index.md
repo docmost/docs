@@ -9,7 +9,7 @@ Docker ist die empfohlene Installationsmethode. Wenn Sie Entwickler sind, könnt
 
 
 :::tip[Enterprise-Testversion]
-Schalten Sie Enterprise-Funktionen wie Bases, SSO, AI, Audit-Protokolle und SCIM-Bereitstellung frei. Starten Sie eine Enterprise-Testversion auf [customers.docmost.com](https://customers.docmost.com/), um einen Lizenzschlüssel zu generieren.
+Schalten Sie kostenpflichtige Funktionen wie Bases, SSO, AI, Audit-Protokolle und SCIM-Bereitstellung frei. Starten Sie eine Enterprise-Testversion auf [customers.docmost.com](https://customers.docmost.com/), um einen Lizenzschlüssel zu generieren.
 :::
 
 ## Voraussetzungen
@@ -192,6 +192,12 @@ docker compose up -d --force-recreate docmost
 ```
 
 ## Nützliche Docker-Befehle
+
+Um die Docmost-Protokolle anzuzeigen:
+
+```shell
+docker compose logs -f docmost
+```
 
 Um die Dienste zu stoppen:
 
