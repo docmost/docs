@@ -29,6 +29,7 @@ Docmost unterstützt Bereiche. Sie können je nach Bedarf Bereiche für verschie
 - **Synchronisierte Blöcke**: Verwenden Sie denselben Inhalt auf mehreren Seiten mit Blöcken, die synchron bleiben.
 - **Seitenbeschriftungen**: Organisieren und kategorisieren Sie Seiten mit anpassbaren Beschriftungen.
 - **Kommentare**: Fügen Sie Seiten Kommentare hinzu, um die Kommunikation und das Feedback zu verbessern.
+- **Kommentare auflösen**: Markieren Sie Kommentar-Threads als aufgelöst.
 - **Seitenverlauf**: Verfolgen Sie Änderungen mit einem umfassenden Versionsverlauf und stellen Sie frühere Versionen wieder her.
 - **Öffentliches Teilen**: Teilen Sie Ihre Seiten öffentlich, sodass jeder mit dem Link sie ansehen kann.
 - **Suche**: Volltextsuche über alle Seiten hinweg mit Bereichs- und Typfiltern.
@@ -62,7 +63,6 @@ Docmost unterstützt Bereiche. Sie können je nach Bedarf Bereiche für verschie
 - **AI** — AI-Chat, AI-gestützte Schreibhilfe (Ask AI), AI-gestützte Suche (AI Answers) und MCP. Verwenden Sie Cloud-Modelle oder lokale LLMs.
 - **API** — REST-API mit persönlichen API-Schlüsseln und Admin-Schlüsselverwaltung.
 - **Volltextsuche in Anhängen** — Durchsuchen Sie Inhalte in PDF- und DOCX-Dateianhängen.
-- **Kommentare auflösen** — Markieren Sie Kommentar-Threads als aufgelöst.
 - **Öffentliches Teilen deaktivieren** — Steuern Sie das öffentliche Teilen auf Arbeitsbereichs- oder Bereichsebene.
 - **Confluence-Importer** — Importieren Sie Confluence-Bereiche unter Beibehaltung von Formatierung, Hierarchie und Anhängen.
 - **DOCX-Importer** — Importieren Sie Microsoft-Word-Dokumente.

@@ -29,6 +29,7 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **Synced Blocks**: Reuse the same content across multiple pages with blocks that stay in sync.
 - **Page Labels**: Organize and categorize pages with customizable labels.
 - **Comments**: Add comments to pages for better communication and feedback.
+- **Resolve Comments**: Mark comment threads as resolved.
 - **Page History**: Track changes with a comprehensive version history and restore previous versions.
 - **Public Sharing**: Publicly share your pages, allowing anyone with the link to view them.
 - **Search**: Full-text search across pages with space and type filters.
@@ -62,7 +63,6 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **AI** — AI Chat, AI-powered writing assistance (Ask AI), AI-powered search (AI Answers), and MCP. Use cloud models or local LLMs.
 - **API** — REST API with personal API keys and admin key management.
 - **Full-text search in attachments** — Search content inside PDF and DOCX file attachments.
-- **Resolve comments** — Mark comment threads as resolved.
 - **Disable public sharing** — Control public sharing at the workspace or space level.
 - **Confluence importer** — Import Confluence spaces with preserved formatting, hierarchy, and attachments.
 - **DOCX importer** — Import Microsoft Word documents.
