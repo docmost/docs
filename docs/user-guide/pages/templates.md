@@ -37,6 +37,27 @@ The scope determines who can find and use the template:
 | **Global** | Everyone in the workspace |
 | **Space** | Members of the selected space |
 
+## Placeholders
+
+Placeholders are short instructions that tell people what to write, such as "Add the meeting goal". They show in gray in pages created from the template until someone types in their place.
+
+### Add placeholders
+
+In the template editor:
+
+1. Type `/` and choose **Placeholder text**. With the [fixed editor toolbar](../preferences.md#fixed-editor-toolbar), you can also find it under **More inserts**.
+2. Write the instruction and press `Enter`. Press `Esc` to cancel.
+
+To turn existing text into placeholders, select it and click **Turn into placeholder** in the formatting toolbar. Each selected line becomes its own placeholder, so you can convert a whole list at once.
+
+To change a placeholder, click it, edit the instruction, and press `Enter`. To remove it, delete the instruction and press `Enter`.
+
+### Fill in placeholders
+
+In a page created from a template, click a placeholder and start typing. The instruction disappears and your text takes its place, with the formatting of the text around it. Pasting works the same way. In a table, `Tab` moves to the next cell and stops at its first placeholder.
+
+Placeholders show only while you edit a page or preview a template. They don't appear in read mode, on shared pages, or in search results. Copying, exporting, or printing a page leaves them out.
+
 ## Edit or delete a template
 
 In **Templates**, open the template's menu (`…`) and select **Edit** or **Delete**. In the editor, use the **Template settings** gear icon to change its scope.
