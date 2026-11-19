@@ -202,8 +202,6 @@ Der MCP-Server stellt die folgenden Tools bereit:
 |------|-------------|
 | **list_templates** | Die Vorlagen auflisten, die Sie verwenden können |
 | **get_template** | Den Inhalt einer Vorlage abrufen |
-| **create_template** | Eine neue Vorlage erstellen |
-| **update_template** | Details oder Inhalt einer Vorlage aktualisieren |
 
 ### Sonstiges
 

@@ -203,8 +203,6 @@ The MCP server exposes the following tools:
 |------|-------------|
 | **list_templates** | List the templates you can use |
 | **get_template** | Get the content of a template |
-| **create_template** | Create a new template |
-| **update_template** | Update a template's details or content |
 
 ### Other
 
