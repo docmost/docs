@@ -21,7 +21,7 @@ Arbeitsbereich-Administratoren können KI-Funktionen unter **Einstellungen** > *
 - **Generative KI (KI fragen)** — Aktiviert die KI-gestützte Inhaltserstellung im Editor. Benutzer können Texte direkt im Editor erstellen, verbessern, übersetzen und umformen.
 - **KI-Chat** — Ermöglicht Gespräche mit der KI, um Informationen zu finden, Folgefragen zu stellen und Seiten zu erstellen oder zu bearbeiten.
 
-Jede Funktion kann unabhängig ein- oder ausgeschaltet werden. Der Schalter für die KI-gestützte Suche wird nur auf selbst gehosteten Instanzen angezeigt. Zusätzliche [KI-Chat-Einstellungen](/self-hosting/ai/ai-chat#admin-controls) sind mit Enterprise und Cloud Business verfügbar.
+Jede Funktion kann unabhängig ein- oder ausgeschaltet werden. Zusätzliche [KI-Chat-Einstellungen](/self-hosting/ai/ai-chat#admin-controls) sind verfügbar.
 
 ## KI-Chat {#ai-chat}
 
