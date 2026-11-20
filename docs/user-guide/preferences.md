@@ -18,6 +18,8 @@ Choose your preferred color scheme for the interface.
 
 Choose your preferred interface language. Docmost supports multiple languages. Select a language from the dropdown to switch the interface.
 
+New members start with the workspace's [default language](/user-guide/translations#workspace-default-language).
+
 ## Full Page Width
 
 Toggle this option to expand pages to the full width of the browser window. When disabled, pages are displayed with a centered, narrower content width for improved readability.

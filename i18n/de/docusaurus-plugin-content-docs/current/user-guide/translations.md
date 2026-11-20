@@ -29,3 +29,12 @@ Die Spracheinstellungen können von jedem Benutzer auf der Seite "Einstellungen 
 Übersetzungen werden über die Crowdin-Plattform gepflegt und verbessert. Das bedeutet, dass jeder dabei helfen kann, die Sprachübersetzungen zu verbessern.
 So beteiligen Sie sich an der Übersetzungsarbeit:
 👉 [Docmost Crowdin-Projekt](https://crowdin.com/project/docmost)
+
+## Standardsprache des Arbeitsbereichs {#workspace-default-language}
+
+Arbeitsbereich-Administratoren können unter **Einstellungen** > **Allgemein** > **Standardsprache** eine Standardsprache festlegen.
+
+- Neue Mitglieder starten mit dieser Sprache. Sie können sie weiterhin unter **Einstellungen** > **Präferenzen** ändern.
+- Wer nicht angemeldet ist, sieht die Anmeldeseite, die Einladungsseite und [geteilte Seiten](/user-guide/pages#freigabe) in dieser Sprache.
+- Angemeldete Mitglieder sehen geteilte Seiten in ihrer eigenen Sprache.
+- Bestehende Mitglieder behalten ihre aktuelle Sprache.
