@@ -78,7 +78,7 @@ Seiten, die veraltet sind, sich im Entwurf befinden oder deren Verifizierung ber
 
 ## Änderungen prüfen
 
-**Änderungen prüfen** zeigt, was sich auf einer Seite seit der letzten Genehmigung oder Verifizierung geändert hat. Dazu wird die aktuelle Seite mit der zuletzt genehmigten Version (Genehmigungsworkflow) oder der zuletzt verifizierten Version (wiederkehrende Verifizierung) verglichen. Änderungen an Text, Struktur und Titel werden hervorgehoben. Mit dem Schalter **Änderungen hervorheben** schalten Sie die Hervorhebung ein oder aus, mit den Pfeilen springen Sie von Änderung zu Änderung.
+**Änderungen prüfen** zeigt, was sich auf einer Seite seit der letzten Genehmigung oder Verifizierung geändert hat. Dazu wird die aktuelle Seite mit der zuletzt genehmigten Version (Genehmigungsworkflow) oder der zuletzt verifizierten Version (wiederkehrende Verifizierung) verglichen. Änderungen an Text, Formatierung, Struktur und Titel werden hervorgehoben. Bei Formatierungsänderungen nennt ein Hinweis, was sich geändert hat, zum Beispiel eine hinzugefügte Fettschrift oder eine geänderte Überschriftenebene. Mit dem Schalter **Änderungen hervorheben** schalten Sie die Hervorhebung ein oder aus, mit den Pfeilen springen Sie von Änderung zu Änderung.
 
 Die Schaltfläche erscheint, wenn es etwas zu prüfen gibt:
 
@@ -97,7 +97,7 @@ Sie können ihn öffnen über:
 
 Docmost speichert bei jeder Einreichung, Genehmigung, Ablehnung und Verifizierung eine Version der Seite, und die Prüfung vergleicht mit diesen Versionen.
 
-Manche Änderungen werden nicht hervorgehoben: reine Formatierungsänderungen wie Fettdruck, Links, Überschriftenebenen, Kontrollkästchen, Bilder und Formeln. Hat eine Seite nur solche Änderungen, weist der Dialog darauf hin, dass einige Änderungen nicht hervorgehoben werden können. Kommentare, das Auf- oder Zuklappen aufklappbarer Blöcke und leere Zeilen am Ende zählen nie als Änderung. Diagramme zeigen immer ihre neueste Zeichnung.
+Kommentare, das Auf- oder Zuklappen aufklappbarer Blöcke und leere Zeilen am Ende zählen nie als Änderung. Diagramme zeigen immer ihre neueste Zeichnung. Kann eine Änderung nicht hervorgehoben werden, weist der Dialog darauf hin.
 
 Wenn jemand eine Änderung rückgängig macht und die Seite wieder mit der genehmigten oder verifizierten Version übereinstimmt, weist der Dialog darauf hin. Der Status bleibt **Entwurf** oder **Nicht verifizierte Änderungen**, bis die Seite erneut genehmigt oder verifiziert wird.
 
@@ -111,7 +111,7 @@ Seiten mit dem Status **Verifiziert**, **Prüfung erforderlich**, **Genehmigt** 
 
 Um eine solche Seite zu bearbeiten, wählen Sie in der Seitenkopfzeile **Bearbeiten** und bestätigen Sie. Der Bearbeitungsmodus gilt nur für diese Seite, bis Sie sie verlassen. Ihr Standard-Bearbeitungsmodus und andere Seiten bleiben unverändert.
 
-Wenn jemand die Seite genehmigt oder zur Genehmigung einreicht, während Sie sie geöffnet haben, wechselt die Seite zurück in den Lesemodus.
+Wenn jemand die Seite verifiziert, genehmigt oder zur Genehmigung einreicht, während Sie sie geöffnet haben, wechselt die Seite zurück in den Lesemodus.
 
 ## Liste der verifizierten Seiten
 

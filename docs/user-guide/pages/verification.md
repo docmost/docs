@@ -78,7 +78,7 @@ Pages that are obsolete, in draft, or whose verification has already expired kee
 
 ## Review changes
 
-**Review changes** shows what changed on a page since it was last approved or verified. It compares the current page with the last approved version (approval workflow) or the last verified version (recurring verification). Text, structure and title changes are highlighted. Use the **Highlight changes** toggle to turn highlighting on or off, and the arrows to step through the changes.
+**Review changes** shows what changed on a page since it was last approved or verified. It compares the current page with the last approved version (approval workflow) or the last verified version (recurring verification). Changes to text, formatting, structure and title are highlighted. Formatting changes carry a label that says what changed, for example **Bold added** or **Heading 2**. Use the **Highlight changes** toggle to turn highlighting on or off, and the arrows to step through the changes.
 
 The button appears when there is something to review:
 
@@ -97,7 +97,7 @@ You can open it from:
 
 Docmost saves a version of the page every time it is submitted, approved, rejected or verified, and the review compares against these versions.
 
-Some changes are not highlighted: formatting-only changes such as bold text, links, heading levels, checkboxes, images and formulas. When a page has only such changes, the dialog tells you that some changes can't be highlighted. Comments, expanding or collapsing toggle blocks, and empty trailing lines never count as changes. Diagrams always show their latest drawing.
+Comments, expanding or collapsing toggle blocks, and empty trailing lines never count as changes. Diagrams always show their latest drawing. If a change can't be highlighted, the dialog says so.
 
 If someone undoes an edit and the page matches the approved or verified version again, the dialog says so. The status stays **Draft** or **Unverified changes** until the page is approved or verified again.
 
@@ -111,7 +111,7 @@ Pages that are **Verified**, **Review needed**, **Approved** or **In approval** 
 
 To edit such a page, select **Edit** in the page header and confirm. Edit mode applies only to that page until you leave it. Your default page edit mode and other pages are not affected.
 
-If someone approves the page or submits it for approval while you have it open, the page switches back to read mode.
+If someone verifies or approves the page, or submits it for approval, while you have it open, the page switches back to read mode.
 
 ## Verified pages list
 
