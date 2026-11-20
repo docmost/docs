@@ -144,6 +144,8 @@ To export a page:
 3. Select the export format and options.
 4. Click **Export** to download.
 
+Admins can [disable export](/user-guide/import-export#disabling-export) for the whole workspace or for individual spaces.
+
 ## Moving Pages
 
 You can move a page to a different space or change its position in the hierarchy:

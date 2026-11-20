@@ -64,6 +64,7 @@ Docmost unterstützt Bereiche. Sie können je nach Bedarf Bereiche für verschie
 - **API** — REST-API mit persönlichen API-Schlüsseln und Admin-Schlüsselverwaltung.
 - **Volltextsuche in Anhängen** — Durchsuchen Sie Inhalte in PDF- und DOCX-Dateianhängen.
 - **Öffentliches Teilen deaktivieren** — Steuern Sie das öffentliche Teilen auf Arbeitsbereichs- oder Bereichsebene.
+- **Export deaktivieren** — Blockieren Sie den Export von Inhalten auf Arbeitsbereichs- oder Bereichsebene.
 - **Confluence-Importer** — Importieren Sie Confluence-Bereiche unter Beibehaltung von Formatierung, Hierarchie und Anhängen.
 - **DOCX-Importer** — Importieren Sie Microsoft-Word-Dokumente.
 - **PDF-Importer** — Importieren Sie PDF-Dateien in Seiten.
