@@ -135,13 +135,15 @@ Verwenden Sie für Jira Cloud die Atlassian-Zugangsdaten. Mit `INTEGRATION_JIRA_
 | `INTEGRATION_FIGMA_CLIENT_ID` | `<client-id>` | Client-ID der Figma-OAuth-App. |
 | `INTEGRATION_FIGMA_CLIENT_SECRET` | `<client-secret>` | Client-Secret der Figma-OAuth-App. |
 
-### Azure DevOps
+### Azure DevOps und Microsoft 365
+
+Beide Integrationen verwenden diese Variablen, daher kann eine Entra-App beide bedienen.
 
 | Variable | Beispiel | Beschreibung |
 |----------|----------|--------------|
-| `INTEGRATION_MICROSOFT_CLIENT_ID` | `<client-id>` | Client-ID der Microsoft-Entra-Anwendung für Azure DevOps. |
-| `INTEGRATION_MICROSOFT_CLIENT_SECRET` | `<client-secret-value>` | Wert des geheimen Clientschlüssels der Microsoft-Entra-Anwendung für Azure DevOps. |
-| `INTEGRATION_MICROSOFT_TENANT_ID` | `<tenant-id>` | ID des mit der Azure-DevOps-Organisation verbundenen Verzeichnisses. Für eine Single-Tenant-App erforderlich. Ohne Angabe wird `organizations` verwendet. Eine Mandantendomäne ist ebenfalls zulässig. |
+| `INTEGRATION_MICROSOFT_CLIENT_ID` | `<client-id>` | Client-ID der Microsoft-Entra-Anwendung. |
+| `INTEGRATION_MICROSOFT_CLIENT_SECRET` | `<client-secret-value>` | Wert des geheimen Clientschlüssels der Microsoft-Entra-Anwendung. |
+| `INTEGRATION_MICROSOFT_TENANT_ID` | `<tenant-id>` | ID des Verzeichnisses für die Anmeldung. Für Azure DevOps das mit der Organisation verbundene Verzeichnis. Für eine Single-Tenant-App erforderlich. Ohne Angabe wird `organizations` verwendet. Eine Mandantendomäne ist ebenfalls zulässig. Microsoft 365 behält das bei der Installation gespeicherte Verzeichnis. |
 
 ## AI-Konfiguration
 
