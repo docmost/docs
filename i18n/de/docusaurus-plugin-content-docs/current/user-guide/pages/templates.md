@@ -19,7 +19,7 @@ So erstellen Sie eine neue Seite über die Seitenleiste:
 2. Klicken Sie auf eine Vorlage, um eine Vorschau zu öffnen, und dann auf **Vorlage verwenden**.
 3. Wählen Sie einen Zielbereich oder eine übergeordnete Seite und klicken Sie auf **Seite erstellen**.
 
-Sie benötigen die Berechtigung, am Zielort Seiten zu erstellen. Die neue Seite übernimmt den Titel, das Symbol und den Inhalt der Vorlage. Sie können die Seite bearbeiten, ohne die Vorlage zu ändern.
+Sie benötigen die Berechtigung, am Zielort Seiten zu erstellen. Die neue Seite übernimmt den Titel, das Symbol und den Inhalt der Vorlage einschließlich ihrer Bilder, Diagramme und Anhänge. Sie können die Seite bearbeiten, ohne die Vorlage zu ändern.
 
 ## Eine Vorlage erstellen {#create-a-template}
 
@@ -28,7 +28,7 @@ Eigentümer und Administratoren des Arbeitsbereichs können **Allow members to c
 1. Öffnen Sie **Vorlagen** und klicken Sie auf **Neue Vorlage**.
 2. Geben Sie einen **Titel** ein und wählen Sie unter **Bereich** den Geltungsbereich.
 3. Klicken Sie auf **Erstellen**.
-4. Fügen Sie im Vorlageneditor Inhalte hinzu. Änderungen werden automatisch gespeichert.
+4. Fügen Sie im Vorlageneditor Inhalte hinzu, auch Bilder, Diagramme und Anhänge. Änderungen werden automatisch gespeichert.
 
 Der Geltungsbereich bestimmt, wer die Vorlage finden und verwenden kann:
 

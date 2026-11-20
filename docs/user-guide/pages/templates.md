@@ -19,7 +19,7 @@ To create a new page from the sidebar:
 2. Click a template to preview it, then click **Use template**.
 3. Choose a destination space or a parent page, then click **Create page**.
 
-You need permission to create pages in the destination. The new page copies the template's title, icon, and content. You can edit it without changing the template.
+You need permission to create pages in the destination. The new page copies the template's title, icon, and content, including its images, diagrams, and attachments. You can edit it without changing the template.
 
 ## Create a template
 
@@ -28,7 +28,7 @@ Workspace owners and admins can enable **Allow members to create templates** in 
 1. Open **Templates** and click **New template**.
 2. Enter a **Title** and choose a **Scope**.
 3. Click **Create**.
-4. Add content in the template editor. Changes are saved automatically.
+4. Add content in the template editor, including images, diagrams, and attachments. Changes are saved automatically.
 
 The scope determines who can find and use the template:
 
