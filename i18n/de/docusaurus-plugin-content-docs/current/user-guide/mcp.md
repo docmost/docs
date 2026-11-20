@@ -1,6 +1,7 @@
 ---
 sidebar_position: 14
 tags:
+    - business
     - enterprise
 ---
 
@@ -11,7 +12,7 @@ Docmost stellt einen [Model Context Protocol (MCP)](https://modelcontextprotocol
 Die meisten Clients verbinden sich über OAuth: Sie melden sich bei Docmost an, legen fest, was die Anwendung darf, und es werden keine Zugangsdaten kopiert. Für Clients, die kein OAuth unterstützen, steht weiterhin ein API-Schlüssel zur Verfügung, sofern Ihr Administrator diese Möglichkeit nicht deaktiviert hat.
 
 :::note
-MCP ist eine Enterprise-Funktion. Eine aktive Enterprise-Lizenz ist erforderlich.
+MCP ist eine kommerzielle Funktion. Eine aktive Business- oder Enterprise-Lizenz ist erforderlich.
 :::
 
 ## MCP aktivieren (Admin)
