@@ -26,8 +26,7 @@ Jeder Benutzer kann persönliche API-Schlüssel erstellen, um sich bei der API z
    - 60 Tage
    - 90 Tage
    - 365 Tage
-   - Benutzerdefiniert
-   - Kein Ablauf
+   - Benutzerdefiniert (ein Datum innerhalb der nächsten 3 Jahre)
 5. Klicken Sie auf **Create**.
 
 Der API-Schlüssel wird nach der Erstellung einmalig angezeigt. Kopieren Sie ihn und bewahren Sie ihn sicher auf — er kann nicht erneut angezeigt werden.
@@ -38,7 +37,7 @@ Ihre API-Schlüssel werden unter **Einstellungen** > **API keys** mit den folgen
 
 - **Name** — Der aussagekräftige Name, den Sie dem Schlüssel zugewiesen haben.
 - **Last used** — Wann der Schlüssel zuletzt für eine API-Anfrage verwendet wurde.
-- **Expires** — Das Ablaufdatum oder „Never“, wenn der Schlüssel keinen Ablauf hat.
+- **Expires** — Das Ablaufdatum oder „Never“ bei älteren Schlüsseln, die ohne Ablaufdatum erstellt wurden.
 - **Created** — Wann der Schlüssel erstellt wurde.
 
 Klicken Sie auf das Menü **...** bei einem beliebigen Schlüssel, um:
