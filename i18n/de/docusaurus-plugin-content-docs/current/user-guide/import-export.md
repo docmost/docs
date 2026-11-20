@@ -150,4 +150,4 @@ Auch das Drucken über den Browser ist auf betroffenen Seiten blockiert. Das gil
 
 Das Lesen von Seiten funktioniert weiterhin, auch über die API, MCP und den KI-Chat. Auch das manuelle Kopieren von Text funktioniert weiterhin, und öffentliche Seiten sowie Anhänge sind nicht betroffen. Mitglieder mit Bearbeitungsrechten können Seiten weiterhin in einen anderen Bereich kopieren oder verschieben. Verwenden Sie daher die Einstellung auf Arbeitsbereichsebene, um den Export überall zu blockieren.
 
-Zum Aktivieren von **Disable export** ist eine Enterprise-Lizenz erforderlich (Enterprise bei Self-Hosting oder Cloud Business). Zum Deaktivieren ist nie eine Lizenz erforderlich. Änderungen an der Einstellung werden im [Audit-Protokoll](/user-guide/audit-logs) aufgezeichnet.
+Zum Aktivieren von **Disable export** ist eine Enterprise-Lizenz erforderlich (Enterprise bei Self-Hosting). Zum Deaktivieren ist nie eine Lizenz erforderlich. Änderungen an der Einstellung werden im [Audit-Protokoll](/user-guide/audit-logs) aufgezeichnet.
