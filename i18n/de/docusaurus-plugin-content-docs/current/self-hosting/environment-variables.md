@@ -14,6 +14,7 @@ Um Ihre Anwendung zu konfigurieren, setzen Sie die folgenden Umgebungsvariablen.
 | `APP_SECRET`           | `LONG_SECRET_KEY`             | Ein sicherer Schlüssel für die Anwendungssicherheit (mindestens 32 Zeichen). Generieren Sie ihn mit `openssl rand -hex 32`. |
 | `PORT`                | `3000`                        | Der Port, auf dem die Anwendung ausgeführt wird.                                                 |
 | `JWT_TOKEN_EXPIRES_IN` | `30d`                         | Die Ablaufzeit für JSON Web Tokens (JWT). Der Standardwert beträgt 30 Tage.                      |
+| `PAGE_HISTORY_INTERVAL` | `5m`                         | Wie oft der Seitenverlauf während einer Bearbeitungssitzung gespeichert wird. Der Standardwert beträgt 5 Minuten, das Minimum 1 Minute. |
 
 ## Datenbankkonfiguration
 
