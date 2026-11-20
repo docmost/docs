@@ -170,7 +170,7 @@ Der MCP-Server stellt die folgenden Tools bereit:
 |------|-------------|
 | **search_pages** | Seiten nach Stichwort durchsuchen |
 | **get_page** | Den Inhalt einer bestimmten Seite abrufen |
-| **create_page** | Eine neue Seite in einem Bereich erstellen |
+| **create_page** | Eine neue Seite in einem Bereich erstellen, optional aus einer Vorlage |
 | **update_page** | Titel oder Inhalt einer vorhandenen Seite aktualisieren |
 | **list_pages** | Zuletzt verwendete Seiten in einem Bereich auflisten |
 | **list_child_pages** | Untergeordnete Seiten einer bestimmten Seite auflisten |
@@ -195,6 +195,13 @@ Der MCP-Server stellt die folgenden Tools bereit:
 | **get_comments** | Kommentare auf einer Seite abrufen |
 | **create_comment** | Einen Kommentar zu einer Seite hinzufügen |
 | **update_comment** | Einen vorhandenen Kommentar aktualisieren |
+
+### Vorlagen
+
+| Tool | Beschreibung |
+|------|-------------|
+| **list_templates** | Die Vorlagen auflisten, die Sie verwenden können |
+| **get_template** | Den Inhalt einer Vorlage abrufen |
 
 ### Sonstiges
 

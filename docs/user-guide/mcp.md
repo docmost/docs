@@ -171,7 +171,7 @@ The MCP server exposes the following tools:
 |------|-------------|
 | **search_pages** | Search for pages by keyword |
 | **get_page** | Get the content of a specific page |
-| **create_page** | Create a new page in a space |
+| **create_page** | Create a new page in a space, optionally from a template |
 | **update_page** | Update an existing page's title or content |
 | **list_pages** | List recent pages in a space |
 | **list_child_pages** | List child pages of a specific page |
@@ -196,6 +196,13 @@ The MCP server exposes the following tools:
 | **get_comments** | Get comments on a page |
 | **create_comment** | Add a comment to a page |
 | **update_comment** | Update an existing comment |
+
+### Templates
+
+| Tool | Description |
+|------|-------------|
+| **list_templates** | List the templates you can use |
+| **get_template** | Get the content of a template |
 
 ### Other
 
