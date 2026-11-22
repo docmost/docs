@@ -88,5 +88,5 @@ Replace the invented content with your permitted selection, preserve unknowns,
 and record a decision only when someone actually makes it. Set the next review
 date so a copied title does not silently become permanent evidence.
 
-Prepared by ClosedLoop Labs LLC, the team behind ClosedLoop AI. This is a manual
+Prepared by ClosedLoop Labs LLC, the team behind [ClosedLoop AI](https://closedloop.sh/). This is a manual
 documentation example, not an automated integration or an adoption claim.
