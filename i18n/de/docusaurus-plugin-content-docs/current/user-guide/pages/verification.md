@@ -113,6 +113,10 @@ Um eine solche Seite zu bearbeiten, wählen Sie in der Seitenkopfzeile **Bearbei
 
 Wenn jemand die Seite verifiziert, genehmigt oder zur Genehmigung einreicht, während Sie sie geöffnet haben, wechselt die Seite zurück in den Lesemodus.
 
+## Verifizierte Seiten in der Suche finden
+
+Wählen Sie in der Suche **Filter > Nur verifizierte**, um die Ergebnisse auf Seiten mit dem Status **Verifiziert**, **Prüfung erforderlich** oder **Genehmigt** zu beschränken. Diese Seiten zeigen in den Suchergebnissen außerdem ein Verifizierungssymbol vor ihrem Titel. Siehe [Suche](/user-guide/search#verified-only).
+
 ## Liste der verifizierten Seiten
 
 Unter **Einstellungen > Verifizierte Seiten** sehen Sie alle Seiten mit Verifizierung, auf die Sie Zugriff haben, mit Status und Prüfern. Sie können nach Titel suchen und nach Bereich und Workflow filtern.

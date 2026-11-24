@@ -113,6 +113,10 @@ To edit such a page, select **Edit** in the page header and confirm. Edit mode a
 
 If someone verifies or approves the page, or submits it for approval, while you have it open, the page switches back to read mode.
 
+## Find verified pages in search
+
+In search, choose **Filter > Verified only** to limit results to pages that are **Verified**, **Review needed** or **Approved**. These pages also show a verification icon in front of their title in search results. See [Search](/user-guide/search#verified-only).
+
 ## Verified pages list
 
 Go to **Settings > Verified pages** to see every page with verification that you can access, with its status and verifiers. You can search by title and filter by space and workflow.

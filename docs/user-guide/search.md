@@ -52,6 +52,14 @@ Choose **Filter > Created by** to find pages created or attachments uploaded by 
 
 Choose **Filter > Labels** and select one or more labels. Results include pages with any of the selected labels. See [Page Labels](/user-guide/pages/labels#find-pages-by-label) to add or remove labels on a page.
 
+### Verified Only
+
+Choose **Filter > Verified only** to show only pages with the **Verified**, **Review needed** or **Approved** status. Drafts, pages in approval, obsolete pages, expired verifications and pages with unverified changes are left out. Without a search query, it shows the most recently updated verified pages you can access. The filter isn't available when searching attachments.
+
+Pages with one of these statuses show a verification icon in front of their title in search results, whether or not the filter is on.
+
+Verified only is part of [page verification](/user-guide/pages/verification), which requires an active Enterprise license.
+
 ## AI Answers
 
 When AI Answers is enabled, you can ask natural language questions about your workspace content and receive AI-generated answers based on your pages.

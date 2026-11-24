@@ -52,6 +52,14 @@ Wählen Sie **Filter > Erstellt von**, um Seiten zu finden, die eine Person erst
 
 Wählen Sie **Filter > Beschriftungen** und dann eine oder mehrere Beschriftungen. Die Ergebnisse enthalten Seiten mit mindestens einer der ausgewählten Beschriftungen. Unter [Seitenbeschriftungen](/user-guide/pages/labels#find-pages-by-label) erfahren Sie, wie Sie Beschriftungen zu einer Seite hinzufügen oder davon entfernen.
 
+### Nur verifizierte {#verified-only}
+
+Wählen Sie **Filter > Nur verifizierte**, um nur Seiten mit dem Status **Verifiziert**, **Prüfung erforderlich** oder **Genehmigt** anzuzeigen. Entwürfe, Seiten in Genehmigung, veraltete Seiten, abgelaufene Verifizierungen und Seiten mit unverifizierten Änderungen werden ausgeblendet. Ohne Suchbegriff zeigt der Filter die zuletzt aktualisierten verifizierten Seiten, auf die Sie Zugriff haben. Bei der Suche nach Anhängen ist der Filter nicht verfügbar.
+
+Seiten mit einem dieser Status zeigen in den Suchergebnissen ein Verifizierungssymbol vor ihrem Titel, auch wenn der Filter nicht aktiv ist.
+
+Nur verifizierte gehört zur [Seitenverifizierung](/user-guide/pages/verification), für die eine aktive Enterprise-Lizenz erforderlich ist.
+
 ## AI Answers
 
 Wenn AI Answers aktiviert ist, können Sie Fragen in natürlicher Sprache zu den Inhalten Ihres Arbeitsbereichs stellen und KI-generierte Antworten erhalten, die auf Ihren Seiten basieren.
