@@ -85,7 +85,7 @@ Fügen Sie einen Link ein und wählen Sie unter **Einfügen als** die Option **U
 
 Um einen vorhandenen Link zu ändern, klicken Sie darauf und wählen Sie **Anzeigen als**. Wählen Sie eine Erwähnung oder Karte aus, um die Darstellung zu ändern, oder wählen Sie **Vorschau aktualisieren**, um Titel, Beschreibung und Bild erneut abzurufen.
 
-Docmost ruft die Vorschau einmal ab, wenn Sie **Erwähnung** oder **Karte** wählen, und speichert sie in der Seite. Alle, die die Seite sehen können, sehen dieselbe Vorschau, auch Besucher geteilter Seiten. Manche Websites stellen keine Vorschau bereit, und Seiten mit Anmeldung zeigen nur ihre Adresse.
+Docmost ruft die Vorschau einmal ab, wenn Sie **Erwähnung** oder **Karte** wählen, und speichert sie in der Seite. Alle, die die Seite sehen können, sehen dieselbe Vorschau, auch Besucher geteilter Seiten. Manche Websites stellen keine Vorschau bereit, und Seiten mit Anmeldung oder in einem internen Netzwerk zeigen nur ihre Adresse.
 
 ## Formatierungsleiste
 

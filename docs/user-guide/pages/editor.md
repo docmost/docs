@@ -85,7 +85,7 @@ Paste a link and choose **URL**, **Mention**, **Card**, or **Embed** in **Paste 
 
 To change a link you added earlier, click it and choose **Display as**. Select a mention or card to change its display, or choose **Refresh preview** to fetch the title, description, and image again.
 
-Docmost fetches the preview once, when you choose **Mention** or **Card**, and saves it in the page. Everyone who can view the page sees the same preview, including visitors to shared pages. Some sites don't provide a preview, and pages behind a sign-in show only their address.
+Docmost fetches the preview once, when you choose **Mention** or **Card**, and saves it in the page. Everyone who can view the page sees the same preview, including visitors to shared pages. Some sites don't provide a preview, and pages behind a sign-in or on an internal network show only their address.
 
 ## Formatting Toolbar
 
