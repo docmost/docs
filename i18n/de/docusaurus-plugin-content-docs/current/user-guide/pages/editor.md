@@ -79,6 +79,14 @@ Nachdem ein Administrator eine [Integration installiert hat](/self-hosting/integ
 
 Jeder Leser verbindet sein eigenes Anbieterkonto, um Vorschauen zu sehen. Leser ohne Zugriff sehen nur Informationen aus der URL. Unterstützte Links und Einrichtungsschritte finden Sie in den [Integrationsanleitungen](/self-hosting/integrations).
 
+## Linkvorschauen {#link-previews}
+
+Fügen Sie einen Link ein und wählen Sie unter **Einfügen als** die Option **URL**, **Erwähnung**, **Karte** oder **Einbetten**. Der Link bleibt ein normaler Link, wenn Sie keine andere Option wählen. Eine Erwähnung zeigt das Symbol der Website und den Seitentitel im Text. Eine Karte zeigt zusätzlich die Beschreibung und das Bild der Seite. **Einbetten** zeigt die Seite selbst: Links von Diensten wie YouTube, Loom oder Figma nutzen deren eigenen Player, andere Websites werden als Seite eingebettet, sofern sie das zulassen.
+
+Um einen vorhandenen Link zu ändern, klicken Sie darauf und wählen Sie **Anzeigen als**. Wählen Sie eine Erwähnung oder Karte aus, um die Darstellung zu ändern, oder wählen Sie **Vorschau aktualisieren**, um Titel, Beschreibung und Bild erneut abzurufen.
+
+Docmost ruft die Vorschau einmal ab, wenn Sie **Erwähnung** oder **Karte** wählen, und speichert sie in der Seite. Alle, die die Seite sehen können, sehen dieselbe Vorschau, auch Besucher geteilter Seiten. Manche Websites stellen keine Vorschau bereit, und Seiten mit Anmeldung zeigen nur ihre Adresse.
+
 ## Formatierungsleiste
 
 Wählen Sie Text aus, um die schwebende Formatierungsleiste anzuzeigen. Die Leiste bietet schnellen Zugriff auf:
