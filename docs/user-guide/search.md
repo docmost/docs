@@ -52,6 +52,10 @@ Choose **Filter > Created by** to find pages created or attachments uploaded by 
 
 Choose **Filter > Labels** and select one or more labels. Results include pages with any of the selected labels. See [Page Labels](/user-guide/pages/labels#find-pages-by-label) to add or remove labels on a page.
 
+### Archived Spaces
+
+Search leaves out pages in [archived spaces](/user-guide/spaces#archiving-a-space). To include them, choose **Filter** and turn on **Include archived**. Results from archived spaces are marked **Archived**. Archived spaces are never used for AI Answers.
+
 ## AI Answers
 
 When AI Answers is enabled, you can ask natural language questions about your workspace content and receive AI-generated answers based on your pages.

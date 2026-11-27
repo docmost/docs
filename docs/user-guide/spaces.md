@@ -91,6 +91,28 @@ To export a space,
 
 The exported content will be bundled into a ZIP file and automatically downloaded to your device. You can then extract and use it according to your needs.
 
+### Archiving a Space
+
+Archive a space you no longer use to keep it out of space lists and search without deleting it. People with **Full Access** to a space can archive and restore it.
+
+To archive a space:
+
+1. Open the space's **Settings**.
+2. Switch to the **Settings** tab.
+3. Click **Archive** next to **Archive space**.
+4. Click **Archive** to confirm.
+
+When a space is archived:
+
+- It's hidden from space lists. To see it, choose **Archived spaces** in the filter next to the search box on the **Spaces** page or in **Settings > Spaces**.
+- Search leaves out its pages unless you turn on [Include archived](/user-guide/search#archived-spaces). Archived spaces are never used for AI Answers.
+- Members keep their roles and can still open and edit its pages. The space shows a notice that it's archived.
+- Public links to its pages keep working.
+
+To restore the space, click **Restore space** on the notice, or click **Restore** in the space's **Settings** tab.
+
+Personal spaces can't be archived.
+
 ### Deleting a Space
 
 To permanently delete a space:

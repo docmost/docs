@@ -52,6 +52,10 @@ Wählen Sie **Filter > Erstellt von**, um Seiten zu finden, die eine Person erst
 
 Wählen Sie **Filter > Beschriftungen** und dann eine oder mehrere Beschriftungen. Die Ergebnisse enthalten Seiten mit mindestens einer der ausgewählten Beschriftungen. Unter [Seitenbeschriftungen](/user-guide/pages/labels#find-pages-by-label) erfahren Sie, wie Sie Beschriftungen zu einer Seite hinzufügen oder davon entfernen.
 
+### Archivierte Bereiche {#archived-spaces}
+
+Die Suche lässt Seiten in [archivierten Bereichen](/user-guide/spaces#archiving-a-space) aus. Um sie einzubeziehen, wählen Sie **Filter** und aktivieren Sie **Archivierte einschließen**. Ergebnisse aus archivierten Bereichen sind mit **Archiviert** gekennzeichnet. Archivierte Bereiche werden nie für AI Answers verwendet.
+
 ## AI Answers
 
 Wenn AI Answers aktiviert ist, können Sie Fragen in natürlicher Sprache zu den Inhalten Ihres Arbeitsbereichs stellen und KI-generierte Antworten erhalten, die auf Ihren Seiten basieren.

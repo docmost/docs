@@ -91,6 +91,28 @@ So exportieren Sie einen Bereich:
 
 Die exportierten Inhalte werden in einer ZIP-Datei gebündelt und automatisch auf Ihr Gerät heruntergeladen. Anschließend können Sie sie nach Ihren Bedürfnissen extrahieren und verwenden.
 
+### Einen Bereich archivieren {#archiving-a-space}
+
+Archivieren Sie einen Bereich, den Sie nicht mehr nutzen, damit er aus Bereichslisten und der Suche verschwindet, ohne ihn zu löschen. Personen mit **Vollzugriff** auf einen Bereich können ihn archivieren und wiederherstellen.
+
+So archivieren Sie einen Bereich:
+
+1. Öffnen Sie die **Einstellungen** des Bereichs.
+2. Wechseln Sie zum Tab **Einstellungen**.
+3. Klicken Sie neben **Bereich archivieren** auf **Archivieren**.
+4. Klicken Sie zur Bestätigung auf **Archivieren**.
+
+Wenn ein Bereich archiviert ist:
+
+- Er wird in Bereichslisten ausgeblendet. Um ihn zu sehen, wählen Sie auf der Seite **Bereiche** oder unter **Einstellungen > Bereiche** im Filter neben dem Suchfeld **Archivierte Bereiche**.
+- Die Suche lässt seine Seiten aus, solange Sie [Archivierte einschließen](/user-guide/search#archived-spaces) nicht aktivieren. Archivierte Bereiche werden nie für AI Answers verwendet.
+- Mitglieder behalten ihre Rollen und können seine Seiten weiterhin öffnen und bearbeiten. Der Bereich zeigt einen Hinweis, dass er archiviert ist.
+- Öffentliche Links zu seinen Seiten funktionieren weiter.
+
+Um den Bereich wiederherzustellen, klicken Sie im Hinweis auf **Bereich wiederherstellen** oder im Tab **Einstellungen** des Bereichs auf **Wiederherstellen**.
+
+Persönliche Bereiche können nicht archiviert werden.
+
 ### Einen Bereich löschen
 
 So löschen Sie einen Bereich dauerhaft:
