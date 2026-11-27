@@ -38,5 +38,9 @@
   "sidebar.tutorialSidebar.category.Bases": {
     "message": "Bases",
     "description": "The label for category Bases in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Spaces": {
+    "message": "Bereiche",
+    "description": "The label for category Spaces in sidebar tutorialSidebar"
   }
 }

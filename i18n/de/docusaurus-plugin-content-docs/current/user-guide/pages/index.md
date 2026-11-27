@@ -69,28 +69,11 @@ Sie können auch mit der rechten Maustaste auf eine Seite in der Seitenleiste kl
 
 ## Kommentare
 
-Docmost unterstützt Inline-Kommentare zu Seiteninhalten. So fügen Sie einen Kommentar hinzu:
-
-1. Markieren Sie den Text, den Sie kommentieren möchten.
-2. Klicken Sie auf das **Kommentarsymbol** in der schwebenden Symbolleiste.
-3. Geben Sie Ihren Kommentar ein und senden Sie ihn ab.
-
-Kommentare werden im Kommentarfeld auf der rechten Seite der Seite angezeigt. Das Feld hat zwei Registerkarten:
-
-- **Offen** – Aktive Kommentare, die Aufmerksamkeit erfordern.
-- **Aufgelöst** – Kommentare, die aufgelöst wurden.
+Markieren Sie Text und klicken Sie in der Symbolleiste auf **Kommentar**, um eine Diskussion zu beginnen, oder öffnen Sie das Kommentarfeld, um die ganze Seite zu kommentieren. Siehe [Kommentare](/user-guide/pages/comments).
 
 ## Seitenverlauf
 
-Docmost speichert den Seitenverlauf automatisch, während Sie bearbeiten. Während der ersten 5 Minuten nach Erstellung einer Seite werden jede Minute Schnappschüsse gespeichert. Danach wird der Verlauf während einer Bearbeitungssitzung alle 5 Minuten gespeichert.
-
-So greifen Sie auf den Seitenverlauf zu:
-
-1. Öffnen Sie das **Seitenmenü (...)**.
-2. Klicken Sie auf **Seitenverlauf**.
-3. Durchsuchen Sie die Liste der gespeicherten Versionen auf der rechten Seite.
-4. Wählen Sie eine Version aus, um eine **Diff-Hervorhebung** anzuzeigen, die die Änderungen gegenüber der aktuellen Version zeigt.
-5. Klicken Sie auf **Wiederherstellen**, um die Seite auf eine frühere Version zurückzusetzen.
+Docmost speichert beim Bearbeiten Versionen einer Seite. Um sie anzusehen, zu vergleichen oder wiederherzustellen, öffnen Sie das **Seitenmenü (...)** und klicken Sie auf **Seitenverlauf**. Siehe [Seitenverlauf](/user-guide/pages/page-history).
 
 ## Freigabe
 
@@ -111,7 +94,7 @@ So geben Sie eine Seite frei:
 
 Die öffentliche Freigabe kann auf zwei Ebenen gesteuert werden:
 
-- **Arbeitsbereichsebene** – Administratoren können die öffentliche Freigabe für den gesamten Arbeitsbereich unter **Einstellungen > Allgemein** deaktivieren.
+- **Arbeitsbereichsebene** – Administratoren können die öffentliche Freigabe für den gesamten Arbeitsbereich unter **Einstellungen > Security & SSO** deaktivieren.
 - **Bereichsebene** – Bereichsadministratoren können die öffentliche Freigabe für einzelne Bereiche unter **Bereichseinstellungen** deaktivieren.
 
 Einstellungen auf Arbeitsbereichsebene haben Vorrang vor Einstellungen auf Bereichsebene. Wenn die öffentliche Freigabe auf einer der beiden Ebenen deaktiviert ist, werden alle zuvor freigegebenen Seiten innerhalb dieses Bereichs automatisch wieder privat gestellt.
