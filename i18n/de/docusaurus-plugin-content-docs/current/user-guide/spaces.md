@@ -43,15 +43,15 @@ Die verfügbaren Bereichsrollen sind:
 
 ### Ein Mitglied aus einem Bereich entfernen
 
-So entfernen Sie jemanden aus einer Gruppe:
+So entfernen Sie ein Mitglied oder eine Gruppe aus einem Bereich:
 
-1. Gehen Sie zu **Einstellungen > Gruppen**.
-2. Wählen Sie die Gruppe aus.
-3. Suchen Sie das Mitglied, das Sie entfernen möchten.
-4. Klicken Sie auf die **drei Punkte (⋯)** neben dem Namen.
-5. Wählen Sie **Bereichsmitglied entfernen**.
-6. Bestätigen Sie die Aktion.
+1. Klicken Sie in der Seitenleiste auf **Bereichseinstellungen** für den Bereich, den Sie verwalten möchten.
+2. Gehen Sie im Popup zum Tab **Mitglieder**.
+3. Klicken Sie auf die **drei Punkte (⋯)** neben dem Mitglied oder der Gruppe.
+4. Wählen Sie **Bereichsmitglied entfernen**.
+5. Klicken Sie zur Bestätigung auf **Entfernen**.
 
+Entfernte Mitglieder verlieren den Zugriff auf den Bereich, es sei denn, sie gehören noch einer Gruppe an, die Mitglied des Bereichs ist. Ein Bereich muss mindestens ein Mitglied mit **Vollzugriff** behalten.
 
 ### Einen Bereich bearbeiten
 
