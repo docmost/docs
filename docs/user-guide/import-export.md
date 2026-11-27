@@ -61,6 +61,8 @@ If you are moving from Notion to Docmost, you can import your Notion content dir
 
 Teams moving from Confluence can import their content into Docmost. To do this, you first need to export your Confluence space as HTML, then import it into Docmost.
 
+The steps below import one space export at a time. For a fuller migration, see [Advanced Confluence Migration](#advanced-confluence-migration).
+
 #### Exporting from Confluence
 
 1. In Confluence, navigate to the space you want to export.
@@ -85,6 +87,10 @@ The following content is preserved during import:
 - Internal page links
 - Images and attachments
 - Draw.io diagrams
+
+#### Advanced Confluence Migration
+
+The Advanced Confluence Migration is available to Enterprise customers. It migrates users, pages, permissions, page history, templates, anchor links, and internal and cross-space links, along with other content. To get started, contact support at [help@docmost.com](mailto:help@docmost.com).
 
 ## Exporting Pages
 

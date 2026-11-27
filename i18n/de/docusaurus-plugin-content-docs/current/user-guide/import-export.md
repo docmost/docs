@@ -61,6 +61,8 @@ Wenn Sie von Notion zu Docmost wechseln, können Sie Ihre Notion-Inhalte direkt 
 
 Teams, die von Confluence wechseln, können ihre Inhalte in Docmost importieren. Dazu müssen Sie zunächst Ihren Confluence-Bereich als HTML exportieren und ihn anschließend in Docmost importieren.
 
+Mit den folgenden Schritten importieren Sie jeweils den Export eines Bereichs. Für eine umfassendere Migration siehe [Advanced Confluence Migration](#advanced-confluence-migration).
+
 #### Aus Confluence exportieren
 
 1. Navigieren Sie in Confluence zu dem Bereich, den Sie exportieren möchten.
@@ -85,6 +87,10 @@ Die folgenden Inhalte bleiben während des Imports erhalten:
 - Interne Seitenlinks
 - Bilder und Anhänge
 - Draw.io-Diagramme
+
+#### Advanced Confluence Migration {#advanced-confluence-migration}
+
+Die Advanced Confluence Migration steht Enterprise-Kunden zur Verfügung. Sie migriert Benutzer, Seiten, Berechtigungen, Seitenverlauf, Vorlagen, Ankerlinks sowie interne und bereichsübergreifende Links und weitere Inhalte. Wenden Sie sich für den Einstieg an den Support unter [help@docmost.com](mailto:help@docmost.com).
 
 ## Seiten exportieren
 
