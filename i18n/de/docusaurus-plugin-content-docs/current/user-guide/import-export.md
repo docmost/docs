@@ -90,7 +90,7 @@ Die folgenden Inhalte bleiben während des Imports erhalten:
 
 #### Advanced Confluence Migration {#advanced-confluence-migration}
 
-Die Advanced Confluence Migration steht Enterprise-Kunden zur Verfügung. Sie migriert Benutzer, Seiten, Berechtigungen, Seitenverlauf, Vorlagen, Ankerlinks sowie interne und bereichsübergreifende Links und weitere Inhalte. Wenden Sie sich für den Einstieg an den Support unter [help@docmost.com](mailto:help@docmost.com).
+Die Advanced Confluence Migration steht Enterprise-Kunden zur Verfügung. Sie migriert Benutzer, Seiten, Berechtigungen, Seitenverlauf, Vorlagen, Ankerlinks sowie interne und bereichsübergreifende Links und weitere Inhalte. Potenzielle Kunden können sie testen, bevor sie sich festlegen. Wenden Sie sich für den Einstieg an den Support unter [help@docmost.com](mailto:help@docmost.com).
 
 ## Seiten exportieren
 

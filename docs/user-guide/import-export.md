@@ -90,7 +90,7 @@ The following content is preserved during import:
 
 #### Advanced Confluence Migration
 
-The Advanced Confluence Migration is available to Enterprise customers. It migrates users, pages, permissions, page history, templates, anchor links, and internal and cross-space links, along with other content. To get started, contact support at [help@docmost.com](mailto:help@docmost.com).
+The Advanced Confluence Migration is available to Enterprise customers. It migrates users, pages, permissions, page history, templates, anchor links, and internal and cross-space links, along with other content. Potential customers can try it before committing. To get started, contact support at [help@docmost.com](mailto:help@docmost.com).
 
 ## Exporting Pages
 
