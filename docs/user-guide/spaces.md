@@ -43,15 +43,15 @@ The available space roles are:
 
 ### Removing a Member from a Space
 
-To remove someone from a group:
+To remove a member or group from a space:
 
-1. Go to **Settings > Groups**.
-2. Select the group.
-3. Find the member you want to remove.
-4. Click the **three dots (⋯)** next to their name.
-5. Select **Remove Space Member**.
-6. Confirm the action.
+1. In the sidebar, click **Space Settings** for the space you want to manage.
+2. In the popup, go to the **Members** tab.
+3. Click the **three dots (⋯)** next to the member or group.
+4. Select **Remove Space Member**.
+5. Click **Remove** to confirm.
 
+Removed members lose access to the space unless they still belong to a group that is a member of it. A space must keep at least one member with **Full Access**.
 
 ### Editing a Space
 
