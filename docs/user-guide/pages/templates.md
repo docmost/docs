@@ -21,6 +21,8 @@ To create a new page from the sidebar:
 
 You need permission to create pages in the destination. The new page copies the template's title, icon, and content, including its images, diagrams, and attachments. You can edit it without changing the template.
 
+If the template has [variables](#variables), you fill them in before the page is created.
+
 ## Create a template
 
 Workspace owners and admins can enable **Allow members to create templates** in **Settings > General**. This lets members create templates in spaces they belong to and can edit. Only workspace owners and admins can create global templates.
@@ -57,6 +59,29 @@ To change a placeholder, click it, edit the instruction, and press `Enter`. To r
 In a page created from a template, click a placeholder and start typing. The instruction disappears and your text takes its place, with the formatting of the text around it. Pasting works the same way. In a table, `Tab` moves to the next cell and stops at its first placeholder.
 
 Placeholders show only while you edit a page or preview a template. They don't appear in read mode, on shared pages, or in search results. Copying, exporting, or printing a page leaves them out.
+
+## Variables
+
+Variables are named fields, such as a project name or an owner, that people fill in when they use the template. Each answer becomes regular text on the new page. Unlike placeholders, variables are filled in once, before the page is created, and don't stay on the page.
+
+### Add variables
+
+In the template editor:
+
+1. Type `/` and choose **Variable**. With the [fixed editor toolbar](../preferences.md#fixed-editor-toolbar), you can also find it under **More inserts**.
+2. Enter a **Variable name**, such as "Project name".
+3. Choose a **Field type**: **Single-line text**, **Multi-line text**, or **Select**. For **Select**, enter one choice per line under **Choices**.
+4. Click **Insert**.
+
+To ask for the same value in several places, insert another variable with the same name. One answer fills every copy. Names aren't case-sensitive.
+
+To change a variable, click it, make your changes, and click **Save**. Renaming a variable renames all its copies. To remove a variable, delete it like regular text.
+
+### Fill in variables
+
+When you use a template that has variables, Docmost first opens the template with an input in place of each variable. Fill in the fields and continue. Fields you leave empty are removed from the page.
+
+Answers keep the formatting the variable had in the template, and multi-line answers keep their line breaks. Variables fill in the page content only, not the title.
 
 ## Edit or delete a template
 

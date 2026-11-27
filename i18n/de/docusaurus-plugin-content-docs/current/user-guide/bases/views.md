@@ -8,7 +8,7 @@ tags:
 
 Eine Ansicht ist eine gespeicherte Art, die Zeilen in einer Base zu betrachten. Jede Ansicht merkt sich ihre eigenen Filter, Sortierungen, sichtbaren Eigenschaften, das Spaltenlayout und die Gruppierung, sodass Sie eine Tabelle zum Bearbeiten und ein Board zum Verfolgen derselben Datensätze behalten können. Ansichten erscheinen als Registerkarten über der Base. Klicken Sie auf eine Registerkarte, um zu ihr zu wechseln.
 
-Eine Base unterstützt zwei Ansichtstypen: **Tabelle** und **Kanban**.
+Eine Base unterstützt drei Ansichtstypen: **Tabelle**, **Kanban** und **Kalender**.
 
 ## Tabellenansicht
 
@@ -35,11 +35,34 @@ Die Kanban-Ansicht ist ein Board aus Karten, die in Spalten gruppiert sind.
 
 Um ein Board zu gruppieren, benötigt die Base mindestens eine Auswahl- oder Status-Eigenschaft.
 
+## Kalenderansicht {#calendar-view}
+
+Die Kalenderansicht zeigt Zeilen in einem Kalender, angeordnet nach einer Datumseigenschaft. Zeilen ohne Datum erscheinen nicht im Kalender.
+
+Wählen Sie in den Kalendereinstellungen (Zahnradsymbol) unter **Kalender nach** die Eigenschaft aus. Das kann eine Eigenschaft vom Typ **Datum**, **Erstellt am** oder **Zuletzt bearbeitet am** sein. Hat die Base keine, klicken Sie auf **Datumseigenschaft erstellen**. Ein Datum mit Enddatum erstreckt sich über mehrere Tage, und ein Datum mit Uhrzeit erscheint in der Wochenansicht zu dieser Uhrzeit.
+
+- Wechseln Sie zwischen **Monat** und **Woche** und bewegen Sie sich mit **Heute** und den Pfeilen durch die Zeit. Auf kleinen Bildschirmen ist nur die Monatsansicht verfügbar.
+- Jede Zeile zeigt ihren Titel. Weitere Eigenschaften wählen Sie unter **Karteneigenschaften**. In der Monatsansicht erscheinen sie, wenn Sie mit der Maus über eine Zeile fahren.
+- Hat ein Tag mehr Zeilen, als Platz ist, klicken Sie auf **+N weitere**, um den Rest zu sehen.
+- Um Samstage und Sonntage auszublenden, schalten Sie in den Kalendereinstellungen **Wochenenden anzeigen** aus.
+
+Wenn Sie die Base bearbeiten können:
+
+- Doppelklicken Sie auf einen Tag oder in der Wochenansicht auf ein Zeitfenster, um eine Zeile mit diesem Datum hinzuzufügen. Ziehen Sie über mehrere Tage oder Zeitfenster, um eine Zeile mit einem Zeitraum hinzuzufügen.
+- Ziehen Sie eine Zeile auf einen anderen Tag, um ihr Datum zu ändern. In der Wochenansicht ändert das Ziehen auch die Uhrzeit.
+- Ziehen Sie am Rand einer Zeile, um ihren Beginn oder ihr Ende zu ändern.
+- Änderungen an **Monat** oder **Woche**, **Kalender nach**, **Wochenenden anzeigen** und **Karteneigenschaften** werden für alle gespeichert.
+
+Ziehen funktioniert nur mit einer Eigenschaft vom Typ **Datum**, da **Erstellt am** und **Zuletzt bearbeitet am** automatisch ausgefüllt werden. Klicken Sie auf eine Zeile, um sie zu öffnen.
+
+Sie können einen Kalender wie jede andere Ansicht filtern. Zeilen sind nach Datum sortiert. Uhrzeiten erscheinen in Ihrer eigenen Zeitzone, und Daten ohne Uhrzeit stehen für alle am selben Tag.
+
 ## Ansichten erstellen und verwalten
 
 1. Klicken Sie auf **+** neben den Ansichts-Registerkarten.
-2. Wählen Sie **Tabelle** oder **Kanban**.
+2. Wählen Sie **Tabelle**, **Kanban** oder **Kalender**.
 3. Wählen Sie für eine Kanban-Ansicht die Auswahl- oder Status-Eigenschaft, nach der gruppiert werden soll. Wenn die Base genau eine solche Eigenschaft hat, wird sie automatisch verwendet.
+4. Wählen Sie für eine Kalenderansicht die Datumseigenschaft. Wenn die Base genau eine Eigenschaft vom Typ **Datum** hat, wird sie automatisch verwendet.
 
 Um eine Ansicht umzubenennen, neu anzuordnen oder zu löschen, verwenden Sie ihre Registerkarte.
 

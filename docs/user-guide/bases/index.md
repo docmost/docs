@@ -38,7 +38,7 @@ A base can take up a whole page, the same way a document does.
 
 1. Create a new page.
 2. On the empty page, find the **Get started with** prompt.
-3. Click **Base** to start with a table, or **Kanban** to start with a board.
+3. Click **Base** to start with a table, **Kanban** to start with a board, or **Calendar** to start with a calendar.
 
 The page becomes a base and shows the grid. It appears in the sidebar with a table icon and is titled **Untitled base** until you name it.
 
@@ -46,17 +46,18 @@ The page becomes a base and shows the grid. It appears in the sidebar with a tab
 
 You can also embed a base in the middle of a regular page.
 
-1. In the editor, type `/base` for a table, or `/kanban` for a board.
-2. Choose **Base (Inline)** or **Kanban** from the slash menu.
+1. In the editor, type `/base` for a table, `/kanban` for a board, or `/calendar` for a calendar.
+2. Choose **Base (Inline)**, **Kanban**, or **Calendar** from the slash menu.
 
-The base is inserted as a block in the document. Both commands create a base; **Kanban** simply starts on a board view. Use the expand control in its toolbar to open it as a full page when you need more room.
+The base is inserted as a block in the document. Each command creates a base. **Kanban** starts on a board view, and **Calendar** starts on a calendar view with a **Date** property. Use the expand control in its toolbar to open it as a full page when you need more room.
 
 ## Views
 
-Every base supports two view types:
+Every base supports three view types:
 
-- **Table** — a spreadsheet-style grid of rows and columns. Best for editing and scanning data.
-- **Kanban** — a board grouped by a Select or Status property, with one column per option. Best for moving records through stages.
+- **Table**: a spreadsheet-style grid of rows and columns. Best for editing and scanning data.
+- **Kanban**: a board grouped by a Select or Status property, with one column per option. Best for moving records through stages.
+- **Calendar**: a monthly or weekly calendar with rows placed by a date property. Best for schedules and deadlines.
 
 See [Views](./views.md) for how to create and configure them.
 
@@ -67,6 +68,10 @@ The Kanban view groups your rows into columns by a Select or Status property —
 <p align="center">
 <img src="/docs/img/base-kanban.png" width="100%" alt="Bases Kanban view"/>
 </p>
+
+### Calendar
+
+The Calendar view places each row on the day of its date property. Drag a row to another day to change its date, or double-click a day to add a row there. It's best for schedules, events, and deadlines. See [Calendar View](./views.md#calendar-view).
 
 ## Permissions & Access
 
@@ -93,6 +98,7 @@ Some values are capped to keep bases responsive:
 | People in one Person cell | 100 |
 | Files in one File cell | 50 |
 | Sort rules per view | 5 |
+| Rows shown at once in a calendar month or week | 1,000 |
 
 :::note
 Bases are designed for small to medium datasets. For the best performance, keep a base under 5,000 rows.
