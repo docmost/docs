@@ -75,7 +75,7 @@ The Calendar view places each row on the day of its date property. Drag a row to
 
 ## Permissions & Access
 
-A base lives in a [space](../spaces.md), and access to it follows the same rules as pages:
+A base lives in a [space](../spaces/index.md), and access to it follows the same rules as pages:
 
 - **Viewer** — can open a base and read its rows, but cannot change anything.
 - **Can Edit** and **Full Access** — can create bases and edit rows, properties, and views.

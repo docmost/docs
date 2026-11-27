@@ -28,6 +28,8 @@ Docmost unterstützt **Time-based One-Time Password (TOTP)** für die Multi-Fakt
 
 Sobald MFA aktiviert ist, müssen Sie bei jeder Anmeldung einen TOTP-Code aus Ihrer Authenticator-App eingeben.
 
+Eigentümer und Administratoren des Arbeitsbereichs können MFA für alle Mitglieder vorschreiben. Siehe [Zwei-Faktor-Authentifizierung erzwingen](/user-guide/security#enforce-two-factor-authentication).
+
 ## MFA deaktivieren
 
 So deaktivieren Sie die Multi-Faktor-Authentifizierung:

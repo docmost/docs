@@ -69,28 +69,11 @@ You can also right-click or hover over a page in the sidebar and click the **thr
 
 ## Comments
 
-Docmost supports inline comments on page content. To add a comment:
-
-1. Select the text you want to comment on.
-2. Click the **comment icon** in the floating toolbar.
-3. Type your comment and submit it.
-
-Comments appear in the comments panel on the right side of the page. The panel has two tabs:
-
-- **Open** - Active comments that need attention.
-- **Resolved** - Comments that have been resolved.
+Select text and click **Comment** in the toolbar to start a discussion, or open the comments panel to comment on the whole page. See [Comments](/user-guide/pages/comments).
 
 ## Page History
 
-Docmost automatically saves page history as you edit. During the first 5 minutes after a page is created, snapshots are saved every minute. After that, history is saved every 5 minutes during an edit session.
-
-To access page history:
-
-1. Open the **page menu (...)**.
-2. Click **Page history**.
-3. Browse the list of saved versions on the right.
-4. Select a version to view a **diff highlight** showing what changed compared to the current version.
-5. Click **Restore** to revert the page to a previous version.
+Docmost saves versions of a page as you edit. To view, compare or restore them, open the **page menu (...)** and click **Page history**. See [Page history](/user-guide/pages/page-history).
 
 ## Sharing
 
@@ -111,7 +94,7 @@ To share a page:
 
 Public sharing can be controlled at two levels:
 
-- **Workspace level** - Admins can disable public sharing for the entire workspace in **Settings > General**.
+- **Workspace level** - Admins can disable public sharing for the entire workspace in **Settings > Security & SSO**.
 - **Space level** - Space admins can disable public sharing for individual spaces in **Space Settings**.
 
 Workspace-level settings take precedence over space-level settings. If public sharing is disabled at either level, all previously shared pages under that scope will be automatically unshared.

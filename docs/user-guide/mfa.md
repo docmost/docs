@@ -28,6 +28,8 @@ Docmost supports **Time-based One-Time Password (TOTP)** for multi-factor authen
 
 Once enabled, you will be required to enter a TOTP code from your authenticator app each time you sign in.
 
+Workspace owners and admins can require MFA for all members. See [Enforce two-factor authentication](/user-guide/security#enforce-two-factor-authentication).
+
 ## Disabling MFA
 
 To disable multi-factor authentication:
