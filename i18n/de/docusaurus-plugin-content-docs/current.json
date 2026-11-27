@@ -31,6 +31,10 @@
     "message": "Seiten",
     "description": "The label for category Pages in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.Editor": {
+    "message": "Editor",
+    "description": "The label for category Editor in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Bases": {
     "message": "Bases",
     "description": "The label for category Bases in sidebar tutorialSidebar"
