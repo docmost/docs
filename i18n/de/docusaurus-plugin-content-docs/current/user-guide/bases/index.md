@@ -69,7 +69,7 @@ Die Kanban-Ansicht gruppiert Ihre Zeilen nach einer Auswahl- oder Status-Eigensc
 
 ## Berechtigungen & Zugriff
 
-Eine Base befindet sich in einem [Bereich](../spaces.md), und der Zugriff darauf folgt denselben Regeln wie bei Seiten:
+Eine Base befindet sich in einem [Bereich](../spaces/index.md), und der Zugriff darauf folgt denselben Regeln wie bei Seiten:
 
 - **Betrachter** — kann eine Base öffnen und ihre Zeilen lesen, aber nichts ändern.
 - **Bearbeiten** und **Vollzugriff** — können Bases erstellen sowie Zeilen, Eigenschaften und Ansichten bearbeiten.
