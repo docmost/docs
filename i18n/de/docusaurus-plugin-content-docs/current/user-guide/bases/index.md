@@ -37,7 +37,7 @@ Eine Base kann eine ganze Seite einnehmen, genau wie ein Dokument.
 
 1. Erstellen Sie eine neue Seite.
 2. Suchen Sie auf der leeren Seite die Aufforderung **Erste Schritte mit**.
-3. Klicken Sie auf **Base**, um mit einer Tabelle zu beginnen, oder auf **Kanban**, um mit einem Board zu beginnen.
+3. Klicken Sie auf **Basis**, um mit einer Tabelle zu beginnen, auf **Kanban** für ein Board oder auf **Kalender** für einen Kalender.
 
 Die Seite wird zu einer Base und zeigt das Raster an. Sie erscheint in der Seitenleiste mit einem Tabellensymbol und trägt den Titel **Untitled base**, bis Sie sie benennen.
 
@@ -45,17 +45,18 @@ Die Seite wird zu einer Base und zeigt das Raster an. Sie erscheint in der Seite
 
 Sie können eine Base auch mitten in eine reguläre Seite einbetten.
 
-1. Geben Sie im Editor `/base` für eine Tabelle oder `/kanban` für ein Board ein.
-2. Wählen Sie **Base (Inline)** oder **Kanban** aus dem Slash-Menü.
+1. Geben Sie im Editor `/base` für eine Tabelle, `/kanban` für ein Board oder `/calendar` für einen Kalender ein.
+2. Wählen Sie **Basis (Inline)**, **Kanban** oder **Kalender** aus dem Slash-Menü.
 
-Die Base wird als Block in das Dokument eingefügt. Beide Befehle erstellen eine Base; **Kanban** beginnt lediglich mit einer Board-Ansicht. Verwenden Sie das Erweiterungssteuerelement in der Symbolleiste, um sie als ganze Seite zu öffnen, wenn Sie mehr Platz benötigen.
+Die Base wird als Block in das Dokument eingefügt. Jeder Befehl erstellt eine Base. **Kanban** beginnt mit einer Board-Ansicht, **Kalender** mit einer Kalenderansicht und einer Eigenschaft **Datum**. Verwenden Sie das Erweiterungssteuerelement in der Symbolleiste, um sie als ganze Seite zu öffnen, wenn Sie mehr Platz benötigen.
 
 ## Ansichten
 
-Jede Base unterstützt zwei Ansichtstypen:
+Jede Base unterstützt drei Ansichtstypen:
 
-- **Tabelle** — ein tabellenkalkulationsähnliches Raster aus Zeilen und Spalten. Am besten geeignet zum Bearbeiten und Durchsehen von Daten.
-- **Kanban** — ein Board, das nach einer Auswahl- oder Status-Eigenschaft gruppiert ist, mit einer Spalte pro Option. Am besten geeignet, um Datensätze durch Phasen zu bewegen.
+- **Tabelle**: ein tabellenkalkulationsähnliches Raster aus Zeilen und Spalten. Am besten geeignet zum Bearbeiten und Durchsehen von Daten.
+- **Kanban**: ein Board, das nach einer Auswahl- oder Status-Eigenschaft gruppiert ist, mit einer Spalte pro Option. Am besten geeignet, um Datensätze durch Phasen zu bewegen.
+- **Kalender**: ein Monats- oder Wochenkalender, in dem Zeilen nach einer Datumseigenschaft angeordnet sind. Am besten geeignet für Zeitpläne und Fristen.
 
 Siehe [Ansichten](./views.md) für die Erstellung und Konfiguration.
 
@@ -66,6 +67,10 @@ Die Kanban-Ansicht gruppiert Ihre Zeilen nach einer Auswahl- oder Status-Eigensc
 <p align="center">
 <img src="/docs/img/base-kanban.png" width="100%" alt="Bases Kanban view"/>
 </p>
+
+### Kalender {#calendar}
+
+Die Kalenderansicht platziert jede Zeile am Tag ihrer Datumseigenschaft. Ziehen Sie eine Zeile auf einen anderen Tag, um ihr Datum zu ändern, oder doppelklicken Sie auf einen Tag, um dort eine Zeile hinzuzufügen. Sie eignet sich am besten für Zeitpläne, Termine und Fristen. Siehe [Kalenderansicht](./views.md#calendar-view).
 
 ## Berechtigungen & Zugriff
 
@@ -92,6 +97,7 @@ Einige Werte sind begrenzt, um die Bases reaktionsschnell zu halten:
 | Personen in einer Personen-Zelle | 100 |
 | Dateien in einer Datei-Zelle | 50 |
 | Sortierregeln pro Ansicht | 5 |
+| Gleichzeitig angezeigte Zeilen in einem Kalendermonat oder einer Kalenderwoche | 1.000 |
 
 :::note
 Bases sind für kleine bis mittlere Datenmengen ausgelegt. Für die beste Leistung halten Sie eine Base unter 5.000 Zeilen.
