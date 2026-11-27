@@ -41,6 +41,7 @@ Geben Sie `/` in einer neuen Zeile ein, um das Menü der Slash-Befehle zu öffne
 | **Tabelle** | Fügen Sie eine Tabelle ein |
 | **Umschaltblock** | Fügen Sie einen einklappbaren Block ein |
 | **Callout** | Fügen Sie einen Callout-Hinweisblock ein |
+| **Synchronisierter Block** | Fügen Sie einen Block ein, den Sie auf mehreren Seiten zeigen können. Siehe [Synchronisierte Blöcke](/user-guide/editor/synced-blocks) |
 
 ### Erweitert
 

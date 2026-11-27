@@ -41,6 +41,7 @@ Type `/` on a new line to open the slash command menu. You can also type to filt
 | **Table** | Insert a table |
 | **Toggle block** | Insert a collapsible block |
 | **Callout** | Insert a callout notice block |
+| **Synced block** | Insert a block you can show on several pages. See [Synced Blocks](/user-guide/editor/synced-blocks) |
 
 ### Advanced
 
