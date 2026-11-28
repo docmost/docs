@@ -206,15 +206,22 @@ Integrationen wie das SIEM-Streaming lassen den Server Anfragen an URLs senden, 
 |----------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `ALLOWED_PRIVATE_NETWORKS` | `all,127.0.0.0/8,::1/128`  | `none` (Standard) lehnt private, Loopback- und reservierte Ziele ab. `all` erlaubt private Netzwerke (10.x, 172.16-31.x, 192.168.x, 100.64.x, IPv6 Unique Local). Eine durch Kommas getrennte Liste von CIDR-Bereichen, jeweils optional mit Port (`192.168.1.20/32:8088`), erlaubt nur diese Bereiche. Nach `all` aufgeführte Bereiche kommen hinzu, zum Beispiel Loopback für einen Collector auf derselben Maschine. |
 
-Linkvorschauen verwenden diese Variable nicht. Sie rufen nie private, Loopback- oder reservierte Adressen ab, daher zeigen Links auf Intranetseiten nur ihre Adresse.
+Linkvorschauen verwenden diese Variable nicht. Wenn Docmost Vorschauen selbst abruft, ruft es nie private, Loopback- oder reservierte Adressen ab, daher zeigen Links auf Intranetseiten nur ihre Adresse. Mit `LINK_PREVIEW_DRIVER=iframely` ruft stattdessen Iframely die Seiten ab (siehe [Linkvorschauen](#link-previews)).
 
-Wenn `HTTP_PROXY` oder `HTTPS_PROXY` gesetzt ist, laufen Linkvorschauen über den Proxy. Docmost löst jeden Host trotzdem vorher selbst auf und prüft ihn, der Server braucht daher funktionierendes DNS für öffentliche Hostnamen. Der Proxy löst den Host selbst erneut auf, sperren Sie private und Loopback-Bereiche daher zusätzlich am Proxy.
+Wenn `HTTP_PROXY` oder `HTTPS_PROXY` gesetzt ist, laufen Linkvorschauen über den Proxy, unabhängig davon, ob Docmost die Seiten selbst abruft oder Iframely fragt. Docmost löst jeden Host trotzdem vorher selbst auf und prüft ihn, der Server braucht daher funktionierendes DNS für öffentliche Hostnamen. Der Proxy löst den Host selbst erneut auf, sperren Sie private und Loopback-Bereiche daher zusätzlich am Proxy.
 
 ## Linkvorschauen {#link-previews}
 
 | Variable                | Beispiel | Beschreibung |
 |-------------------------|----------|--------------|
-| `DISABLE_LINK_PREVIEWS` | `true`   | Auf `true` setzen, um Linkvorschauen auszuschalten. Ein eingefügter Link bleibt dann ein normaler Link ohne **Einfügen als**, Links lassen sich nicht in eine Erwähnung oder Karte umwandeln, **Vorschau aktualisieren** wird ausgeblendet, und der Server ruft keine Seiten mehr für Vorschauen ab. Vorschauen, die bereits in Seiten stehen, werden weiter angezeigt. Vorschauen aus Integrationen wie GitHub oder Jira sind nicht betroffen. Standardwert ist `false`. |
+| `DISABLE_LINK_PREVIEWS` | `true`   | Auf `true` setzen, um Linkvorschauen auszuschalten. Ein eingefügter Link bleibt dann ein normaler Link ohne **Einfügen als**, Links lassen sich nicht in eine Erwähnung oder Karte umwandeln, **Vorschau aktualisieren** wird ausgeblendet, und der Server ruft keine Seiten mehr für Vorschauen ab. Vorschauen, die bereits in Seiten stehen, werden weiter angezeigt. Vorschauen aus Integrationen wie GitHub oder Jira sind nicht betroffen. Hat Vorrang vor `LINK_PREVIEW_DRIVER`. Standardwert ist `false`. |
+| `LINK_PREVIEW_DRIVER`   | `iframely` | Nicht gesetzt (Standard) ruft der Docmost-Server eingefügte Seiten selbst ab, um Vorschauen zu erstellen. Mit `iframely` erstellt Iframely die Vorschauen, und der Docmost-Server sendet keine Anfrage an die eingefügte Seite. Docmost prüft weiterhin, dass der eingefügte Link auf eine öffentliche Adresse zeigt, was nur eine DNS-Abfrage ist, und prüft die Adresse, die Iframely zurückmeldet. Schlägt Iframely fehl oder läuft in eine Zeitüberschreitung, zeigt der Link nur seine Adresse. |
+| `IFRAMELY_URL`          | `http://iframely:8061` | Basis-URL von Iframely, verwendet bei `LINK_PREVIEW_DRIVER=iframely`. Docmost ruft `<IFRAMELY_URL>/iframely` auf. Standardwert ist `https://iframe.ly/api`, das gehostete Iframely. Für ein selbst gehostetes Iframely setzen Sie dessen Adresse. |
+| `IFRAMELY_API_KEY`      | `your-api-key` | API-Schlüssel für gehostetes Iframely. Ein selbst gehostetes Iframely braucht keinen. Fehlt der Schlüssel oder ist er für gehostetes Iframely falsch, schlagen Vorschauen fehl, und der Server protokolliert eine Warnung. |
+
+Anfragen an Iframely laufen über `HTTP_PROXY` / `HTTPS_PROXY`, wenn gesetzt. Kann der Proxy ein selbst gehostetes Iframely nicht erreichen, fügen Sie dessen Host zu `NO_PROXY` hinzu.
+
+Ein selbst gehostetes Iframely lehnt private Adressen selbst ab. Halten Sie es aktuell, denn neuere Versionen haben den Umgang mit Weiterleitungen auf private Adressen behoben. Fügen Sie interne Hosts nicht zu dessen Einstellung `ALLOWED_LOCAL_HOSTS` hinzu.
 
 ## Telemetrie
 Wir erfassen anonym die aktive Version, die Anzahl der Benutzer, die Anzahl der Seiten sowie die Anzahl der Bereiche und Arbeitsbereiche.

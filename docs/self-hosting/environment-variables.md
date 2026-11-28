@@ -206,15 +206,22 @@ Integrations such as SIEM streaming make the server send requests to URLs that w
 |----------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `ALLOWED_PRIVATE_NETWORKS` | `all,127.0.0.0/8,::1/128`  | `none` (default) refuses private, loopback and reserved destinations. `all` allows private networks (10.x, 172.16-31.x, 192.168.x, 100.64.x, IPv6 unique-local). A comma-separated list of CIDR ranges, each optionally with a port (`192.168.1.20/32:8088`), allows only those ranges. Ranges listed after `all` are added on top, for example loopback for a collector on the same machine. |
 
-Link previews don't use this variable. They never fetch private, loopback or reserved addresses, so links to intranet pages show only their address.
+Link previews don't use this variable. When Docmost fetches previews itself, it never fetches private, loopback or reserved addresses, so links to intranet pages show only their address. With `LINK_PREVIEW_DRIVER=iframely`, Iframely fetches the pages instead (see [Link Previews](#link-previews)).
 
-When `HTTP_PROXY` or `HTTPS_PROXY` is set, link previews go through the proxy. Docmost still looks up and checks each host itself first, so the server needs working DNS for public host names. The proxy looks the host up again on its own, so block private and loopback ranges at the proxy as well.
+When `HTTP_PROXY` or `HTTPS_PROXY` is set, link previews go through the proxy, whether Docmost fetches the pages itself or asks Iframely. Docmost still looks up and checks each host itself first, so the server needs working DNS for public host names. The proxy looks the host up again on its own, so block private and loopback ranges at the proxy as well.
 
 ## Link Previews
 
 | Variable                | Example | Description |
 |-------------------------|---------|-------------|
-| `DISABLE_LINK_PREVIEWS` | `true`  | Set to `true` to turn off link previews. Pasting a link then inserts a plain link without **Paste as**, links can't be turned into a mention or card, **Refresh preview** is hidden, and the server no longer fetches pages for previews. Previews already in pages keep showing. Previews from integrations such as GitHub or Jira aren't affected. Defaults to `false`. |
+| `DISABLE_LINK_PREVIEWS` | `true`  | Set to `true` to turn off link previews. Pasting a link then inserts a plain link without **Paste as**, links can't be turned into a mention or card, **Refresh preview** is hidden, and the server no longer fetches pages for previews. Previews already in pages keep showing. Previews from integrations such as GitHub or Jira aren't affected. Takes precedence over `LINK_PREVIEW_DRIVER`. Defaults to `false`. |
+| `LINK_PREVIEW_DRIVER`   | `iframely` | Leave unset (default) and the Docmost server fetches pasted pages itself to build previews. Set to `iframely` and Iframely builds the previews, and the Docmost server sends no request to the pasted page. Docmost still checks that the pasted link points to a public address, which is only a DNS lookup, and checks the address Iframely reports back. If Iframely fails or times out, the link shows only its address. |
+| `IFRAMELY_URL`          | `http://iframely:8061` | Base URL of Iframely, used when `LINK_PREVIEW_DRIVER=iframely`. Docmost calls `<IFRAMELY_URL>/iframely`. Defaults to `https://iframe.ly/api`, which is hosted Iframely. For a self-hosted Iframely, set its address. |
+| `IFRAMELY_API_KEY`      | `your-api-key` | API key for hosted Iframely. A self-hosted Iframely needs none. If the key is missing or wrong for hosted Iframely, previews fail and the server logs a warning. |
+
+Requests to Iframely go through `HTTP_PROXY` / `HTTPS_PROXY` when set. If the proxy can't reach a self-hosted Iframely, add its host to `NO_PROXY`.
+
+A self-hosted Iframely refuses private addresses on its own. Keep it updated, because recent versions fixed how redirects to private addresses are handled. Don't add internal hosts to its `ALLOWED_LOCAL_HOSTS` setting.
 
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.
