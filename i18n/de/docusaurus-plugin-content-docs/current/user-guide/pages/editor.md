@@ -87,6 +87,8 @@ Um einen vorhandenen Link zu ändern, klicken Sie darauf und wählen Sie **Anzei
 
 Docmost ruft die Vorschau einmal ab, wenn Sie **Erwähnung** oder **Karte** wählen, und speichert sie in der Seite. Alle, die die Seite sehen können, sehen dieselbe Vorschau, auch Besucher geteilter Seiten. Manche Websites stellen keine Vorschau bereit, und Seiten mit Anmeldung oder in einem internen Netzwerk zeigen nur ihre Adresse.
 
+Der Serveradministrator kann Linkvorschauen mit [`DISABLE_LINK_PREVIEWS`](/self-hosting/environment-variables#link-previews) ausschalten. Ein eingefügter Link bleibt dann ein normaler Link ohne **Einfügen als**, Links lassen sich nicht in eine Erwähnung oder Karte umwandeln, und **Vorschau aktualisieren** wird ausgeblendet. Vorschauen, die bereits in Seiten stehen, werden weiter angezeigt.
+
 ## Formatierungsleiste
 
 Wählen Sie Text aus, um die schwebende Formatierungsleiste anzuzeigen. Die Leiste bietet schnellen Zugriff auf:

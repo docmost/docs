@@ -210,6 +210,12 @@ Link previews don't use this variable. They never fetch private, loopback or res
 
 When `HTTP_PROXY` or `HTTPS_PROXY` is set, link previews go through the proxy. Docmost still looks up and checks each host itself first, so the server needs working DNS for public host names. The proxy looks the host up again on its own, so block private and loopback ranges at the proxy as well.
 
+## Link Previews
+
+| Variable                | Example | Description |
+|-------------------------|---------|-------------|
+| `DISABLE_LINK_PREVIEWS` | `true`  | Set to `true` to turn off link previews. Pasting a link then inserts a plain link without **Paste as**, links can't be turned into a mention or card, **Refresh preview** is hidden, and the server no longer fetches pages for previews. Previews already in pages keep showing. Previews from integrations such as GitHub or Jira aren't affected. Defaults to `false`. |
+
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.
 

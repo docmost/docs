@@ -210,6 +210,12 @@ Linkvorschauen verwenden diese Variable nicht. Sie rufen nie private, Loopback- 
 
 Wenn `HTTP_PROXY` oder `HTTPS_PROXY` gesetzt ist, laufen Linkvorschauen über den Proxy. Docmost löst jeden Host trotzdem vorher selbst auf und prüft ihn, der Server braucht daher funktionierendes DNS für öffentliche Hostnamen. Der Proxy löst den Host selbst erneut auf, sperren Sie private und Loopback-Bereiche daher zusätzlich am Proxy.
 
+## Linkvorschauen {#link-previews}
+
+| Variable                | Beispiel | Beschreibung |
+|-------------------------|----------|--------------|
+| `DISABLE_LINK_PREVIEWS` | `true`   | Auf `true` setzen, um Linkvorschauen auszuschalten. Ein eingefügter Link bleibt dann ein normaler Link ohne **Einfügen als**, Links lassen sich nicht in eine Erwähnung oder Karte umwandeln, **Vorschau aktualisieren** wird ausgeblendet, und der Server ruft keine Seiten mehr für Vorschauen ab. Vorschauen, die bereits in Seiten stehen, werden weiter angezeigt. Vorschauen aus Integrationen wie GitHub oder Jira sind nicht betroffen. Standardwert ist `false`. |
+
 ## Telemetrie
 Wir erfassen anonym die aktive Version, die Anzahl der Benutzer, die Anzahl der Seiten sowie die Anzahl der Bereiche und Arbeitsbereiche.
 

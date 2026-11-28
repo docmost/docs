@@ -87,6 +87,8 @@ To change a link you added earlier, click it and choose **Display as**. Select a
 
 Docmost fetches the preview once, when you choose **Mention** or **Card**, and saves it in the page. Everyone who can view the page sees the same preview, including visitors to shared pages. Some sites don't provide a preview, and pages behind a sign-in or on an internal network show only their address.
 
+The server administrator can turn off link previews with [`DISABLE_LINK_PREVIEWS`](/self-hosting/environment-variables#link-previews). Pasting a link then inserts a plain link without **Paste as**, links can't be turned into a mention or card, and **Refresh preview** is hidden. Previews already in pages keep showing.
+
 ## Formatting Toolbar
 
 Select text to reveal the floating formatting toolbar. The toolbar provides quick access to:
