@@ -208,20 +208,20 @@ Integrations such as SIEM streaming make the server send requests to URLs that w
 
 Link previews don't use this variable. When Docmost fetches previews itself, it never fetches private, loopback or reserved addresses, so links to intranet pages show only their address. With `LINK_PREVIEW_DRIVER=iframely`, Iframely fetches the pages instead (see [Link Previews](#link-previews)).
 
-When `HTTP_PROXY` or `HTTPS_PROXY` is set, link previews go through the proxy, whether Docmost fetches the pages itself or asks Iframely. Docmost still looks up and checks each host itself first, so the server needs working DNS for public host names. The proxy looks the host up again on its own, so block private and loopback ranges at the proxy as well.
+When Docmost fetches the pages itself and `HTTP_PROXY` or `HTTPS_PROXY` is set, link previews go through the proxy. Docmost still looks up and checks each host itself first, so the server needs working DNS for public host names. The proxy looks the host up again on its own, so block private and loopback ranges at the proxy as well. With `LINK_PREVIEW_DRIVER=iframely`, the proxy only carries Docmost's requests to Iframely.
 
 ## Link Previews
 
 | Variable                | Example | Description |
 |-------------------------|---------|-------------|
 | `DISABLE_LINK_PREVIEWS` | `true`  | Set to `true` to turn off link previews. Pasting a link then inserts a plain link without **Paste as**, links can't be turned into a mention or card, **Refresh preview** is hidden, and the server no longer fetches pages for previews. Previews already in pages keep showing. Previews from integrations such as GitHub or Jira aren't affected. Takes precedence over `LINK_PREVIEW_DRIVER`. Defaults to `false`. |
-| `LINK_PREVIEW_DRIVER`   | `iframely` | Leave unset (default) and the Docmost server fetches pasted pages itself to build previews. Set to `iframely` and Iframely builds the previews, and the Docmost server sends no request to the pasted page. Docmost still checks that the pasted link points to a public address, which is only a DNS lookup, and checks the address Iframely reports back. If Iframely fails or times out, the link shows only its address. |
+| `LINK_PREVIEW_DRIVER`   | `iframely` | Leave unset (default) and the Docmost server fetches pasted pages itself to build previews. Set to `iframely` and Iframely builds the previews, and the Docmost server sends no request to the pasted page. Docmost still checks that the pasted link points to a public address, which is only a DNS lookup, and checks the address Iframely reports back. Requests Iframely makes along the way, such as following redirects and oEmbed lookups, are covered only by Iframely's own checks. If Iframely fails or times out, the link shows only its address. |
 | `IFRAMELY_URL`          | `http://iframely:8061` | Base URL of Iframely, used when `LINK_PREVIEW_DRIVER=iframely`. Docmost calls `<IFRAMELY_URL>/iframely`. Defaults to `https://iframe.ly/api`, which is hosted Iframely. For a self-hosted Iframely, set its address. |
 | `IFRAMELY_API_KEY`      | `your-api-key` | API key for hosted Iframely. A self-hosted Iframely needs none. If the key is missing or wrong for hosted Iframely, previews fail and the server logs a warning. |
 
 Requests to Iframely go through `HTTP_PROXY` / `HTTPS_PROXY` when set. If the proxy can't reach a self-hosted Iframely, add its host to `NO_PROXY`.
 
-A self-hosted Iframely refuses private addresses on its own. Keep it updated, because recent versions fixed how redirects to private addresses are handled. Don't add internal hosts to its `ALLOWED_LOCAL_HOSTS` setting.
+A self-hosted Iframely refuses private addresses on its own. Use Iframely v26.11.25 or later, because earlier versions, including v2.6.0, can follow redirects to private IP addresses. We recommend running it on a network that can't reach your internal services. Don't add internal hosts to its `ALLOWED_LOCAL_HOSTS` setting.
 
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.
