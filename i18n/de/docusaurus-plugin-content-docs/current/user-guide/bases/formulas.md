@@ -25,6 +25,8 @@ Verweisen Sie mit `prop()` über den Namen auf eine andere Eigenschaft:
 prop("Price")
 ```
 
+Verknüpfungen können nicht in Formeln verwendet werden.
+
 ### Operatoren
 
 Formeln unterstützen die üblichen Operatoren:

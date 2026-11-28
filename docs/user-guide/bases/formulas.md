@@ -25,6 +25,8 @@ Refer to another property by name with `prop()`:
 prop("Price")
 ```
 
+Relation properties can't be used in formulas.
+
 ### Operators
 
 Formulas support the usual operators:

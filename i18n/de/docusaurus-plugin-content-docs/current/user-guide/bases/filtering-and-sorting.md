@@ -36,6 +36,7 @@ Die verfügbaren Operatoren hängen vom Eigenschaftstyp ab.
 | Person, Zuletzt bearbeitet von | Ist, Ist nicht, Ist eines von, Ist keines von, Ist leer, Ist nicht leer |
 | Kontrollkästchen | Ist, Ist leer, Ist nicht leer |
 | Seite, Datei | Ist leer, Ist nicht leer |
+| Verknüpfung | Ist eines von, Ist keines von, Ist leer, Ist nicht leer |
 | Formel | Ist, Ist nicht, Ist leer, Ist nicht leer |
 
 ### Nach Datum filtern
@@ -47,6 +48,8 @@ Datumsbedingungen akzeptieren ein exaktes Datum oder eine relative Option, die a
 Öffnen Sie das **Sortierung**-Steuerelement, um die Zeilen in einer Tabellenansicht zu ordnen. Jede Sortierregel hat eine Eigenschaft und eine Richtung, aufsteigend oder absteigend.
 
 Sie können mehrere Sortierregeln stapeln, bis zu fünf. Sie werden der Reihe nach angewendet: Die erste Regel ist die primäre Sortierung, die zweite löst Gleichstände innerhalb der ersten auf, und so weiter.
+
+Seiten- und Verknüpfungseigenschaften können nicht zum Sortieren verwendet werden.
 
 ## Ansichtsänderungen speichern
 

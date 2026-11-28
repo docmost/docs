@@ -36,6 +36,7 @@ The available operators depend on the property type.
 | Person, Last edited by | Is, Is not, Is any of, Is none of, Is empty, Is not empty |
 | Checkbox | Is, Is empty, Is not empty |
 | Page, File | Is empty, Is not empty |
+| Relation | Is any of, Is none of, Is empty, Is not empty |
 | Formula | Is, Is not, Is empty, Is not empty |
 
 ### Filtering on Dates
@@ -47,6 +48,8 @@ Date conditions accept an exact date, or a relative option that is resolved when
 Open the **Sort** control to order the rows in a table view. Each sort rule has a property and a direction, ascending or descending.
 
 You can stack several sort rules, up to five. They apply in order: the first rule is the primary sort, the second breaks ties within the first, and so on.
+
+Page and Relation properties can't be used for sorting.
 
 ## Saving View Changes
 

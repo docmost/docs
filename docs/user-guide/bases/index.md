@@ -97,6 +97,7 @@ Some values are capped to keep bases responsive:
 | Choices selected in one Multi-select cell | 100 |
 | People in one Person cell | 100 |
 | Files in one File cell | 50 |
+| Rows picked in one relation filter | 100 |
 | Sort rules per view | 5 |
 | Rows shown at once in a calendar month or week | 1,000 |
 

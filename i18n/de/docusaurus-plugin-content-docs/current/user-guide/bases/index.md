@@ -96,6 +96,7 @@ Einige Werte sind begrenzt, um die Bases reaktionsschnell zu halten:
 | In einer Mehrfachauswahl-Zelle ausgewählte Optionen | 100 |
 | Personen in einer Personen-Zelle | 100 |
 | Dateien in einer Datei-Zelle | 50 |
+| In einem Verknüpfungsfilter gewählte Zeilen | 100 |
 | Sortierregeln pro Ansicht | 5 |
 | Gleichzeitig angezeigte Zeilen in einem Kalendermonat oder einer Kalenderwoche | 1.000 |
 

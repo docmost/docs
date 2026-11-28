@@ -23,6 +23,7 @@ Eigenschaften sind die typisierten Felder einer Base. Jede Zeile teilt denselben
 | **Datei** | Eine oder mehrere hochgeladene Dateien. |
 | **Formel** | Ein schreibgeschützter Wert, der aus anderen Eigenschaften berechnet wird. Siehe [Formeln](./formulas.md). |
 | **Seite** | Ein Link zu einer Seite in Ihrem Arbeitsbereich. |
+| **Verknüpfung** | Verknüpft Zeilen einer anderen oder derselben Base. Siehe [Verknüpfungen](./relations.md). |
 | **Kontrollkästchen** | Ein Umschalter für wahr oder falsch. |
 | **URL** | Eine Webadresse. |
 | **E-Mail** | Eine E-Mail-Adresse. |
@@ -69,6 +70,15 @@ Diese Typen enthalten eine Liste von Optionen. Für jede Option können Sie eine
 ### Person
 
 - Schalten Sie um, ob eine Zelle mehr als eine Person enthalten kann.
+
+### Verknüpfung
+
+- Wählen Sie die verknüpfte Base beim Erstellen der Eigenschaft. Sie lässt sich später nicht ändern.
+- Aktivieren Sie **In [andere Base] anzeigen**, damit die andere Base eine passende Eigenschaft erhält.
+- Deaktivieren Sie **Mehrere Zeilen erlauben**, um in einer Eigenschaft nur eine Zeile auszuwählen.
+- Eine Verknüpfung lässt sich nicht in einen anderen Typ umwandeln.
+
+Siehe [Verknüpfungen](./relations.md).
 
 ### Text, Langtext, URL, E-Mail, Kontrollkästchen
 

@@ -23,6 +23,7 @@ Properties are the typed fields of a base. Every row shares the same set of prop
 | **File** | One or more uploaded files. |
 | **Formula** | A read-only value calculated from other properties. See [Formulas](./formulas.md). |
 | **Page** | A link to a page in your workspace. |
+| **Relation** | Links to rows in another base, or in the same base. See [Relations](./relations.md). |
 | **Checkbox** | A true or false toggle. |
 | **URL** | A web address. |
 | **Email** | An email address. |
@@ -69,6 +70,15 @@ These types hold a list of choices. For each choice you can set a name and a col
 ### Person
 
 - Toggle whether a cell can hold more than one person.
+
+### Relation
+
+- Pick the related base when you create the property. It can't be changed later.
+- Turn on **Show on [other base]** to give the other base a matching property.
+- Turn off **Allow multiple rows** to pick only one row in a property.
+- A relation can't be converted to another type.
+
+See [Relations](./relations.md).
 
 ### Text, Long text, URL, Email, Checkbox
 
